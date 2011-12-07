@@ -18,7 +18,5 @@
             <div class="weibo-follow">
             <iframe width="136" scrolling="no" height="24" frameborder="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&amp;width=136&amp;height=24&amp;uid=1776438131&amp;style=2&amp;btn=light&amp;dpc=1" border="0" marginheight="0" marginwidth="0" allowtransparency="true"></iframe>
             </div>
-            <ul class="top-nav">
-            </ul>
         </div>
     </div>
