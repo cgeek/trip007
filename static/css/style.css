@@ -23,7 +23,7 @@ body, input, textarea {
     font-size: 12px;
 }
 body {
-    background: #ffffff;
+    background: #EEEFF1;
     text-align: center;
     word-wrap: break-word;
 }
@@ -62,6 +62,7 @@ a:hover {
 .wrap {
     padding: 10px;
     z-index: 2;
+	border-radius:10px;
 }
 .content {
     background-color: #FFFFFF;
@@ -98,7 +99,7 @@ a:hover {
 }
 .header {
     background-color: #35BFE9;
-    border-bottom: 10px solid #CCCCCC;
+    border-bottom: 10px solid #EEEFF1;
     height: 90px;
     position: relative;
     z-index: 4;
@@ -264,7 +265,7 @@ a:hover {
     float: right;
     padding: 0;
     position: relative;
-    width: 300px;
+    width: 250px;
 }
 .sidebar .section {
     padding:10px 0 10px 0;
