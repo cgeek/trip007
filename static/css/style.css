@@ -60,6 +60,7 @@ a:hover {
     text-align: left;
 }
 .wrap {
+	background:#fff;
     padding: 10px;
     z-index: 2;
 	border-radius:10px;
