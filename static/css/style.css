@@ -232,7 +232,7 @@ a:hover {
 }
 .feed-img img{
     width:120px;
-    max-height:120px;
+    height:120px;
 }
 .feed-content {
     float:left;
