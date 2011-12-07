@@ -50,7 +50,7 @@ class Home extends CI_Controller {
         $reg2 = '/#[\w\W]+#/i';
         preg_match('/#([\w\W]+)#/',$content,$matches);
         if ( ! empty($matches[1])) {
-            $content = preg_replace($reg2,'<a href="http://s.weibo.com/weibo/'.$matches[1] .'">'.$matches[1].' :  </a>',$content);
+            $content = preg_replace($reg2,'<a target="_blank" href="http://s.weibo.com/weibo/'.$matches[1] .'">'.$matches[1].' :  </a>',$content);
         }
         return $content;
     }
