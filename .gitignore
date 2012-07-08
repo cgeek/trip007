@@ -2,7 +2,6 @@
 *_tags
 tags
 .DS_Store
-build
 Build
 Products
 *.pbxuser
