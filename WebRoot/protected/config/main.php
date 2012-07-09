@@ -41,11 +41,11 @@ return array(
 			'urlFormat'=>'path',
 			'showScriptName'=>false,
 			'rules'=>array(
-				'/u/<id:\d+>' => '/user/timeline',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/detail',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-				'Api/<controller:\w+>.<action:\w+>'=>'<controller>/<action>Json',
+				'Api/<controller:\w+>.<action:\w+>'=>'<controller>/<action>Ajax',
+				'/signup' => '/user/signup',
 			),
 		),
 		/*

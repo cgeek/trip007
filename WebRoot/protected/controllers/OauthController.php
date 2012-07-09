@@ -68,6 +68,7 @@ class OauthController extends Controller
 			$new_user->avatar = $user_info['profile_image_url'];
 			$new_user->avatar_large = $user_info['avatar_large'];
 			$new_user->gender = $user_info['gender'];
+			$new_user->description = mysql_escape_string($user_info['description']);
 			$new_user->out_source = 'weibo';
 			$new_user->out_uid = $user_info['id'];
 			$new_user->out_token = $_SESSION['token']['access_token'];

@@ -13,4 +13,5 @@ class Controller extends CController
 		echo json_encode($result);
 		exit();
 	}
+
 }

@@ -29,11 +29,11 @@ class UserController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('register','login','logout','timeline','detail'),
+				'actions'=>array('signup','register','login','logout','timeline','detail'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('home','apps','setting','update','timelineJson'),
+				'actions'=>array('home','apps','settings','update','timelineAjax','myweibo','followAjax','unfollowAjax'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -52,7 +52,65 @@ class UserController extends Controller
 		if(empty($user_db) || $user_db->status < 0)
 			throw new CHttpException(404,'Not found');
 
+		$this->_data['user'] = $user_db;
+		if(!Yii::app()->user->isGuest && Yii::app()->user->user_id === $id)
+		{
+			$this->_data['myself'] = true;
+		} else {
+			$this->_data['myself'] = false;
+		}
+		$limit = 10;
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("user_id=$id");
+		$criteria->order = ' `ctime` DESC';
+		$criteria->limit = $limit;
+		$count = Pin::model()->count($criteria);
+		$data = Pin::model()->findAll($criteria);
+		$pin_list = array();
+		foreach($data as $pin)
+		{
+			$pin_list[] = format_pin($pin);
+		}
+		$this->_data['pin_list'] = $pin_list;
+		//$this->ajax_response(true,'',$this->_data);
+
+		if(!Yii::app()->user->isGuest) {
+			$followed = UserRelation::model()->find('user_id=:user_id AND follow_id=:follow_id AND type=1',array('user_id'=>Yii::app()->user->user_id, 'follow_id'=>$id));
+		}
+		if(isset($followed) && !empty($followed)) {
+			$this->_data['followed'] = true;
+		} else {
+			$this->_data['followed'] = false;
+		}
+		$this->render('/user/detail',$this->_data);
 	}
+
+	public function actionHome()
+	{
+		$id = Yii::app()->user->user_id;
+		$user_db = User::model()->findByPk($id);
+		if(empty($user_db) || $user_db->status < 0)
+			throw new CHttpException(404,'Not found');
+
+		$this->_data['user'] = $user_db;
+		$limit = 10;
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("user_id=$id");
+		$criteria->order = ' `ctime` DESC';
+		$criteria->limit = $limit;
+		$count = Pin::model()->count($criteria);
+		$data = Pin::model()->findAll($criteria);
+		$pin_list = array();
+		foreach($data as $pin)
+		{
+			$pin_list[] = format_pin($pin);
+		}
+		$this->_data['pin_list'] = $pin_list;
+		//$this->ajax_response(true,'',$this->_data);
+		
+		$this->render('/user/home',$this->_data);
+	}
+
 	public function actionTimeline($id)
 	{
 		$user_db = User::model()->findByPk($id);
@@ -73,7 +131,7 @@ class UserController extends Controller
 		$this->render('timeline',$this->_data);
 	}
 	
-	public function actionTimelineJson()
+	public function actionTimelineAjax()
 	{
 		$user_id = $_GET['user_id'];
 		$user_db = User::model()->findByPk($user_id);
@@ -106,7 +164,7 @@ class UserController extends Controller
 		return $content;
 	}
 
-	public function actionHome()
+	public function actionMyweibo()
 	{
 		$c = new SaeTClientV2( WB_AKEY , WB_SKEY , Yii::app()->user->out_token);
 		$home_timeline = $c->user_timeline_by_id($user_db['out_uid'], 1, 50, 0, 0, 1);
@@ -119,14 +177,68 @@ class UserController extends Controller
 		$this->_data['pin_list'] = $data;
 		$this->render('home',$this->_data);
 	}
-	public function actionApps()
+
+	public function actionFollowAjax()
 	{
-		$this->render('apps');
+
+		$follow_id = $_POST['user_id'];
+		$user_db = User::model()->findByPk($follow_id);
+		if(empty($user_db) || $user_db->status < 0)
+			$this->ajax_response(false,'用户不存在');
+
+		$user_id = Yii::app()->user->user_id;
+		$followed = UserRelation::model()->find('user_id=:user_id AND follow_id=:follow_id AND type=1',array('user_id'=>$user_id, 'follow_id'=>$follow_id));
+		if($followed) {
+			$this->ajax_response(false,'已经关注过');
+		}
+		$follow_model = new UserRelation;
+		$follow_model->user_id = $user_id;
+		$follow_model->follow_id = $follow_id;
+		$follow_model->type = 1;
+		$follow_model->save();
+		
+		$fansed = UserRelation::model()->find('user_id=:user_id AND follow_id=:follow_id AND type=0',array('user_id'=>$follow_id, 'follow_id'=>$user_id));
+		if($fansed) {
+			$this->ajax_response(false,'已经关注过');
+		}
+		$fans_model = new UserRelation;
+		$fans_model->user_id = $follow_id;
+		$fans_model->follow_id = $user_id;
+		$fans_model->type = 0;
+		$fans_model->save();
+
+		$this->_update_stats($user_id);
+		$this->_update_stats($follow_id);
+
+		$this->ajax_response(true,'');
 	}
+
+	public function actionUnFollowAjax()
+	{
+		$follow_id = $_POST['user_id'];
+		$user_id = Yii::app()->user->user_id;
+		UserRelation::model()->deleteAll('user_id=:user_id AND follow_id=:follow_id AND type=1',array('user_id'=>$user_id, 'follow_id'=>$follow_id));
+		UserRelation::model()->deleteAll('user_id=:follow_id AND follow_id=:user_id AND type=0',array('user_id'=>$user_id, 'follow_id'=>$follow_id));
+
+		$this->_update_stats($user_id);
+		$this->_update_stats($follow_id);
+
+		$this->ajax_response(true,'');
+	}
+
+	private function _update_stats($user_id)
+	{
+		$fans_count = UserRelation::model()->count('user_id=:user_id AND type=1',array('user_id'=>$user_id));
+		$follow_count = UserRelation::model()->count('user_id=:user_id AND type=0',array('user_id'=>$user_id));
+		$update_data = array('fans_count'=>$fans_count, 'follow_count'=>$follow_count);
+		User::model()->updateByPK($user_id,$update_data);
+	}
+
 	public function actionSetting()
 	{
 		$this->render('setting');
 	}
+
 	public function actionLogin()
 	{
 		if(Yii::app()->request->isAjaxRequest) {
@@ -161,6 +273,16 @@ class UserController extends Controller
 				$this->redirect(array('user/home'));
 			}
 		}
+	}
+
+	public function actionSettings()
+	{	
+		$this->render('settings');
+	}
+
+	public function actionSignup()
+	{
+		$this->renderPartial('signup');
 	}
 
 	public function actionRegister()
@@ -201,95 +323,6 @@ class UserController extends Controller
 		$referrer = Yii::app()->request->getUrlReferrer();
 		$referrer = !empty($referrer) ? $referrer : '/';
 		$this->redirect($referrer);
-
-	}
-	/**
-	 * Displays a particular model.
-	 * @param integer $id the ID of the model to be displayed
-	 */
-	public function actionView($id)
-	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
-	}
-
-	/**
-	 * Creates a new model.
-	 * If creation is successful, the browser will be redirected to the 'view' page.
-	 */
-	public function actionCreate()
-	{
-		$model=new User;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['User']))
-		{
-			$model->attributes=$_POST['User'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->user_id));
-		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
-	}
-
-	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
-	 */
-	public function actionUpdate($id)
-	{
-		$model=$this->loadModel($id);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['User']))
-		{
-			$model->attributes=$_POST['User'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->user_id));
-		}
-
-		$this->render('update',array(
-			'model'=>$model,
-		));
-	}
-
-	/**
-	 * Deletes a particular model.
-	 * If deletion is successful, the browser will be redirected to the 'admin' page.
-	 * @param integer $id the ID of the model to be deleted
-	 */
-	public function actionDelete($id)
-	{
-		if(Yii::app()->request->isPostRequest)
-		{
-			// we only allow deletion via POST request
-			$this->loadModel($id)->delete();
-
-			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-			if(!isset($_GET['ajax']))
-				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-		}
-		else
-			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
-	}
-
-	/**
-	 * Lists all models.
-	 */
-	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('User');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
 	}
 
 	/**
@@ -307,29 +340,4 @@ class UserController extends Controller
 		));
 	}
 
-	/**
-	 * Returns the data model based on the primary key given in the GET variable.
-	 * If the data model is not found, an HTTP exception will be raised.
-	 * @param integer the ID of the model to be loaded
-	 */
-	public function loadModel($id)
-	{
-		$model=User::model()->findByPk($id);
-		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
-		return $model;
-	}
-
-	/**
-	 * Performs the AJAX validation.
-	 * @param CModel the model to be validated
-	 */
-	protected function performAjaxValidation($model)
-	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='user-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-	}
 }

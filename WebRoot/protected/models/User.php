@@ -18,6 +18,9 @@
  * @property string $out_source
  * @property string $out_uid
  * @property string $out_token
+ * @property integer $msg_count
+ * @property integer $fans_count
+ * @property integer $follow_count
  * @property integer $ctime
  * @property string $mtime
  * @property string $last_login_time
@@ -52,13 +55,13 @@ class User extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('ctime', 'required'),
-			array('ctime, status', 'numerical', 'integerOnly'=>true),
+			array('msg_count, fans_count, follow_count, ctime, status', 'numerical', 'integerOnly'=>true),
 			array('user_name, password, gender', 'length', 'max'=>64),
 			array('email, website, location, province, description, avatar, avatar_large, out_source, out_uid, out_token', 'length', 'max'=>255),
 			array('mtime, last_login_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('user_id, user_name, password, email, website, location, province, description, avatar, avatar_large, gender, out_source, out_uid, out_token, ctime, mtime, last_login_time, status', 'safe', 'on'=>'search'),
+			array('user_id, user_name, password, email, website, location, province, description, avatar, avatar_large, gender, out_source, out_uid, out_token, msg_count, fans_count, follow_count, ctime, mtime, last_login_time, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -93,6 +96,9 @@ class User extends CActiveRecord
 			'out_source' => 'Out Source',
 			'out_uid' => 'Out Uid',
 			'out_token' => 'Out Token',
+			'msg_count' => 'Msg Count',
+			'fans_count' => 'Fans Count',
+			'follow_count' => 'Follow Count',
 			'ctime' => 'Ctime',
 			'mtime' => 'Mtime',
 			'last_login_time' => 'Last Login Time',
@@ -125,6 +131,9 @@ class User extends CActiveRecord
 		$criteria->compare('out_source',$this->out_source,true);
 		$criteria->compare('out_uid',$this->out_uid,true);
 		$criteria->compare('out_token',$this->out_token,true);
+		$criteria->compare('msg_count',$this->msg_count);
+		$criteria->compare('fans_count',$this->fans_count);
+		$criteria->compare('follow_count',$this->follow_count);
 		$criteria->compare('ctime',$this->ctime);
 		$criteria->compare('mtime',$this->mtime,true);
 		$criteria->compare('last_login_time',$this->last_login_time,true);

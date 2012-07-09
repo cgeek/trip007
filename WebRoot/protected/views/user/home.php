@@ -1,28 +1,46 @@
 <div class="main">
-<?php if(Yii::app()->user->isGuest):?>
-	<div id="unauth_callout">
-		<div class="sheet">
-			<div class="unauth-connect">
-				<h5>使用合作网站帐号登录</h5>
-				<a href="/oauth/weibo">微薄登录</a>
+	<div id="nav_bar">
+		<div class="cases">
+			<a id="nav_bar_latest" href="/all" class="active"><em></em>我关注的</a>
+			<a id="nav_bar_top20" href="/pin/top20" class=""><em></em>我发布的</a>
+		</div>
+		<div class="places">
+		</div>
+		<div class="add_pin">
+			<a href="/pin/add"> + 发布情报</a>
+		</div>
+	</div>
+<div id="waterfall" class="clearfix" style="visibility:hidden;" data-url="/Api/Pin.list?user_id=<?=$user['user_id'];?>">
+	<div class="pin item" id="user_info">
+		<div class="profile">
+			<div class="profile-basic">
+				<a class="img" href="/user/<?=$user['user_id'];?>"><img src="<?=$user['avatar_large'];?>" width=64 height=64></a>
+				<a href="/user/<?=$user['user_id'];?>" class="user_name"><?=$user['user_name'];?></a>
+				<a href="/user/settings" class="settings">账号设置</a>
+			</div>
+			<div class="profile-stats">
+			<a href="/user/pins/<?=$user['user_id'];?>"><strong><?=$user['msg_count'];?></strong>信息</a>
+				<a href="/user/pins/<?=$user['user_id'];?>"><strong><?=$user['follow_count'];?></strong>关注</a>
+				<a href="/user/pins/<?=$user['user_id'];?>" class="last"><strong><?=$user['fans_count'];?></strong>粉丝</a>
+			</div>
+			<div class="profile=acts">
 			</div>
 		</div>
 	</div>
-<?php endif;?>
-<div id="waterfall" class="clearfix" style="visibility:hidden;" data-url="/Api/User.TimelineJson?user_id=<?=Yii::app()->user->user_id;?>">
 	<?php if(!empty($pin_list)):?>
 		<?php foreach($pin_list as $pin):?>
 	<div class="pin item">
-		<div class="cover_image"><img width=222 src="<?=$pin['bmiddle_pic'];?>" ></div>
-		<p class="content">	<?=$pin['text'];?> </p>
+		<div class="cover_image"><a href="/pin/<?=$pin['pin_id'];?>"><img width=222 height="<?=$pin['cover_image_height'];?>" src="<?=$pin['cover_image_mw'];?>" ></a></div>
+		<p class="title"><a href="/pin/<?=$pin['pin_id'];?>"><?=$pin['title'];?></a></p>
+		<p class="content">	<?=$pin['desc'];?> </p>
 		<div class="author">
-			<div class="author_avatar">
-				<img src="<?=$pin['user']['profile_image_url'];?>" width=30 > 
-			</div>
-			<div class="">
-			来自微博<a href="http://weibo.com/<?=$pin['user']['domain'];?>" target="_blank"><?=$pin['user']['screen_name'];?> </a>
+			<a class="author_avatar" href="/user/<?=$pin['user']['user_id'];?>">
+				<img src="<?=$pin['user']['avatar'];?>" width=30 > 
+			</a>
+			<div class="username">
+				<a href="/user/<?=$pin['user']['user_id'];?>" target="_blank"><?=$pin['user']['user_name'];?> </a>
 			<br>
-			<span><?=$pin['created_at'];?></span>
+			<span><?=$pin['ctime'];?></span>
 			</div>
 		</div>
 	</div>
@@ -35,22 +53,23 @@
 </div>
 </div>
 <script type="js/template" id="item_list_tpl">
-{{#data}}
+{{#pin_list}}
 	<div class="pin item">
-		<div class="cover_image"><img width=222 src="{{bmiddle_pic}}" ></div>
-		<p class="content">{{{text}}}</p>
+		<div class="cover_image"><a href="/pin/{{pin_id}}"><img width=222 height="{{cover_image_height}}" src="{{cover_image_mw}}" ></a></div>
+		<p class="title"><a href="/pin/{{pin_id}}">{{title}}</a></p>
+		<p class="content">{{{desc}}}</p>
 		<div class="author">
-			<div class="author_avatar">
-				<img src="{{user.profile_image_url}}" width=30 > 
-			</div>
-			<div class="">
-			来自微博<a href="http://weibo.com/{{user.domain}}" target="_blank">{{user.screen_name}} </a>
+			<a class="author_avatar" href="/user/{{user.user_id}}">
+				<img src="{{user.avatar}}" width=30 > 
+			</a>
+			<div class="username">
+				<a href="/user/{{user.user_id}}" target="_blank">{{user.user_name}} </a>
 			<br>
-			<span>{{created_at}}</span>
+			<span>{{ctime}}</span>
 			</div>
 		</div>
 	</div>
-{{/data}}
+{{/pin_list}}
 </script>
 <script>
 seajs.use('/assets/js/router.js',function(router){
