@@ -42,4 +42,24 @@ define(function(require, exports, module){
 			}
 		});
 	});
+
+
+	$('body').delegate('.delete_pin', 'click', function(){
+		alert('delete');
+		var self = this,
+			pin_id = $(this).attr('pin_id');
+		$.ajax({
+			url: '/Api/Pin.delete',
+			type: 'post',
+			data: {'pin_id':pin_id},
+			dataType: 'json'
+		}).success(function(result){
+			if(result.success == true) {
+				alert('删除成功');
+				window.location.href= "/";
+			} else {
+				alert(result.message);
+			}
+		});
+	});
 });

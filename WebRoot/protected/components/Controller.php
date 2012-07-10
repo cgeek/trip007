@@ -5,6 +5,7 @@
  */
 class Controller extends CController
 {
+
 	public function ajax_response($success=true,$message="",$data = array())
 	{
 		$result['success'] = $success;

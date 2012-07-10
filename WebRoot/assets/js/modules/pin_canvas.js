@@ -47,17 +47,17 @@ define(function(require, exports, module){
 		},
 		errorRetry: function(_self){
 			var errorTime = $.data(document.body,'errorTime')?$.data(document.body,'errorTime') : 0;
-			if(errorTime>=1) {
+			if(errorTime >= 0) {
 				_self.loadFinish('没有更多信息啦！');
 				return;
 			}
 			$.data(document.body,'errorTime',errorTime-0+1);
 		},
-		
 		loadFinish:function(tip) {
 			$('#more-loading').html('<img src=\"/images/end.png\" >').show();
 			this.config.isFinish = true;
 			$(window).unbind('scroll.loadData');
+			return false;
 		},
 		
 		_checkHeight:function(){

@@ -1,8 +1,8 @@
 <div class="main">
 	<div id="nav_bar">
 		<div class="cases">
-			<a id="nav_bar_latest" href="/all" class="active"><em></em>我关注的</a>
-			<a id="nav_bar_top20" href="/pin/top20" class=""><em></em>我发布的</a>
+			<a id="nav_bar_latest" href="/user/home" class="active"><em></em>我关注的</a>
+			<a id="nav_bar_top20" href="/user/my" class=""><em></em>我发布的</a>
 		</div>
 		<div class="places">
 		</div>
@@ -19,9 +19,9 @@
 				<a href="/user/settings" class="settings">账号设置</a>
 			</div>
 			<div class="profile-stats">
-			<a href="/user/pins/<?=$user['user_id'];?>"><strong><?=$user['msg_count'];?></strong>信息</a>
-				<a href="/user/pins/<?=$user['user_id'];?>"><strong><?=$user['follow_count'];?></strong>关注</a>
-				<a href="/user/pins/<?=$user['user_id'];?>" class="last"><strong><?=$user['fans_count'];?></strong>粉丝</a>
+			<a href="/user/<?=$user['user_id'];?>"><strong><?=$user['pin_count'];?></strong>信息</a>
+				<a href="/user/following/<?=$user['user_id'];?>"><strong><?=$user['follow_count'];?></strong>关注</a>
+				<a href="/user/followers/<?=$user['user_id'];?>" class="last"><strong><?=$user['fans_count'];?></strong>粉丝</a>
 			</div>
 			<div class="profile=acts">
 			</div>

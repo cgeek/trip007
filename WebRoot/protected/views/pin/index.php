@@ -1,8 +1,10 @@
 <div class="main">
+	<!--div class="welcome-banner" style="padding:10px;height:220px;border-radius:5px;background:#fff;">
+	</div-->
 	<div id="nav_bar">
 		<div class="cases">
 			<a id="nav_bar_latest" href="/" class="active"><em></em>最新特价</a>
-			<a id="nav_bar_top20" href="/pin/top20" class=""><em></em>每日推荐</a>
+			<a id="nav_bar_top20" href="/pin/top" class=""><em></em>每日推荐</a>
 		</div>
 		<div id="nav_bar_more_places">
 			<div class="row">

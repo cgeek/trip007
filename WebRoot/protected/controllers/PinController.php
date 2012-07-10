@@ -33,11 +33,12 @@ class PinController extends Controller
 			),
 		);
 	}
-	
+
 	public function actionIndex()
 	{
 		$limit = 10;
 		$criteria = new CDbCriteria;
+		$criteria->addCondition("status=0");
 		$criteria->order = ' `ctime` DESC';
 		$criteria->limit = $limit;
 		$count = Pin::model()->count($criteria);
@@ -55,7 +56,7 @@ class PinController extends Controller
 
 	public function actionTop()
 	{
-
+		$this->render('index',$this->_data);
 	}
 
 	public function actionHotAjax()
@@ -66,6 +67,7 @@ class PinController extends Controller
 		$offset = ($p - 1) * $per_page;
 		$limit = $per_page; 
 		$criteria = new CDbCriteria;
+		$criteria->addCondition("status=0");
 		$criteria->order = ' `ctime` DESC';
 		$criteria->limit = $limit;
 		$criteria->offset = $offset;
@@ -146,6 +148,8 @@ class PinController extends Controller
 		if($new_pin->save())
 		{
 			$new_pin_id = $new_pin->pin_id;
+			// 更新用户发表数量
+			$this->_update_user_stats();
 			$this->_data['pin_id'] = $new_pin_id;
 			$this->ajax_response(true,'',$this->_data);
 		} else {
@@ -153,17 +157,21 @@ class PinController extends Controller
 		}
 	}
 
-	public function actionDeleteAjax($pin_id)
+	public function actionDeleteAjax()
 	{
+		$pin_id = $_POST['pin_id'];
+		if(empty($pin_id) || $pin_id <=0)
+			$this->ajax_response(false,'参数不正确');
 		$pin_db = Pin::model()->findByPk($pin_id);
 		if(empty($pin_db))
-			throw new CHttpException(404,'Not found');
-
+			$this->ajax_response(false,'该信息不存在');
 		$this->_check_pin_author($pin_db);
 
 		$data = array('status'=> -1);
 		Pin::model()->updateByPk($pin_id, $data);
-		$this->ajax_response(true,'');
+		// 更新用户发表数量
+		$this->_update_user_stats();
+		$this->ajax_response(true,'删除成功');
 	}
 
 	public function actionDetail()
@@ -187,6 +195,13 @@ class PinController extends Controller
 		$this->_data['pin'] = $pin;
 		$this->_data['pinner'] = $pinner;
 		$this->render('detail',$this->_data);
+	}
+
+	private function _update_user_stats()
+	{
+		$user_id = Yii::app()->user->user_id;
+		$pin_count = Pin::model()->count("user_id=:user_id AND status=0",array("user_id"=>$user_id));
+		User::model()->updateByPk($user_id, array('pin_count'=>$pin_count));
 	}
 
 	public function actionWelcomeHot()

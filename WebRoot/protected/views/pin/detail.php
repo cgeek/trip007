@@ -18,3 +18,9 @@
 
 	</div>
 </div>
+
+<script>
+seajs.use('/assets/js/router.js',function(router){
+	router.load('head.js');
+});
+</script>

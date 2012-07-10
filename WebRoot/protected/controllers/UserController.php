@@ -29,7 +29,7 @@ class UserController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('signup','register','login','logout','timeline','detail'),
+				'actions'=>array('signup','register','login','logout','followers','following','timeline','detail'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -62,6 +62,7 @@ class UserController extends Controller
 		$limit = 10;
 		$criteria = new CDbCriteria;
 		$criteria->addCondition("user_id=$id");
+		$criteria->addCondition("status=0");
 		$criteria->order = ' `ctime` DESC';
 		$criteria->limit = $limit;
 		$count = Pin::model()->count($criteria);
@@ -95,6 +96,7 @@ class UserController extends Controller
 		$this->_data['user'] = $user_db;
 		$limit = 10;
 		$criteria = new CDbCriteria;
+		$criteria->addCondition("status=0");
 		$criteria->addCondition("user_id=$id");
 		$criteria->order = ' `ctime` DESC';
 		$criteria->limit = $limit;
@@ -226,6 +228,15 @@ class UserController extends Controller
 		$this->ajax_response(true,'');
 	}
 
+	public function actionFollowing()
+	{
+
+	}
+
+	public function actionFollowers()
+	{
+
+	}
 	private function _update_stats($user_id)
 	{
 		$fans_count = UserRelation::model()->count('user_id=:user_id AND type=1',array('user_id'=>$user_id));

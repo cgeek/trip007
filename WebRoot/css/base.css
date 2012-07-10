@@ -258,9 +258,9 @@ strong {
 }
 
 .pb-aside {
-	width: 256px;
+	width: 226px;
 	padding: 0;
-	margin-top: 30px;
+	margin-top: 60px;
 	float: right;
 	background: #d5d5d5;
 	min-height: 450px;
@@ -422,7 +422,7 @@ strong {
 	line-height: 40px;
 	padding: 0 7px 0 12px;
 }
-#nav_bar .switcher a {
+#nav_bar .add_pin a {
 	display: block;
 	float: left;
 	height: 40px;
