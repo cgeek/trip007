@@ -41,7 +41,13 @@
 			<div class="pb-aside-inbox">
 				<div id="post-privacy-holder">
 					<div class="post-privacy-select">
+						<ul class="private-menu">
+						
+						</ul>
 					</div>
+				</div>
+				<div id="post-tags-holder">
+					<textarea name="tags" place="添加关联目的地,用逗号或者回车分割"></textarea>
 				</div>
 			</div>
 		</div>

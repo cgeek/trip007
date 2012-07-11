@@ -9,6 +9,8 @@ define(function(require){
 		Mustache = require('mustache'),
 		Canvas = require('./modules/pin_canvas');
 		
+		require('bootstrap')($);
+
 		this.Pin_list = {};
 		_.extend(this.Pin_list, {
 			like: function(target, cancel) {
@@ -50,10 +52,33 @@ define(function(require){
 					}
 				});
 			},
+			show_pin_detail: function(target) {
+				var _self = this,
+					$pin = $(target),
+					pin_id = $pin.attr('pin_id');
+					$.ajax({
+						url:'/Api/Pin.view',
+						data:{'pin_id':pin_id},
+						type:'post',
+						dataType: 'json'
+					}).success(function(data){
+						var tpl = $('#pin_view_modal_tpl').html().replace(/[\n\t\r]/g,'');
+						var html = Mustache.to_html(tpl,data.data);
+						$('#pin_detail_modal').html(html);
+						$('#pin_detail_modal').modal('show');
+					});
+			},
 			init:function() {
 				var _self = this;
 				_.extend(_self, Canvas);
 				_self.setup();
+				
+				/*
+				$('#waterfall').delegate('.pin','click',function(event){
+					event.preventDefault();
+					_self.show_pin_detail(this);
+				});
+				*/
 			}
 			
 		});

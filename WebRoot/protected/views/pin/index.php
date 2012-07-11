@@ -54,6 +54,10 @@
 	<span>正在加载</span>
 </div>
 </div>
+<div class="modal hide fade" id="pin_detail_modal"></div>
+<script type=“js/template" id="pin_detail_tpl">
+	<div class="pin_content"></div>
+</script>
 <script type="js/template" id="item_list_tpl">
 {{#pin_list}}
 	<div class="pin item">

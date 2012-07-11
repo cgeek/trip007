@@ -5920,3 +5920,835 @@ Stack trace:
 REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
 HTTP_REFERER=http://www.trip007.net/pin/11
 ---
+2012/07/10 12:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 12:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 12:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 12:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 12:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 12:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "\"\\"http:".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('\"\\"http:')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('\"\\"http:')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/\"\\"http:/...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/%5C%22%5C%5C%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg%5C%5C%22%5C%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 12:59:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "\"\\"http:".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('\"\\"http:')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('\"\\"http:')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/\"\\"http:/...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/%5C%22%5C%5C%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg%5C%5C%22%5C%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 12:59:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "\"\\"http:".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('\"\\"http:')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('\"\\"http:')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/\"\\"http:/...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/%5C%22%5C%5C%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg%5C%5C%22%5C%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 12:59:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "\"\\"http:".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('\"\\"http:')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('\"\\"http:')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/\"\\"http:/...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/%5C%22%5C%5C%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg%5C%5C%22%5C%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 12:59:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "\"\\"http:".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('\"\\"http:')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('\"\\"http:')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/\"\\"http:/...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/%5C%22%5C%5C%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg%5C%5C%22%5C%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:00:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 15:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 15:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=20&p=2&_=1341904129072
+HTTP_REFERER=http://www.trip007.net/user/20
+---
+2012/07/10 15:09:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:09:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:09:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:09:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:09:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:10:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 15:10:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=19&p=2&_=1341904254256
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/10 15:10:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=19&p=2&_=1341904254559
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/10 15:14:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 15:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:26:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:26:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:26:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:26:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:26:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:26:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 15:26:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:26:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:26:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:26:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:26:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:28:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=19&p=2&_=1341905294174
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/10 15:28:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "my".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('my')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('my')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/my')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/my
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/10 15:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:28:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:28:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:28:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:28:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:28:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 15:31:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 20:14:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:17:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:17:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:17:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:17:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:17:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:17:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:25:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:25:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:25:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:25:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:25:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:33:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:33:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:33:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:33:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:35:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:36:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:36:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:36:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:37:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:37:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('viewAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('viewAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/viewAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.view
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/10 22:38:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/10 22:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/11 15:26:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "weibo".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('weibo')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/weibo
+---
