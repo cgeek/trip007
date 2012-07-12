@@ -15,16 +15,28 @@
 		<div class="logo">
 			<a title="旅游特价情报站" href="/">旅游特价情报站</a>
 		</div>
+			<div class="tips">
+				<span>发现最超值的旅游特价信息</span>
+			</div>
+				<div class="weibo-follow">
+					<iframe width="136" scrolling="no" height="24" frameborder="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&amp;width=136&amp;height=24&amp;uid=1776438131&amp;style=2&amp;btn=light&amp;dpc=1" border="0" marginheight="0" marginwidth="0" allowtransparency="true"></iframe>
+				</div>
 <?php if(! Yii::app()->user->isGuest): ?>
 		<div class="user_nav">
 			<a href="/user/home"><img src="<?=Yii::app()->user->avatar;?>" width=25><?php echo Yii::app()->user->user_name;?></a>
 			  &nbsp;&nbsp; | &nbsp;&nbsp; <a href="/user/logout">退出登录</a>
 		</div>
+<?php else:?>
+		<div class="header_login">
+				<a href="/oauth/weibo" class="login-button weibo">
+					<img src="/images/loginbtn_weibo.png">
+				</a>
+		</div>
 <?php endif;?>
 	</div>
 </div>
 
-<?php if(Yii::app()->user->isGuest):?>
+<?php if(false && Yii::app()->user->isGuest):?>
 <div class="main">
 	<div id="unauth_callout">
 		<div class="sheet">

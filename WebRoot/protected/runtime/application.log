@@ -6770,3 +6770,348 @@ Stack trace:
 REQUEST_URI=/static/css/style.css
 HTTP_REFERER=http://www.trip007.net/
 ---
+2012/07/12 13:43:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'trip007'@'localhost' (using password: YES)' in /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(2268): CActiveRecord->getDbConnection()
+#6 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(User))
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/models/User.php(39): CActiveRecord::model('User')
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(56): User::model()
+#9 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(31): OauthController->process_out_callback()
+#10 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): OauthController->actionWeiboCallback()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('weiboCallback')
+#15 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('oauth/weiboCall...')
+#16 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#18 {main}
+REQUEST_URI=/oauth/weiboCallback?code=83471ba1648316f9570b52b7baa5d027
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/12 13:43:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'trip007'@'localhost' (using password: YES)' in /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(2268): CActiveRecord->getDbConnection()
+#6 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(User))
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/models/User.php(39): CActiveRecord::model('User')
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(56): User::model()
+#9 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(31): OauthController->process_out_callback()
+#10 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): OauthController->actionWeiboCallback()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('weiboCallback')
+#15 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('oauth/weiboCall...')
+#16 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#18 {main}
+REQUEST_URI=/oauth/weiboCallback?code=df85bcca133865d6972618b82d81b817
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/12 13:48:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'trip007'@'localhost' (using password: YES)' in /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(2268): CActiveRecord->getDbConnection()
+#6 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(User))
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/models/User.php(39): CActiveRecord::model('User')
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(56): User::model()
+#9 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(31): OauthController->process_out_callback()
+#10 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): OauthController->actionWeiboCallback()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('weiboCallback')
+#15 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('oauth/weiboCall...')
+#16 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#18 {main}
+REQUEST_URI=/oauth/weiboCallback?code=2ed24ecf96f3c44bb532c20b77f20171
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/12 13:49:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'trip007'@'localhost' (using password: YES)' in /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(2268): CActiveRecord->getDbConnection()
+#6 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(User))
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/models/User.php(39): CActiveRecord::model('User')
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(56): User::model()
+#9 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(31): OauthController->process_out_callback()
+#10 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): OauthController->actionWeiboCallback()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('weiboCallback')
+#15 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('oauth/weiboCall...')
+#16 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#18 {main}
+REQUEST_URI=/oauth/weiboCallback?code=f431235afba998f1f5af69c58f979f06
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/12 13:58:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'trip007'@'localhost' (using password: YES)' in /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(2268): CActiveRecord->getDbConnection()
+#6 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(User))
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/models/User.php(39): CActiveRecord::model('User')
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(56): User::model()
+#9 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(31): OauthController->process_out_callback()
+#10 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): OauthController->actionWeiboCallback()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('weiboCallback')
+#15 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('oauth/weiboCall...')
+#16 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#18 {main}
+REQUEST_URI=/oauth/weiboCallback?code=06c84d8cb10f251b0483f144c96d10f8
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/12 14:01:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'trip007'@'localhost' (using password: YES)' in /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(2268): CActiveRecord->getDbConnection()
+#6 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(User))
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/models/User.php(39): CActiveRecord::model('User')
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(56): User::model()
+#9 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(31): OauthController->process_out_callback()
+#10 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): OauthController->actionWeiboCallback()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('weiboCallback')
+#15 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('oauth/weiboCall...')
+#16 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#18 {main}
+REQUEST_URI=/oauth/weiboCallback?code=2f430824c3a2f5c80656aaa8def60437
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/12 14:03:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'trip007'@'localhost' (using password: YES)' in /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(2268): CActiveRecord->getDbConnection()
+#6 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(User))
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/models/User.php(39): CActiveRecord::model('User')
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(56): User::model()
+#9 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php(31): OauthController->process_out_callback()
+#10 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): OauthController->actionWeiboCallback()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('weiboCallback')
+#15 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('oauth/weiboCall...')
+#16 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#18 {main}
+REQUEST_URI=/oauth/weiboCallback?code=ba99b04f52907959befda2824ed6a8d8
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/12 15:32:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'trip007'@'localhost' (using password: YES)' in /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(2268): CActiveRecord->getDbConnection()
+#6 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Pin))
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/models/Pin.php(31): CActiveRecord::model('Pin')
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(44): Pin::model()
+#9 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionIndex()
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#17 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#19 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#20 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2012/07/12 15:32:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'trip007'@'localhost' (using password: YES)' in /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(2268): CActiveRecord->getDbConnection()
+#6 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Pin))
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/models/Pin.php(31): CActiveRecord::model('Pin')
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(44): Pin::model()
+#9 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionIndex()
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#17 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#19 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#20 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+---
+2012/07/12 16:30:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 16:30:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 16:30:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 16:30:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 16:30:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 16:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 16:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 16:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 16:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 16:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 18:03:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=20&p=2&_=1342087406412
+HTTP_REFERER=http://www.trip007.net/user/20
+---
+2012/07/12 18:03:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=20&p=2&_=1342087406735
+HTTP_REFERER=http://www.trip007.net/user/20
+---
+2012/07/12 18:04:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---

@@ -15,7 +15,10 @@
 			<?=htmlspecialchars_decode($pin['content']);?>
 			<img src="<?=upimage($pin['cover_image'],'big');?>">
 		</div>	
-
+		
+	</div>
+	<div class="aside">
+		<iframe frameborder="0" style="display:block;" width="300px" height="246px" src="http://www.hotelscombined.com/Affiliate/Widgets/300x246/default.aspx?a_aid=68060&languageCode=CS" scrolling="no" allowtransparency="true" ></iframe>
 	</div>
 </div>
 

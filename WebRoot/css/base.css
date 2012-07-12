@@ -92,11 +92,11 @@ strong {
 #header { background:#35BFE9;}
 .main {width:933px;margin:0 auto;text-align:left;}
 #footer{margin-top:20px;border-top:1px solid #E6E6E6;padding-top:6px;color:#999;text-align:center;}
-
-.logo {color:#fff;float:left;overflow:hidden;width:240px;}
+.logo {color:#fff;float:left;overflow:hidden;width:230px;}
 .logo a {color: #FFFFFF;float:left;margin:10px 0;font-size: 30px;}
 .logo p{text-align:left;float:left;}
-.weibo-follow {padding-top:5px;	text-align:center;}
+.weibo-follow {padding-top:5px;	text-align:center;padding:10px;float:left;}
+.header_login {padding:5px 0;float:right;}
 .user_nav {float:right;color:#fff;padding:10px;line-height:25px;}
 .user_nav a{color:#fff;}
 #header {
@@ -286,7 +286,13 @@ strong {
 	border:1px solid #e8e8e8;
 	border-radius:5px;
 	min-height:400px;
-	width:660px;
+	width:620px;
+	float:left;
+}
+.aside {
+	width:300px;
+	float:right;
+	overflow:hidden;
 }
 .pin-pinner {
 	padding:20px;
