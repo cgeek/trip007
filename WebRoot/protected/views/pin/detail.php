@@ -6,7 +6,7 @@
 			<p class="pinner-stats less">发布于<?=human_time($pin['ctime']);?></p>
 		</div>
 		<div class="pin-content">
-			<?php if($is_author):?>
+			<?php if(isset($is_author) && $is_author):?>
 				<div class="pin-opt">
 					<a href="/pin/edit/<?=$pin['pin_id'];?>">编辑</a> | <a href="javascript:void(0);" class="delete_pin" pin_id="<?=$pin['pin_id'];?>">删除</a>
 				</div>

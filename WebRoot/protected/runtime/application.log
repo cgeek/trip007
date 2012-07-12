@@ -6752,3 +6752,21 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/weibo
 ---
+2012/07/12 13:20:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "static/images/default-feed.jpeg".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('static/images/d...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/images/default-feed.jpeg
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/12 13:20:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "static/css/style.css".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('static/css/styl...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/css/style.css
+HTTP_REFERER=http://www.trip007.net/
+---
