@@ -7115,3 +7115,271 @@ Stack trace:
 REQUEST_URI=/pin/search/
 HTTP_REFERER=http://www.trip007.net/
 ---
+2012/07/12 23:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 23:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 23:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 23:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/12 23:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/13 11:25:58 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.avatar" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CWebUser.php(141): CComponent->__get('avatar')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php(24): CWebUser->__get('avatar')
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/views/layouts/main.php(26): WebUser->__get('avatar')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#4 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(785): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#6 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(54): CController->render('index', Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionIndex()
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#17 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#18 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#20 {main}
+REQUEST_URI=/
+---
+2012/07/13 11:25:59 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.avatar" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CWebUser.php(141): CComponent->__get('avatar')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php(24): CWebUser->__get('avatar')
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/views/layouts/main.php(26): WebUser->__get('avatar')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#4 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(785): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#6 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(54): CController->render('index', Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionIndex()
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#17 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#18 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#20 {main}
+REQUEST_URI=/
+---
+2012/07/13 11:26:00 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.avatar" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CWebUser.php(141): CComponent->__get('avatar')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php(24): CWebUser->__get('avatar')
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/views/layouts/main.php(26): WebUser->__get('avatar')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#4 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(785): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#6 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(54): CController->render('index', Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionIndex()
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#17 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#18 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#20 {main}
+REQUEST_URI=/
+---
+2012/07/13 11:26:00 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.avatar" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CWebUser.php(141): CComponent->__get('avatar')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php(24): CWebUser->__get('avatar')
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/views/layouts/main.php(26): WebUser->__get('avatar')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#4 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(785): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#6 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(54): CController->render('index', Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionIndex()
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#17 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#18 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#20 {main}
+REQUEST_URI=/
+---
+2012/07/13 22:00:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trip007.meta_jobs' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `meta_jobs`.
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2012/07/13 23:07:10 [error] [exception.CException] exception 'CException' with message 'Property "CDbDataReader.is_sync_weibo" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/MetaActionCommand.php(41): CComponent->__get('is_sync_weibo')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/MetaActionCommand.php(20): MetaActionCommand->process_cron_pub_pin(Array)
+#2 [internal function]: MetaActionCommand->actionCrontab()
+#3 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(MetaActionCommand), Array)
+#4 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#5 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#6 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#7 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CApplication->run()
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once('/Users/cgeek/Si...')
+#9 {main}
+---
+2012/07/13 23:58:55 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2012/07/13 23:58:55 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.avatar" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CWebUser.php(141): CComponent->__get('avatar')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php(24): CWebUser->__get('avatar')
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/views/layouts/main.php(26): WebUser->__get('avatar')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#4 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(785): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#6 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(54): CController->render('index', Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionIndex()
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#17 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#18 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#20 {main}
+REQUEST_URI=/
+---
+2012/07/13 23:58:56 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.avatar" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CWebUser.php(141): CComponent->__get('avatar')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php(24): CWebUser->__get('avatar')
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/views/layouts/main.php(26): WebUser->__get('avatar')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#4 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(785): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#6 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(54): CController->render('index', Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionIndex()
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#17 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#18 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#20 {main}
+REQUEST_URI=/
+---
+2012/07/13 23:59:14 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (29)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php (60)
+2012/07/14 00:16:02 [error] [application] sync weibo 15
+2012/07/14 00:23:15 [error] [application] sync weibo 15
+2012/07/14 00:24:46 [error] [application] sync weibo 15
+2012/07/14 00:39:24 [error] [application] sync weibo 15
+2012/07/14 00:55:16 [error] [application] sync weibo 15 ==> 3467494255770663
+2012/07/14 00:56:33 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (29)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php (81)
+2012/07/14 01:31:19 [error] [application] sync weibo 16 ==> 3467503328261007
+2012/07/14 01:36:22 [error] [application] sync weibo error 16
+2012/07/14 01:40:01 [error] [application] sync weibo 17 ==> 3467505517663221
+2012/07/14 01:42:04 [error] [application] sync weibo error 17
+2012/07/14 01:43:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/14 01:46:07 [error] [application] sync weibo error 17
+2012/07/14 01:49:00 [error] [application] can not get pin by job! job id is 4
+2012/07/14 01:51:00 [error] [application] can not get pin by job! job id is 4
+2012/07/14 01:52:00 [error] [application] can not get pin by job! job id is 4
+2012/07/14 01:53:06 [error] [application] sync weibo 17 ==> 3467508810495628
+2012/07/14 09:28:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=21&p=2&_=1342229321116
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/14 09:28:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=21&p=2&_=1342229321423
+HTTP_REFERER=http://www.trip007.net/user/home
+---

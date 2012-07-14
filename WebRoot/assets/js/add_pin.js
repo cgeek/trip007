@@ -2,6 +2,8 @@ define(function(require, exports, module){
 	var $ = require('jquery'),
 	AjaxUploader = require('ajaxupload');
 
+	require('datepicker')($);
+	require('datepicker-css');
 	require('ueditor');
 	require('ueditor-css');
 
@@ -84,12 +86,14 @@ define(function(require, exports, module){
 					cover_image_width = $form.find('input[name=cover_image_width]').val(),
 					title = $form.find('input[name=title]').val(),
 					desc = $form.find('textarea[name=desc]').val(),
-					pin_id = $form.find('input[name=pin_id]').val();
+					pin_id = $form.find('input[name=pin_id]').val(),
+					cron_pub = $form.find('input[name=cron_pub]').val(),
+					cron_time = $form.find('input[name=cron_time]').val();
 
 				$.ajax({
 					type: 'POST',
 					url: '/Api/Pin.savePin',
-					data: {'pin_id':pin_id, 'content':content,'desc':desc,'title':title,'cover_image_id':cover_image_id,'cover_image_height':cover_image_height,'cover_image_width':cover_image_width},
+					data: {'pin_id':pin_id, 'content':content,'desc':desc,'title':title,'cover_image_id':cover_image_id,'cover_image_height':cover_image_height,'cover_image_width':cover_image_width, 'cron_pub':cron_pub, 'cron_time':cron_time},
 					dataType:'json',
 					cache:false
 				}).success(function(result){
@@ -102,12 +106,22 @@ define(function(require, exports, module){
 
 			});
 		},
+		init_datepick:function(){
+			var _self = this;
+			
+			$('#datepicker').glDatePicker({
+				endDate: 30,
+				startDate: new Date(),
+				selectedDate: 30,
+				allowOld: false
+			});
+		},
 		init:function(){
 			var _self = this;
 			_self.upload();
 
 			editor.render('editor');
-
+			_self.init_datepick();
 			_self.save();		
 
 		}

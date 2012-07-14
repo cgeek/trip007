@@ -108,10 +108,12 @@ class PinController extends Controller
 	{
 		$data['title'] = htmlspecialchars(mysql_escape_string(trim($_POST['title'])));
 		$data['content'] = htmlspecialchars(mysql_escape_string($_POST['content'])); 
-		$data['desc'] = htmlspecialchars(mysql_escape_string($_POST['desc'])); 
+		$data['desc'] = htmlspecialchars(mysql_escape_string($_POST['desc']));
 		$data['cover_image'] = $_POST['cover_image_id'];
 		$data['cover_image_width'] = $_POST['cover_image_width'];
 		$data['cover_image_height'] = $_POST['cover_image_height'];
+		$data['cron_pub'] = $_POST['cron_pub'];
+		$data['cron_time'] = trim($_POST['cron_time']);
 
 		$pin_id = $_POST['pin_id'];
 		if(isset($pin_id) && $pin_id > 0) {
@@ -135,6 +137,7 @@ class PinController extends Controller
 
 	private function _save_add_pin($data)
 	{
+		$is_cron_pub = (isset($data['cron_pub']) && $data['cron_pub'] && !empty($data['cron_time'])) ? true : false;
 		$new_pin = new Pin;
 		$new_pin->title = $data['title'];
 		$new_pin->content = $data['content'];
@@ -144,17 +147,40 @@ class PinController extends Controller
 		$new_pin->cover_image_height = $data['cover_image_height'];
 		$new_pin->user_id = Yii::app()->user->user_id;
 		$new_pin->ctime = time();
-	
+		$new_pin->status = $is_cron_pub ? 1 : 0;
+
 		if($new_pin->save())
 		{
 			$new_pin_id = $new_pin->pin_id;
 			// 更新用户发表数量
 			$this->_update_user_stats();
 			$this->_data['pin_id'] = $new_pin_id;
+
+			if($is_cron_pub) {
+				$data['pin_id'] = $new_pin_id;
+				if(! $this->_create_cron_job($data))
+					$this->ajax_response(false,'定时任务发布失败');
+			}
 			$this->ajax_response(true,'',$this->_data);
 		} else {
 			$this->ajax_response(false,'插入失败');
 		}
+	}
+
+	private function _create_cron_job($data)
+	{
+		$new_job = new MetaJob;
+		$new_job->meta_action = 'process_cron_pub_pin';  //定时任务函数名，会于cli 里对应
+		$new_job->params = json_encode(array('pin_id'=>$data['pin_id']));
+		$new_job->status = 0;
+		$new_job->ctime = time();
+		$new_job->cron_time = $data['cron_time'];
+
+		if($new_job->save())
+			return true;
+		else
+			return false;
+
 	}
 
 	public function actionDeleteAjax()

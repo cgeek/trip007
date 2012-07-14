@@ -5,6 +5,7 @@
  *
  * The followings are the available columns in table 'pin':
  * @property integer $pin_id
+ * @property integer $type
  * @property string $out_feed_id
  * @property string $title
  * @property string $desc
@@ -13,6 +14,7 @@
  * @property integer $cover_image_width
  * @property integer $cover_image_height
  * @property integer $user_id
+ * @property integer $is_sync_weibo
  * @property string $source_data
  * @property integer $view_count
  * @property integer $ctime
@@ -48,13 +50,13 @@ class Pin extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('user_id, ctime', 'required'),
-			array('cover_image_width, cover_image_height, user_id, view_count, ctime, status', 'numerical', 'integerOnly'=>true),
+			array('type, cover_image_width, cover_image_height, user_id, is_sync_weibo, view_count, ctime, status', 'numerical', 'integerOnly'=>true),
 			array('out_feed_id', 'length', 'max'=>64),
 			array('title, cover_image', 'length', 'max'=>255),
 			array('desc, content, source_data, mtime', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('pin_id, out_feed_id, title, desc, content, cover_image, cover_image_width, cover_image_height, user_id, source_data, view_count, ctime, mtime, status', 'safe', 'on'=>'search'),
+			array('pin_id, type, out_feed_id, title, desc, content, cover_image, cover_image_width, cover_image_height, user_id, is_sync_weibo, source_data, view_count, ctime, mtime, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -76,6 +78,7 @@ class Pin extends CActiveRecord
 	{
 		return array(
 			'pin_id' => 'Pin',
+			'type' => 'Type',
 			'out_feed_id' => 'Out Feed',
 			'title' => 'Title',
 			'desc' => 'Desc',
@@ -84,6 +87,7 @@ class Pin extends CActiveRecord
 			'cover_image_width' => 'Cover Image Width',
 			'cover_image_height' => 'Cover Image Height',
 			'user_id' => 'User',
+			'is_sync_weibo' => 'Is Sync Weibo',
 			'source_data' => 'Source Data',
 			'view_count' => 'View Count',
 			'ctime' => 'Ctime',
@@ -104,6 +108,7 @@ class Pin extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('pin_id',$this->pin_id);
+		$criteria->compare('type',$this->type);
 		$criteria->compare('out_feed_id',$this->out_feed_id,true);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('desc',$this->desc,true);
@@ -112,6 +117,7 @@ class Pin extends CActiveRecord
 		$criteria->compare('cover_image_width',$this->cover_image_width);
 		$criteria->compare('cover_image_height',$this->cover_image_height);
 		$criteria->compare('user_id',$this->user_id);
+		$criteria->compare('is_sync_weibo',$this->is_sync_weibo);
 		$criteria->compare('source_data',$this->source_data,true);
 		$criteria->compare('view_count',$this->view_count);
 		$criteria->compare('ctime',$this->ctime);

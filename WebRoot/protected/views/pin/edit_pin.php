@@ -44,7 +44,12 @@
 						<ul class="private-menu">
 						
 						</ul>
+
+						<input type="hidden" name="cron_pub" value="1">
+						
 					</div>
+					<input type="text" name="date" id="datepicker" value="">
+					<input type="text" name="cron_time"  value="">
 				</div>
 				<div id="post-tags-holder">
 					<textarea name="tags" place="添加关联目的地,用逗号或者回车分割"></textarea>
