@@ -5,6 +5,12 @@ define(function(require, exports, module){
 	//IE678 placeholder
 	$('input[placeholder], textarea[placeholder]').placeholder();
 
+	$('.dropdown-toggle').dropdown();
+	$('.dropdown').hover(function() {
+		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+	}, function() {
+		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+	});
 	$('[rel=tooltip]').tooltip('hide');
 
 	$("[rel=popover]").popover({

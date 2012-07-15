@@ -2,14 +2,15 @@
 
 class SearchController extends Controller
 {
-	private $_data;
-
-	public function actionPinJson()
+	public function actionTejia($keyword = NULL)
 	{
-
-		$this->ajax_response(true,'',$this->_data);
+		$this->render('/pin/index');
 	}
-
+	
+	public function actionGonglue($keyword = NULL)
+	{
+		$this->render('/pin/gonglue');
+	}
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

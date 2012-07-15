@@ -5,8 +5,17 @@
 		<input type="hidden" name="cover_image_id" value="<?=isset($pin_db['cover_image']) ? $pin_db['cover_image'] :'';?>">
 		<input type="hidden" name="cover_image_width" value="<?=isset($pin_db['cover_image_width']) ? $pin_db['cover_image_width'] :'';?>">
 		<input type="hidden" name="cover_image_height" value="<?=isset($pin_db['cover_image_height']) ? $pin_db['cover_image_height'] :'';?>">
+
+		<?php $is_edit = isset($pin_db) ? true : false ;?>
+		<?php $is_gonglue = ((isset($_GET['type']) && $_GET['type'] ==2) || (isset($pin_db) && $pin_db['type']===2) ) ? true : false ;?>
+
+		<input type="hidden" name="type" value="<?=$is_gonglue ? 2:1;?>">
 		<div class="pb-main">
-			<h2 class="pb-main-title"><span>发布旅游特价信息</span></h2>
+			<h2 class="pb-main-title">
+				<span>
+				<?php echo $is_edit ? '编辑':'发布';?><?php echo $is_gonglue ? '旅游攻略':'特价信息' ;?>
+				</span>
+			</h2>
 			<div class="pb-post-area">
 				<div class="pb-image-holder">
 					<div id="file-uploader"><noscript><p>请打开浏览器的javascript功能</p></noscript></div>
@@ -22,11 +31,11 @@
 					</div>
 				</div>
 				<div class="pb-title-holder">
-					<h3 class="pb-section-title">特价情报标题<span>(选填:30个字以内)</span></h3>
+					<h3 class="pb-section-title">标题<span>(选填:30个字以内)</span></h3>
 					<input type="text" class="pb-title-input" name="title" value="<?=isset($pin_db['title']) ? $pin_db['title'] :'';?>">
 				</div>
 				<div class="pb-desc-holder">
-					<h3 class="pb-section-title">特价情报概述<span>(必填:120个字以内)</span></h3>
+					<h3 class="pb-section-title">概述<span>(必填:120个字以内。如果同步到微博，同步此内容)</span></h3>
 					<textarea name="desc" class="pb-desc-textarea"><?=isset($pin_db['desc']) ? $pin_db['desc'] :'';?></textarea>
 					<span class="counter"></span>
 				</div>

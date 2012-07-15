@@ -1,13 +1,13 @@
 <div class="main">
 	<div id="nav_bar">
 		<div class="cases">
-			<a id="nav_bar_latest" href="/user/home" class="active"><em></em>我关注的</a>
-			<a id="nav_bar_top20" href="/user/my" class=""><em></em>我发布的</a>
+			<a id="nav_bar_latest" href="/user/home" class="active"><em></em>我的关注</a>
+			<a id="nav_bar_top20" href="/user/my" class=""><em></em>我的订阅</a>
 		</div>
 		<div class="places">
 		</div>
 		<div class="add_pin">
-			<a href="/pin/add"> + 发布情报</a>
+			<a href="/pin/add">我的发布</a>
 		</div>
 	</div>
 <div id="waterfall" class="clearfix" style="visibility:hidden;" data-url="/Api/Pin.list?user_id=<?=$user['user_id'];?>">

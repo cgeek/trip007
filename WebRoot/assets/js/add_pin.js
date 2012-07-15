@@ -92,12 +92,13 @@ define(function(require, exports, module){
 					desc = $form.find('textarea[name=desc]').val(),
 					pin_id = $form.find('input[name=pin_id]').val(),
 					cron_pub = $form.find('input[name=cron_pub]').val(),
+					type = $form.find('input[name=type]').val(),
 					cron_time = $form.find('input[name=cron_time]').val(),
 					is_sync_weibo = $form.find('input[name=is_sync_weibo]').attr('checked') ? 1:0;
 				$.ajax({
 					type: 'POST',
 					url: '/Api/Pin.savePin',
-					data: {'pin_id':pin_id, 'content':content,'desc':desc,'title':title,'cover_image_id':cover_image_id,'cover_image_height':cover_image_height,'cover_image_width':cover_image_width, 'cron_pub':cron_pub, 'cron_time':cron_time,'is_sync_weibo':is_sync_weibo},
+					data: {'pin_id':pin_id,'type':type, 'content':content,'desc':desc,'title':title,'cover_image_id':cover_image_id,'cover_image_height':cover_image_height,'cover_image_width':cover_image_width, 'cron_pub':cron_pub, 'cron_time':cron_time,'is_sync_weibo':is_sync_weibo},
 					dataType:'json',
 					cache:false
 				}).success(function(result){

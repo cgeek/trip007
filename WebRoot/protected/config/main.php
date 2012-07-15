@@ -47,6 +47,10 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'Api/<controller:\w+>.<action:\w+>'=>'<controller>/<action>Ajax',
 				'/signup' => '/user/signup',
+				'/logout' => '/user/logout',
+				'/gonglue' => '/pin/gonglue',
+				'/tejia' => '/pin/tejia',
+				'/top' => '/pin/top',
 			),
 		),
 		/*

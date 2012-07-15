@@ -17,7 +17,7 @@ class PinController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('detail','welcomehot','index','hotAjax','top'),
+				'actions'=>array('detail','welcomehot','tejia','index','gonglue','hotAjax','top'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -39,6 +39,7 @@ class PinController extends Controller
 		$limit = 10;
 		$criteria = new CDbCriteria;
 		$criteria->addCondition("status=0");
+		$criteria->addCondition("type=1");
 		$criteria->order = ' `ctime` DESC';
 		$criteria->limit = $limit;
 		$count = Pin::model()->count($criteria);
@@ -52,6 +53,47 @@ class PinController extends Controller
 		//$this->ajax_response(true,'',$this->_data);
 		
 		$this->render('index',$this->_data);
+	}
+	
+	public function actionTejia()
+	{
+		$limit = 10;
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("status=0");
+		$criteria->addCondition("type=1");
+		$criteria->order = ' `ctime` DESC';
+		$criteria->limit = $limit;
+		$count = Pin::model()->count($criteria);
+		$data = Pin::model()->findAll($criteria);
+		$pin_list = array();
+		foreach($data as $pin)
+		{
+			$pin_list[] = $this->_format_pin($pin);
+		}
+		$this->_data['pin_list'] = $pin_list;
+		//$this->ajax_response(true,'',$this->_data);
+		
+		$this->render('tejia',$this->_data);
+	}
+	public function actionGonglue()
+	{
+		$limit = 10;
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("status=0");
+		$criteria->addCondition("type=2");
+		$criteria->order = ' `ctime` DESC';
+		$criteria->limit = $limit;
+		$count = Pin::model()->count($criteria);
+		$data = Pin::model()->findAll($criteria);
+		$pin_list = array();
+		foreach($data as $pin)
+		{
+			$pin_list[] = $this->_format_pin($pin);
+		}
+		$this->_data['pin_list'] = $pin_list;
+		//$this->ajax_response(true,'',$this->_data);
+		
+		$this->render('gonglue',$this->_data);
 	}
 
 	public function actionTop()
@@ -116,6 +158,7 @@ class PinController extends Controller
 		$data['cron_pub'] = $_POST['cron_pub'];
 		$data['cron_time'] = trim($_POST['cron_time']);
 		$data['is_sync_weibo'] = $_POST['is_sync_weibo'] ? 1 : 0;
+		$data['type'] = isset($_POST['type']) ? $_POST['type'] : 1;
 
 		$pin_id = $_POST['pin_id'];
 		if(isset($pin_id) && $pin_id > 0) {
@@ -141,6 +184,7 @@ class PinController extends Controller
 	{
 		$is_cron_pub = (isset($data['cron_pub']) && $data['cron_pub'] && !empty($data['cron_time'])) ? true : false;
 		$new_pin = new Pin;
+		$new_pin->type = $data['type'];
 		$new_pin->title = $data['title'];
 		$new_pin->content = $data['content'];
 		$new_pin->desc = $data['desc'];
