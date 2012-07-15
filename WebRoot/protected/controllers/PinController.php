@@ -71,8 +71,6 @@ class PinController extends Controller
 			$pin_list[] = $this->_format_pin($pin);
 		}
 		$this->_data['pin_list'] = $pin_list;
-		//$this->ajax_response(true,'',$this->_data);
-		
 		$this->render('tejia',$this->_data);
 	}
 	public function actionGonglue()
@@ -98,7 +96,21 @@ class PinController extends Controller
 
 	public function actionTop()
 	{
-		$this->render('index',$this->_data);
+		$limit = 10;
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("status=0");
+		$criteria->addCondition("type=1");
+		$criteria->order = ' `view_count` DESC';
+		$criteria->limit = $limit;
+		$count = Pin::model()->count($criteria);
+		$data = Pin::model()->findAll($criteria);
+		$pin_list = array();
+		foreach($data as $pin)
+		{
+			$pin_list[] = $this->_format_pin($pin);
+		}
+		$this->_data['pin_list'] = $pin_list;
+		$this->render('tejia',$this->_data);
 	}
 
 	public function actionHotAjax()
