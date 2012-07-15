@@ -4,7 +4,7 @@ class SearchController extends Controller
 {
 	public function actionTejia($keyword = NULL)
 	{
-		$this->render('/pin/index');
+		$this->render('/pin/tejia');
 	}
 	
 	public function actionGonglue($keyword = NULL)

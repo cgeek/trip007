@@ -4,7 +4,7 @@
 			<img src="http://qimages.b0.upaiyun.com/3b7bec258201143d80414e64ccd7e505_big.jpg" height="250" width=555>
 		</div>
 		<div style="float:right;">
-		<!--iframe frameborder="0" style="display:block;" width="350px" height="250px" src="http://www.hotelscombined.com/Affiliate/Widgets/HC_large/default.aspx?a_aid=68060&languageCode=CS&openInNewWindow=1" scrolling="no" allowtransparency="true" ></iframe-->
+		<iframe frameborder="0" style="display:block;" width="350px" height="250px" src="http://www.hotelscombined.com/Affiliate/Widgets/HC_large/default.aspx?a_aid=68060&languageCode=CS&openInNewWindow=1" scrolling="no" allowtransparency="true" ></iframe>
 		<!--
 		<script type="text/javascript" src="http://api.skyscanner.net/api.ashx?key=3e0a870b-406d-4798-bba8-73dd095a081"></script>  
 <script type="text/javascript">  
@@ -25,6 +25,9 @@ skyscanner.setOnLoadCallback(main);
 		-->
 		</div>
 	</div>
+</div>
+
+<div class="main">
 	<div id="nav_bar">
 		<div class="cases">
 			<a id="nav_bar_latest" href="/tejia" class="active"><em></em>最新特价</a>
@@ -52,7 +55,9 @@ skyscanner.setOnLoadCallback(main);
 		</div>
 <?php endif;?>
 	</div>
-<div id="waterfall" class="clearfix" style="visibility:hidden;" data-url="/Api/Pin.Hot?">
+</div>
+<div class="main">
+	<div id="waterfall" class="clearfix" style="visibility:hidden;" data-url="/Api/Pin.Hot?">
 	<?php if(!empty($pin_list)):?>
 		<?php foreach($pin_list as $pin):?>
 	<div class="pin item">
@@ -72,6 +77,7 @@ skyscanner.setOnLoadCallback(main);
 	</div>
 		<?php endforeach;?>
 	<?php endif;?>
+	</div>
 </div>
 <div class="loading" id="more-loading">
 	<img src="/images/loading.gif">

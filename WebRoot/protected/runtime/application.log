@@ -9705,3 +9705,151 @@ Stack trace:
 REQUEST_URI=/search/pin/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
 HTTP_REFERER=http://www.trip007.net/
 ---
+2012/07/16 00:28:06 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (29)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php (60)
+2012/07/16 01:01:38 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2012/07/16 01:01:38 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.avatar" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CWebUser.php(141): CComponent->__get('avatar')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php(24): CWebUser->__get('avatar')
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/views/layouts/main.php(54): WebUser->__get('avatar')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#4 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#6 /Users/cgeek/Sites/trip007/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#7 /Users/cgeek/Sites/trip007/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#8 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(207): COutputProcessor->run()
+#9 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 /Users/cgeek/Sites/trip007/WebRoot/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#11 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#12 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(785): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#14 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(55): CController->render('index', Array)
+#15 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionIndex()
+#16 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#23 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#25 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#26 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#28 {main}
+REQUEST_URI=/
+---
+2012/07/16 01:04:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=19&p=2&_=1342371866718
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/16 01:06:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=19&p=2&_=1342371966163
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/16 01:06:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=19&p=2&_=1342371966493
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/16 01:14:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "my".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('my')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('my')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/my')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/my
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/16 01:14:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=19&p=2&_=1342372479213
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/16 02:02:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://www.trip007.net/user/settings
+---
+2012/07/16 02:02:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sub".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('sub')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('sub')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/sub')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/sub
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/16 02:03:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sub".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('sub')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('sub')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/sub')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/sub
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/16 02:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "my".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('my')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('my')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/my')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/my
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/16 02:05:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sub".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('sub')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('sub')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/sub')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/sub
+HTTP_REFERER=http://www.trip007.net/
+---

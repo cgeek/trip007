@@ -5,11 +5,10 @@ define(function(require, exports, module){
 	//IE678 placeholder
 	$('input[placeholder], textarea[placeholder]').placeholder();
 
-	$('.dropdown-toggle').dropdown();
-	$('.dropdown').hover(function() {
-		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+	$('.user_nav').hover(function() {
+		  $(this).find('.user-nav-menu').stop(true, true).delay(200).fadeIn();
 	}, function() {
-		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+		  $(this).find('.user-nav-menu').stop(true, true).delay(200).fadeOut();
 	});
 	$('[rel=tooltip]').tooltip('hide');
 
