@@ -65,9 +65,9 @@ define(function(require, exports, module) {
 		
         //工具栏上的所有的功能按钮和下拉框，可以在new编辑器的实例时选择自己需要的从新定义
         ,toolbars:[
-            ['bold', 'underline', 'strikethrough', '|', 'insertorderedlist', 'insertunorderedlist', '|',
+            ['bold', 'underline', 'strikethrough','forecolor','fontsize','removeformat', '|', 'insertorderedlist', 'insertunorderedlist', '|',
                 'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|',
-                'link', 'unlink', '|', 'insertimage', 'insertvideo', 'map', 'gmap','pagebreak', '|', 'fullscreen','source']
+                'link', 'unlink', '|', 'insertvideo', 'map', 'gmap','pagebreak', '|', 'fullscreen','source']
         ]
         //当鼠标放在工具栏上时显示的tooltip提示
         ,labelMap:{
@@ -113,9 +113,7 @@ define(function(require, exports, module) {
         //,focus:false //初始化时，是否让编辑器获得焦点true或false
 
 
-        ,minFrameHeight:200  // 最小高度,默认320
-
-
+        ,minFrameHeight:160  // 最小高度,默认320
 
         //,autoClearEmptyNode : true //getContent时，是否删除空的inlineElement节点（包括嵌套的情况）
 
@@ -271,9 +269,9 @@ define(function(require, exports, module) {
         //removeFormat
         //清除格式时可以删除的标签和属性
         //removeForamtTags标签
-        //,removeFormatTags:'b,big,code,del,dfn,em,font,i,ins,kbd,q,samp,small,span,strike,strong,sub,sup,tt,u,var'
+		,removeFormatTags:'b,big,code,del,dfn,em,font,i,ins,kbd,q,samp,small,span,strike,strong,sub,sup,tt,u,var'
         //removeFormatAttributes属性
-        //,removeFormatAttributes:'class,style,lang,width,height,align,hspace,valign'
+		,removeFormatAttributes:'class,style,lang,width,height,align,hspace,valign'
 
          //undo
          //可以最多回退的次数,默认20
@@ -325,22 +323,22 @@ define(function(require, exports, module) {
 
 
         //autotypeset
-        //  //自动排版参数
-        //  ,autotypeset:{
-        //      mergeEmptyline : true,         //合并空行
-        //      removeClass : true,           //去掉冗余的class
-        //      removeEmptyline : false,      //去掉空行
-        //      textAlign : "left" ,           //段落的排版方式，可以是 left,right,center,justify 去掉这个属性表示不执行排版
-        //      imageBlockLine : 'center',      //图片的浮动方式，独占一行剧中,左右浮动，默认: center,left,right,none 去掉这个属性表示不执行排版
-        //      pasteFilter : false,            //根据规则过滤没事粘贴进来的内容
-        //      clearFontSize : false,          //去掉所有的内嵌字号，使用编辑器默认的字号
-        //      clearFontFamily : false,        //去掉所有的内嵌字体，使用编辑器默认的字体
-        //      removeEmptyNode : false ,       // 去掉空节点
-        //      //可以去掉的标签
-        //      removeTagNames : {标签名字:1},
-        //      indent : false,                 // 行首缩进
-        //      indentValue : '2em'             //行首缩进的大小
-        //  }
+        //自动排版参数
+        ,autotypeset:{
+            mergeEmptyline : true,         //合并空行
+            removeClass : true,           //去掉冗余的class
+            removeEmptyline : false,      //去掉空行
+            textAlign : "left" ,           //段落的排版方式，可以是 left,right,center,justify 去掉这个属性表示不执行排版
+            imageBlockLine : 'center',      //图片的浮动方式，独占一行剧中,左右浮动，默认: center,left,right,none 去掉这个属性表示不执行排版
+            pasteFilter : false,            //根据规则过滤没事粘贴进来的内容
+            clearFontSize : false,          //去掉所有的内嵌字号，使用编辑器默认的字号
+            clearFontFamily : false,        //去掉所有的内嵌字体，使用编辑器默认的字体
+            removeEmptyNode : false ,       // 去掉空节点
+            //可以去掉的标签
+            removeTagNames : {标签名字:1},
+            indent : false,                 // 行首缩进
+            indentValue : '2em'             //行首缩进的大小
+        }
 
     };
 })();

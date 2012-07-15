@@ -12,8 +12,7 @@
 				</div>
 			<?php endif;?>
 			<?php if(!empty($pin['title'])):?><h2><?=$pin['title'];?></h2><?php endif;?>
-			<?=htmlspecialchars_decode($pin['content']);?>
-			<img src="<?=upimage($pin['cover_image'],'big');?>">
+			<?=stripslashes(htmlspecialchars_decode($pin['content']));?>
 		</div>	
 		
 	</div>

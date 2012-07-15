@@ -106,14 +106,16 @@ class PinController extends Controller
 
 	public function actionSavePinAjax()
 	{
-		$data['title'] = htmlspecialchars(mysql_escape_string(trim($_POST['title'])));
-		$data['content'] = htmlspecialchars(mysql_escape_string($_POST['content'])); 
-		$data['desc'] = htmlspecialchars(mysql_escape_string($_POST['desc']));
+		$data['title'] = htmlspecialchars(addslashes(trim($_POST['title'])));
+		$data['content'] = htmlspecialchars(addslashes($_POST['content'])); 
+		$data['content'] = mysql_escape_string($_POST['content']); 
+		$data['desc'] = htmlspecialchars(addslashes($_POST['desc']));
 		$data['cover_image'] = $_POST['cover_image_id'];
 		$data['cover_image_width'] = $_POST['cover_image_width'];
 		$data['cover_image_height'] = $_POST['cover_image_height'];
 		$data['cron_pub'] = $_POST['cron_pub'];
 		$data['cron_time'] = trim($_POST['cron_time']);
+		$data['is_sync_weibo'] = $_POST['is_sync_weibo'] ? 1 : 0;
 
 		$pin_id = $_POST['pin_id'];
 		if(isset($pin_id) && $pin_id > 0) {
@@ -146,6 +148,7 @@ class PinController extends Controller
 		$new_pin->cover_image_width = $data['cover_image_width'];
 		$new_pin->cover_image_height = $data['cover_image_height'];
 		$new_pin->user_id = Yii::app()->user->user_id;
+		$new_pin->is_sync_weibo = $data['is_sync_weibo'];
 		$new_pin->ctime = time();
 		$new_pin->status = $is_cron_pub ? 1 : 0;
 
@@ -160,6 +163,16 @@ class PinController extends Controller
 				$data['pin_id'] = $new_pin_id;
 				if(! $this->_create_cron_job($data))
 					$this->ajax_response(false,'定时任务发布失败');
+			} else if($data['is_sync_weibo'] == 1) {
+				Yii::import('ext.sinaWeibo.SinaWeibo',true);
+				$text = cut_str($data['desc'],120);
+				$c = new SaeTClientV2( WB_AKEY , WB_SKEY , Yii::app()->user->out_token);
+				if(!empty($data['cover_image']))
+				{
+					$r = $c->upload($text, upimage($data['cover_image'],'big'));
+				} else {
+					$r = $c->update($text);
+				}
 			}
 			$this->ajax_response(true,'',$this->_data);
 		} else {

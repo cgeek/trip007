@@ -190,7 +190,7 @@ strong {
 	margin-bottom:15px;
 	float:left;
 }
-.pin p{padding:0 10px;}
+.pin p{padding:0 10px;word-break:break-word;}
 .pin .title{font-weight:bold;}
 .pin .cover_image {padding:10px;border-radius:3px 3px 0 0;max-height:800px;overflow:hidden;}
 .pin .author{padding:5px 10px;border-top:1px solid #ccc;color:#555;background:#FAFAFA;font-size:12px; border-radius:0 0 3px 3px;}
@@ -219,6 +219,14 @@ strong {
 .cover_image_show img {
 	border:2px solid #fff;
 }
+
+.cover_image_show_layout{
+position: absolute;
+z-index: 99999;
+left: 770px;
+border: 5px solid white;
+display:none;
+}
 .pb-title-input {
 	width:400px;
 }
@@ -241,6 +249,9 @@ strong {
 .pb-content-holder {
 	min-height:230px;
 }
+.pb-desc-holder span.counter{
+	float:right;
+}
 #pb-content-textarea {
 	font-size: 14px;
 	color: #333;
@@ -260,12 +271,18 @@ strong {
 .pb-aside {
 	width: 226px;
 	padding: 0;
-	margin-top: 60px;
+	margin-top: 30px;
 	float: right;
-	background: #d5d5d5;
-	min-height: 450px;
+	background: #e5e5e5;
+	min-height: 500px;
 	border-radius: 0 5px 5px 0;
-	border: 1px solid #C9CBCC;
+	border: 1px solid #ccc;
+	border-left:1px solid #e5e5e5;
+}
+.pb-aside.fixed{
+	position:fixed;
+	left:874px;
+	top:30px;
 }
 .pb-submit-btn {
 	padding: 10px;
@@ -279,7 +296,60 @@ strong {
 	background: -o-linear-gradient(top left, #EB5367, #E04751 50%, #DE404A 50%, #D43638);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb5367', endColorstr='#d43638');
 }
-
+.cron-time-holder {
+	padding:10px 10px 0 10px;
+	display:none;
+}
+#post-privacy-holder {
+    padding: 30px 10px 10px 10px;
+	
+}
+.post-privacy-select {
+	background: #fff;
+	border-radius: 3px;
+	padding: 10px;
+	position:relative;
+	font-size:16px;
+	cursor:pointer;
+}
+.combobox-arrow {
+	position: absolute;
+	top: 17px;
+	right: 8px;
+	border-top: 4px solid #8C8C8C;
+	border-left: 4px dashed transparent;
+	border-right: 4px dashed transparent;
+	border-bottom: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+.private-menu {
+	position: absolute;
+	width: 180px;
+	background: white;
+	top: 39px;
+	left: 10px;
+	border-radius: 0 0 7px 7px;
+	border: 1px solid #CCC;
+	border-top: 0;
+	line-height: 30px;
+	display:none;
+}
+.private-menu li {
+	line-height: 30px;
+	padding: 5px 10px;
+	font-size:14px;
+	border-bottom: 1px solid #CCC;
+}
+.private-menu li:hover{
+	background:#f5f5f5;
+}
+#post-tags-holder {padding:10px 10px 0 10px;}
+#post-tags-holder textarea{width:196px;height:120px;resize: none;}
+.bind_weibo_sync {
+	padding:10px;
+}
 /*========= pin detail ========*/
 .pin-detail-wrapper {
 	background:#fff;
@@ -307,6 +377,7 @@ strong {
 .pin-opt {float:right;display:block;}
 .pin-content {
 	padding:20px;
+	width:580px;
 	float:left;
 	line-height:25px;
 	font-size:14px;
@@ -367,6 +438,7 @@ strong {
 	margin: 15px 0 0;
 }
 
+/*============= nav bar =======*/
 #nav_bar {
 	margin: 20px 0;
 	background: white;

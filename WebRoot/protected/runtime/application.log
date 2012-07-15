@@ -7383,3 +7383,1718 @@ Stack trace:
 REQUEST_URI=/Api/Pin.list?user_id=21&p=2&_=1342229321423
 HTTP_REFERER=http://www.trip007.net/user/home
 ---
+2012/07/14 09:56:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/14 09:56:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/14 09:56:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/14 09:56:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/14 09:56:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/14 13:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://www.trip007.net/user/settings
+---
+2012/07/14 13:23:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://www.trip007.net/user/settings
+---
+2012/07/14 14:06:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/14 14:06:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/14 17:50:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150343jx100a3dd30g30fx.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150343jx100a3dd30g30fx.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502367fc24npf7zfw606p.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502367fc24npf7zfw606p.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502572ep515x5ff3kx45z.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502572ep515x5ff3kx45z.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150240jfijcczi0acfx8fn.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150240jfijcczi0acfx8fn.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150245o80johwdepwperp0.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150245o80johwdepwperp0.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503025p9ccjjjwzqamic5.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503025p9ccjjjwzqamic5.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150308rd2zbss2dlf6r7bs.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150308rd2zbss2dlf6r7bs.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150314sdf87zb8d4dpd46d.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150314sdf87zb8d4dpd46d.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15031822hbf22vd172hzix.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15031822hbf22vd172hzix.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150321x592vxi9zsmsau77.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150321x592vxi9zsmsau77.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503488wcqt6icwn2eqwjz.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503488wcqt6icwn2eqwjz.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150352umrjov6mm5kmmjek.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150352umrjov6mm5kmmjek.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150356h19c7zvmq1j7vqcp.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150356h19c7zvmq1j7vqcp.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15035930bi0i7bbe9e7ykg.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15035930bi0i7bbe9e7ykg.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150401ku5ujoc6z8ms5cuj.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150401ku5ujoc6z8ms5cuj.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150405hvhviw702fdvhlz2.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150405hvhviw702fdvhlz2.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150420etjqmc5xjwu45z55.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150420etjqmc5xjwu45z55.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150408jjvsvic6vyknscdv.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150408jjvsvic6vyknscdv.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150415i4suhmutq5s5gc5s.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150415i4suhmutq5s5gc5s.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150343jx100a3dd30g30fx.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150343jx100a3dd30g30fx.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502367fc24npf7zfw606p.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502367fc24npf7zfw606p.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502572ep515x5ff3kx45z.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502572ep515x5ff3kx45z.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150240jfijcczi0acfx8fn.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150240jfijcczi0acfx8fn.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150245o80johwdepwperp0.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150245o80johwdepwperp0.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503025p9ccjjjwzqamic5.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503025p9ccjjjwzqamic5.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150308rd2zbss2dlf6r7bs.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150308rd2zbss2dlf6r7bs.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150352umrjov6mm5kmmjek.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150352umrjov6mm5kmmjek.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150314sdf87zb8d4dpd46d.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150314sdf87zb8d4dpd46d.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15031822hbf22vd172hzix.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15031822hbf22vd172hzix.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150321x592vxi9zsmsau77.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150321x592vxi9zsmsau77.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503488wcqt6icwn2eqwjz.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503488wcqt6icwn2eqwjz.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150420etjqmc5xjwu45z55.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150420etjqmc5xjwu45z55.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150356h19c7zvmq1j7vqcp.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150356h19c7zvmq1j7vqcp.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15035930bi0i7bbe9e7ykg.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15035930bi0i7bbe9e7ykg.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150401ku5ujoc6z8ms5cuj.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150401ku5ujoc6z8ms5cuj.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150405hvhviw702fdvhlz2.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150405hvhviw702fdvhlz2.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150415i4suhmutq5s5gc5s.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150415i4suhmutq5s5gc5s.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150408jjvsvic6vyknscdv.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150408jjvsvic6vyknscdv.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150343jx100a3dd30g30fx.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150343jx100a3dd30g30fx.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502367fc24npf7zfw606p.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502367fc24npf7zfw606p.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502572ep515x5ff3kx45z.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502572ep515x5ff3kx45z.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150245o80johwdepwperp0.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150245o80johwdepwperp0.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150240jfijcczi0acfx8fn.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150240jfijcczi0acfx8fn.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150308rd2zbss2dlf6r7bs.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150308rd2zbss2dlf6r7bs.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503025p9ccjjjwzqamic5.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503025p9ccjjjwzqamic5.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150314sdf87zb8d4dpd46d.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150314sdf87zb8d4dpd46d.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15031822hbf22vd172hzix.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15031822hbf22vd172hzix.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503488wcqt6icwn2eqwjz.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503488wcqt6icwn2eqwjz.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150321x592vxi9zsmsau77.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150321x592vxi9zsmsau77.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150352umrjov6mm5kmmjek.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150352umrjov6mm5kmmjek.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150356h19c7zvmq1j7vqcp.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150356h19c7zvmq1j7vqcp.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15035930bi0i7bbe9e7ykg.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15035930bi0i7bbe9e7ykg.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150420etjqmc5xjwu45z55.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150420etjqmc5xjwu45z55.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150405hvhviw702fdvhlz2.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150405hvhviw702fdvhlz2.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150401ku5ujoc6z8ms5cuj.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150401ku5ujoc6z8ms5cuj.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150415i4suhmutq5s5gc5s.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150415i4suhmutq5s5gc5s.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150408jjvsvic6vyknscdv.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150408jjvsvic6vyknscdv.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150343jx100a3dd30g30fx.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150343jx100a3dd30g30fx.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502367fc24npf7zfw606p.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502367fc24npf7zfw606p.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502572ep515x5ff3kx45z.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502572ep515x5ff3kx45z.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150240jfijcczi0acfx8fn.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150240jfijcczi0acfx8fn.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150245o80johwdepwperp0.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150245o80johwdepwperp0.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503025p9ccjjjwzqamic5.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503025p9ccjjjwzqamic5.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503488wcqt6icwn2eqwjz.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503488wcqt6icwn2eqwjz.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150308rd2zbss2dlf6r7bs.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150308rd2zbss2dlf6r7bs.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150314sdf87zb8d4dpd46d.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150314sdf87zb8d4dpd46d.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15031822hbf22vd172hzix.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15031822hbf22vd172hzix.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150321x592vxi9zsmsau77.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150321x592vxi9zsmsau77.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150352umrjov6mm5kmmjek.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150352umrjov6mm5kmmjek.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150356h19c7zvmq1j7vqcp.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150356h19c7zvmq1j7vqcp.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150415i4suhmutq5s5gc5s.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150415i4suhmutq5s5gc5s.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15035930bi0i7bbe9e7ykg.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15035930bi0i7bbe9e7ykg.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150401ku5ujoc6z8ms5cuj.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150401ku5ujoc6z8ms5cuj.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150405hvhviw702fdvhlz2.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150405hvhviw702fdvhlz2.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150420etjqmc5xjwu45z55.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150420etjqmc5xjwu45z55.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150408jjvsvic6vyknscdv.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150408jjvsvic6vyknscdv.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/18
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150343jx100a3dd30g30fx.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150343jx100a3dd30g30fx.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502367fc24npf7zfw606p.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502367fc24npf7zfw606p.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502572ep515x5ff3kx45z.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1502572ep515x5ff3kx45z.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150240jfijcczi0acfx8fn.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150240jfijcczi0acfx8fn.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150245o80johwdepwperp0.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150245o80johwdepwperp0.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503025p9ccjjjwzqamic5.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503025p9ccjjjwzqamic5.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150308rd2zbss2dlf6r7bs.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150308rd2zbss2dlf6r7bs.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15031822hbf22vd172hzix.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15031822hbf22vd172hzix.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150314sdf87zb8d4dpd46d.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150314sdf87zb8d4dpd46d.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503488wcqt6icwn2eqwjz.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/1503488wcqt6icwn2eqwjz.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150321x592vxi9zsmsau77.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150321x592vxi9zsmsau77.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150352umrjov6mm5kmmjek.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150352umrjov6mm5kmmjek.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150356h19c7zvmq1j7vqcp.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150356h19c7zvmq1j7vqcp.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15035930bi0i7bbe9e7ykg.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/15035930bi0i7bbe9e7ykg.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150401ku5ujoc6z8ms5cuj.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150401ku5ujoc6z8ms5cuj.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150405hvhviw702fdvhlz2.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150405hvhviw702fdvhlz2.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150420etjqmc5xjwu45z55.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150420etjqmc5xjwu45z55.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150415i4suhmutq5s5gc5s.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150415i4suhmutq5s5gc5s.jpg/%22
+---
+2012/07/14 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150408jjvsvic6vyknscdv.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://www.lcc...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://www.lccsky.com/bbs/data/attachment/forum/201207/13/150408jjvsvic6vyknscdv.jpg/%22
+---
+2012/07/15 10:19:28 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.breadcrumbs" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/views/default/index.php(2): CComponent->__set('breadcrumbs', Array)
+#1 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', NULL, true)
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', NULL, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#5 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/controllers/DefaultController.php(7): CController->render('index')
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('index')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/default/i...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/default/index
+---
+2012/07/15 10:20:35 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.breadcrumbs" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/views/default/index.php(2): CComponent->__set('breadcrumbs', Array)
+#1 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', NULL, true)
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', NULL, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#5 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/controllers/DefaultController.php(7): CController->render('index')
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/default')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/default
+---
+2012/07/15 10:20:36 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.breadcrumbs" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/views/default/index.php(2): CComponent->__set('breadcrumbs', Array)
+#1 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', NULL, true)
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', NULL, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#5 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/controllers/DefaultController.php(7): CController->render('index')
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/default')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/default
+---
+2012/07/15 10:20:37 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.breadcrumbs" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/views/default/index.php(2): CComponent->__set('breadcrumbs', Array)
+#1 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', NULL, true)
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', NULL, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#5 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/controllers/DefaultController.php(7): CController->render('index')
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/default')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/default
+---
+2012/07/15 10:20:38 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.breadcrumbs" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/views/default/index.php(2): CComponent->__set('breadcrumbs', Array)
+#1 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', NULL, true)
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', NULL, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#5 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/controllers/DefaultController.php(7): CController->render('index')
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/default')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/default
+---
+2012/07/15 10:43:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://www.trip007.net/admin/default/index
+---
+2012/07/15 10:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/user".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/default
+---
+2012/07/15 10:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/pin".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pin')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/pin
+HTTP_REFERER=http://www.trip007.net/admin/default
+---
+2012/07/15 10:58:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/user".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/default
+---
+2012/07/15 10:58:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/pin".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pin')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/pin
+HTTP_REFERER=http://www.trip007.net/admin/default
+---
+2012/07/15 10:58:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/pin".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pin')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/pin
+HTTP_REFERER=http://www.trip007.net/admin/default
+---
+2012/07/15 10:59:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/gii".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/gii')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/gii
+---
+2012/07/15 11:00:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pin')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/pin
+---
+2012/07/15 11:00:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pin')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/pin
+HTTP_REFERER=http://www.trip007.net/admin/pin/pin
+---
+2012/07/15 11:03:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pin".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('pin')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('pin')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pin/pin')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/pin/pin
+---
+2012/07/15 11:03:12 [error] [exception.CException] exception 'CException' with message 'PinController cannot find the requested view "list".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:879
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('list', NULL, true)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/modules/admin/controllers/PinController.php(12): CController->render('list')
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionList()
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('list')
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pin/list')
+#8 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/pin/list
+---
+2012/07/15 11:04:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/logout".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('site/logout')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/logout
+HTTP_REFERER=http://www.trip007.net/admin/pin
+---
+2012/07/15 11:04:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/user".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/default
+---
+2012/07/15 11:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/user".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/pin
+---
+2012/07/15 11:06:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/default
+---
+2012/07/15 11:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/pin
+---
+2012/07/15 11:06:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/user/list
+---
+2012/07/15 11:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/user/list
+---
+2012/07/15 11:06:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/pin
+---
+2012/07/15 11:06:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/default
+---
+2012/07/15 11:06:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/pin
+---
+2012/07/15 11:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://www.trip007.net/admin/pin
+---
+2012/07/15 11:36:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 12:32:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/19
+---
+2012/07/15 12:36:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/19
+---
+2012/07/15 12:37:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/19
+---
+2012/07/15 12:39:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/stamp/06.gif".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('images/stamp/06...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/stamp/06.gif
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 12:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/stamp/06.gif".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('images/stamp/06...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/stamp/06.gif
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 12:39:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/stamp/06.gif".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('images/stamp/06...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/stamp/06.gif
+---
+2012/07/15 12:44:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/pin/top
+---
+2012/07/15 12:49:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/20
+---
+2012/07/15 12:50:04 [error] [application] sync weibo error 20
+2012/07/15 12:50:29 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (29)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php (60)
+2012/07/15 12:53:59 [error] [php] include(SaeTClientV2.php): failed to open stream: No such file or directory (/Users/cgeek/Sites/trip007/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(166): spl_autoload_call()
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(123): PinController->_save_add_pin()
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionSavePinAjax()
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): PinController->runAction()
+#5 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#7 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): PinController->filterAccessControl()
+#8 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): PinController->runActionWithFilters()
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): PinController->run()
+#12 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#13 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CWebApplication->run()
+REQUEST_URI=/Api/Pin.savePin
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php (166)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php (123)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2012/07/15 12:54:10 [error] [php] include(SaeTClientV2.php): failed to open stream: No such file or directory (/Users/cgeek/Sites/trip007/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(166): spl_autoload_call()
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(123): PinController->_save_add_pin()
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionSavePinAjax()
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): PinController->runAction()
+#5 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#7 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): PinController->filterAccessControl()
+#8 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): PinController->runActionWithFilters()
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): PinController->run()
+#12 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#13 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CWebApplication->run()
+REQUEST_URI=/Api/Pin.savePin
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php (166)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php (123)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2012/07/15 12:54:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/6303aa2c87cce366fb1215c9be0b1b7a_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/6303aa2c87cce366fb1215c9be0b1b7a_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/23
+---
+2012/07/15 12:55:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/6303aa2c87cce366fb1215c9be0b1b7a_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/6303aa2c87cce366fb1215c9be0b1b7a_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/23
+---
+2012/07/15 12:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/6303aa2c87cce366fb1215c9be0b1b7a_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/6303aa2c87cce366fb1215c9be0b1b7a_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/23
+---
+2012/07/15 12:56:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/20
+---
+2012/07/15 12:57:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/6303aa2c87cce366fb1215c9be0b1b7a_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/6303aa2c87cce366fb1215c9be0b1b7a_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/21
+---
+2012/07/15 12:57:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/6303aa2c87cce366fb1215c9be0b1b7a_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/6303aa2c87cce366fb1215c9be0b1b7a_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/22
+---
+2012/07/15 12:59:00 [error] [application] can not get pin by job! job id is 7
+2012/07/15 12:59:22 [error] [application] sync weibo 25 ==> 3468038869512640
+2012/07/15 13:03:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/19
+---
+2012/07/15 13:03:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/19
+---
+2012/07/15 13:04:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "my".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('my')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('my')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/my')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/my
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/15 13:05:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=21&p=2&_=1342328701777
+HTTP_REFERER=http://www.trip007.net/user/21
+---
+2012/07/15 13:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://www.trip007.net/user/settings
+---
+2012/07/15 13:07:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348182036765.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/15 13:07:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183637733.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/15 13:07:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348181894200.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/15 13:07:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0516/13371393173849.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/15 13:07:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""//"http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//"/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"//"http://img1...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22//%22http://img1.qunarzz.com/tuan/team/2012/0419/13348183779365.jpg//%22/%22
+HTTP_REFERER=http://www.trip007.net/pin/11
+---
+2012/07/15 13:07:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=21&p=2&_=1342328846500
+HTTP_REFERER=http://www.trip007.net/user/21
+---
+2012/07/15 13:07:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=21&p=2&_=1342328846816
+HTTP_REFERER=http://www.trip007.net/user/21
+---
+2012/07/15 13:07:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ""http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/"".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('"http://qimages...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/%22http://qimages.b0.upaiyun.com/5975f6b677fd09ae3345d4f207d2b811_big.jpg/%22
+HTTP_REFERER=http://www.trip007.net/pin/19
+---
+2012/07/15 13:50:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 13:59:01 [error] [application] sync weibo 31 ==> 3468053880801605
+2012/07/15 14:09:59 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (29)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php (60)
+2012/07/15 14:13:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('search')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/search/
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 14:13:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "false".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('false')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/false
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 14:22:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "false".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('false')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/false
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 14:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "false".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('false')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/false
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 14:30:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "false".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('false')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/false
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 14:30:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "false".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('false')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/false
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 14:31:02 [error] [application] sync weibo 45 ==> 3468061938305153
+2012/07/15 14:31:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "false".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('false')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/false
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 14:32:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "false".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('false')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/false
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 14:33:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "false".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('false')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/false
+HTTP_REFERER=http://www.trip007.net/
+---
+2012/07/15 14:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "my".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('my')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('my')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/my')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/my
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/15 14:35:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "my".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('my')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('my')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/my')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/my
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/15 14:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=21&p=2&_=1342334146122
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/15 14:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=21&p=2&_=1342334146440
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/15 14:37:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/listAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.list?user_id=21&p=2&_=1342334228987
+HTTP_REFERER=http://www.trip007.net/user/home
+---
+2012/07/15 14:37:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "false".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('false')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/false
+HTTP_REFERER=http://www.trip007.net/
+---
