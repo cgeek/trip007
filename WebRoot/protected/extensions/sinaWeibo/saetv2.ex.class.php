@@ -153,13 +153,14 @@ class SaeTOAuthV2 {
 	 *  - apponweibo	站内应用专用,站内应用不传display参数,并且response_type为token时,默认使用改display.授权后不会返回access_token，只是输出js刷新站内应用父框架
 	 * @return array
 	 */
-	function getAuthorizeURL( $url, $response_type = 'code', $state = NULL, $display = NULL ) {
+	function getAuthorizeURL( $url, $response_type = 'code', $state = NULL, $display = NULL, $with_offical_account = 1 ) {
 		$params = array();
 		$params['client_id'] = $this->client_id;
 		$params['redirect_uri'] = $url;
 		$params['response_type'] = $response_type;
 		$params['state'] = $state;
 		$params['display'] = $display;
+		$params['with_offical_account'] = $with_offical_account;
 		return $this->authorizeURL() . "?" . http_build_query($params);
 	}
 
