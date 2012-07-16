@@ -10028,3 +10028,7 @@ Stack trace:
 REQUEST_URI=/user/sub
 HTTP_REFERER=http://www.trip007.net/user/home
 ---
+2012/07/16 09:42:50 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (29)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php (60)
