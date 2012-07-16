@@ -79,6 +79,9 @@
 <div id="footer">
 	Copyright &copy; 2011 - <?php echo date('Y'); ?> 旅游特价情报站 	All Rights Reserved.  友情连接:<a href="http://www.qiugonglue.com" target="_blank">求攻略</a><br/>&nbsp;&nbsp; 业务合作：<a href="http://weibo.com/happyweekend" target="_blank">weibo.com/happyweekend</a>
 </div><!-- footer -->
-
+<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F745b68b7c51c5e43e6e61d10d18f87f1' type='text/javascript'%3E%3C/script%3E"));
+</script>
 </body>
 </html>
