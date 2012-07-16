@@ -20,7 +20,7 @@ class OauthController extends Controller
 			$keys['code'] = $_REQUEST['code'];
 			$keys['redirect_uri'] = WB_CALLBACK_URL;
 			try {
-				$token = $weiboService->getAccessToken( 'code', $keys ) ;
+				$token = @$weiboService->getAccessToken( 'code', $keys ) ;
 			} catch (OAuthException $e) {
 			}
 		}
