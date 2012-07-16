@@ -20,8 +20,8 @@
 		'plugins': 'modules/plugins',
 		'bootstrap': 'libs/bootstrap/2.0.4/bootstrap',
 
-		'datepicker': 'libs/gldatepicker/1.3.0/glDatePicker',
-		'datepicker-css': 'libs/gldatepicker/1.3.0/default.css',
+		'datepicker': 'libs/datepicker/1.3.0/glDatePicker',
+		'datepicker-css': 'libs/datepicker/1.3.0/default.css',
 		// modules
 		'account.head' : 'modules/account.head',
 		
