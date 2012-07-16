@@ -56,7 +56,7 @@
 				</a>
 				<ul class="user-nav-menu">
 					<li><a href="/user/home">我的关注</a></li>
-					<li><a href="/user/sub">我的订阅</a></li>
+					<!--li><a href="/user/sub">我的订阅</a></li-->
 					<li><a href="/user/<?=Yii::app()->user->user_id;?>">我的发布</a></li>
 					<li><a href="/pin/add">发布特价信息</a></li>
 					<li><a href="/pin/add?type=2">发布微攻略</a></li>
