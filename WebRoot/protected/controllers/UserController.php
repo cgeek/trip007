@@ -90,14 +90,17 @@ class UserController extends Controller
 	{
 		$id = Yii::app()->user->user_id;
 		$user_db = User::model()->findByPk($id);
-		if(empty($user_db) || $user_db->status < 0)
-			throw new CHttpException(404,'Not found');
 
+		$followed = UserRelation::model()->findAll('user_id=:user_id AND type=1',array('user_id'=>Yii::app()->user->user_id));
+		$follow_array = array();
+		foreach($followed as $follow) {
+			$follow_array[] = $follow->follow_id;
+		}
 		$this->_data['user'] = $user_db;
 		$limit = 10;
 		$criteria = new CDbCriteria;
 		$criteria->addCondition("status=0");
-		$criteria->addCondition("user_id=$id");
+		$criteria->addInCondition("user_id",$follow_array);
 		$criteria->order = ' `ctime` DESC';
 		$criteria->limit = $limit;
 		$count = Pin::model()->count($criteria);
@@ -109,8 +112,33 @@ class UserController extends Controller
 		}
 		$this->_data['pin_list'] = $pin_list;
 		//$this->ajax_response(true,'',$this->_data);
-		
+		$this->_data['waterfall_api_url'] = '/Api/User.Home?';
 		$this->render('/user/home',$this->_data);
+	}
+	public function actionHomeAjax()
+	{
+		$p = intval($_GET['p']) > 1 ? intval($_GET['p'])  : 1;
+		$limit = 10;
+		$offset = ($p -1) * 10;
+		$followed = UserRelation::model()->findAll('user_id=:user_id AND type=1',array('user_id'=>Yii::app()->user->user_id));
+		$follow_array = array();
+		foreach($followed as $follow) {
+			$follow_array[] = $follow->follow_id;
+		}
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("status=0");
+		$criteria->addInCondition("user_id",$follow_array);
+		$criteria->order = ' `ctime` DESC';
+		$criteria->limit = $limit;
+		$count = Pin::model()->count($criteria);
+		$data = Pin::model()->findAll($criteria);
+		$pin_list = array();
+		foreach($data as $pin)
+		{
+			$pin_list[] = format_pin($pin);
+		}
+		$this->_data['pin_list'] = $pin_list;
+		$this->ajax_response(true,'',$this->_data);
 	}
 
 	public function actionTimeline($id)

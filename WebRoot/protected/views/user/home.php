@@ -10,7 +10,7 @@
 		<a href="/user/<?=$user['user_id'];?>">我的发布</a>
 		</div>
 	</div>
-<div id="waterfall" class="clearfix" style="visibility:hidden;" data-url="/Api/Pin.list?user_id=<?=$user['user_id'];?>">
+<div id="waterfall" class="clearfix" style="visibility:hidden;" data-url="<?=$waterfall_api_url;?>">
 	<div class="pin item" id="user_info">
 		<div class="profile">
 			<div class="profile-basic">
