@@ -10250,3 +10250,7 @@ Stack trace:
 REQUEST_URI=/Api/PinList?type=2&sort=view_count&p=2&_=1342512946318
 HTTP_REFERER=http://trip007.net/gonglue
 ---
+2012/07/17 16:43:48 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (29)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php (60)

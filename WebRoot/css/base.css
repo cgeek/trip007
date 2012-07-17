@@ -91,7 +91,7 @@ strong {
 }
 .less {color:#8C7E7E;}
 
-.main {width:933px;margin:0 auto;text-align:left;}
+.main {width:933px;margin:0 auto;text-align:left;position:relative;}
 #footer{margin-top:20px;border-top:1px solid #E6E6E6;padding-top:6px;color:#999;text-align:center;}
 
 /*======= header =======*/
@@ -112,8 +112,8 @@ strong {
 .user_nav .caret{margin:5px;}
 .user_nav img{width:20px;height:20px;margin-right:5px;border-radius:3px;position:relative;}
 .user_nav .user-nav-menu {
-	top:83px;
-	right:182px;
+	top:33px;
+	right:0px;
 	min-width:110px;
 	position: absolute;
 	z-index: 1000;

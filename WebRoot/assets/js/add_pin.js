@@ -79,7 +79,16 @@ define(function(require, exports, module){
 		save: function() {
 			$('.pb-submit-btn').click(function(event){
 				event.preventDefault();
-				var $form = $(this).parents('form');
+				var btn = $(this),
+					btn_txt = btn.html(),
+					doing = btn.attr('doing'),
+					$form = $(this).parents('form');
+				if(doing && doing == true) {
+					return ;
+				}
+				btn.html(' 保存中...');
+				btn.attr('doing',true);
+
 				if(!editor.hasContents()) {
 					alert('内容不能为空');
 					return false;
@@ -102,11 +111,15 @@ define(function(require, exports, module){
 					dataType:'json',
 					cache:false
 				}).success(function(result){
-					console.log(result);
 					if(result.success == true) {
 						url = "/pin/" + result.data.pin_id;
 						window.location.href= url;
 					}
+					btn.html(btn_txt);
+					btn.attr('doing',false);
+				}).error(function(){
+					btn.html(btn_txt);
+					btn.attr('doing',false);
 				});
 
 			});
