@@ -20,7 +20,7 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=127.0.0.1;dbname=trip007',
 			'emulatePrepare' => true,
-			'username' => 'root',
+			'username' => 'trip007',
 			'password' => '123456',
 			'charset' => 'utf8',
 		),

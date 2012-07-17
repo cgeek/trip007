@@ -10951,7 +10951,7 @@ UE.plugins['video'] = function (){
             var html = [];
             for(var i=0,vi,len = videoObjs.length;i<len;i++){
                  vi = videoObjs[i];
-                 html.push(creatInsertStr( vi.url, vi.width || 420,  vi.height || 280, vi.align||"none",false,true));
+                 html.push(creatInsertStr( vi.url, vi.width || 600,  vi.height || 400, vi.align||"none",false,true));
             }
             me.execCommand("inserthtml",html.join(""));
         },
