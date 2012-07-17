@@ -167,8 +167,8 @@ class PinController extends Controller
 		$data['cover_image'] = $_POST['cover_image_id'];
 		$data['cover_image_width'] = $_POST['cover_image_width'];
 		$data['cover_image_height'] = $_POST['cover_image_height'];
-		$data['cron_pub'] = $_POST['cron_pub'];
-		$data['cron_time'] = trim($_POST['cron_time']);
+		$data['cron_pub'] = isset($_POST['cron_pub']) ? $_POST['cron_pub'] : '';
+		$data['cron_time'] = isset($_POST['cron_time']) ? trim($_POST['cron_time']) : '';
 		$data['is_sync_weibo'] = $_POST['is_sync_weibo'] ? 1 : 0;
 		$data['type'] = isset($_POST['type']) ? $_POST['type'] : 1;
 

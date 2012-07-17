@@ -26,7 +26,7 @@
 		</div>
 <?php endif;?>
 	</div>
-<div id="waterfall" class="clearfix" style="visibility:hidden;" data-url="/Api/Pin.Hot?">
+<div id="waterfall" class="clearfix" style="visibility:hidden;" data-url="/Api/PinList?type=2&sort=view_count">
 	<?php if(!empty($pin_list)):?>
 		<?php foreach($pin_list as $pin):?>
 	<div class="pin item">
