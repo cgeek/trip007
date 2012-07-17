@@ -7,9 +7,8 @@
 		<input type="hidden" name="cover_image_height" value="<?=isset($pin_db['cover_image_height']) ? $pin_db['cover_image_height'] :'';?>">
 
 		<?php $is_edit = isset($pin_db) ? true : false ;?>
-		<?php $is_gonglue = ((isset($_GET['type']) && $_GET['type'] ==2) || (isset($pin_db) && $pin_db['type']===2) ) ? true : false ;?>
-
-		<input type="hidden" name="type" value="<?=$is_gonglue ? 2:1;?>">
+		<?php $is_gonglue = ((isset($_GET['type']) && $_GET['type'] ==2) || (isset($pin_db) && $pin_db['type'] == 2) ) ? true : false ;?>
+		<input type="hidden" name="type" value="<?=$is_edit ? $pin_db['type'] : $is_gonglue ? 2:1;?>">
 		<div class="pb-main">
 			<h2 class="pb-main-title">
 				<span>

@@ -10032,3 +10032,221 @@ HTTP_REFERER=http://www.trip007.net/user/home
 in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
 in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (29)
 in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php (60)
+2012/07/17 15:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/PinList".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/PinList')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/PinList?type=2&sort=view_count&p=2&_=1342508460269
+HTTP_REFERER=http://trip007.net/gonglue
+---
+2012/07/17 15:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/PinList".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/PinList')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/PinList?type=2&sort=view_count&p=2&_=1342508460589
+HTTP_REFERER=http://trip007.net/gonglue
+---
+2012/07/17 15:01:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/PinList".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/PinList')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/PinList?type=2&sort=view_count&p=2&_=1342508517492
+HTTP_REFERER=http://trip007.net/gonglue
+---
+2012/07/17 15:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/PinList".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/PinList')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/PinList?type=2&sort=view_count&p=2&_=1342509069457
+HTTP_REFERER=http://trip007.net/gonglue
+---
+2012/07/17 15:29:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/PinList".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/PinList')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/PinList?type=2&sort=view_count&p=2&_=1342510177687
+HTTP_REFERER=http://trip007.net/gonglue
+---
+2012/07/17 15:43:25 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "renderPartial".' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/views/pin/tejia.php(31): CComponent->__call('renderPartial', Array)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/views/pin/tejia.php(31): CWebApplication->renderPartial('/layout/waterfa...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('tejia', Array, true)
+#6 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(74): CController->render('tejia', Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionTejia()
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#17 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/tejia')
+#18 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#20 {main}
+REQUEST_URI=/tejia
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/17 15:57:31 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "renderPartial".' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/views/pin/tejia.php(31): CComponent->__call('renderPartial', Array)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/views/pin/tejia.php(31): CWebApplication->renderPartial('/layout/waterfa...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('tejia', Array, true)
+#6 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(74): CController->render('tejia', Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionTejia()
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#17 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/tejia')
+#18 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#20 {main}
+REQUEST_URI=/tejia
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/17 15:57:42 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "renderPartial".' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/views/pin/tejia.php(31): CComponent->__call('renderPartial', Array)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/views/pin/tejia.php(31): CWebApplication->renderPartial('/layout/waterfa...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', NULL, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', NULL, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('/pin/tejia', NULL, true)
+#6 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CController->render('/pin/tejia')
+#7 [internal function]: SearchController->actionTejia(NULL)
+#8 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#14 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#15 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/search/tejia/%E5%90%89%E9%9A%86%E5%9D%A1
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/17 15:57:44 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "renderPartial".' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/views/pin/tejia.php(31): CComponent->__call('renderPartial', Array)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/views/pin/tejia.php(31): CWebApplication->renderPartial('/layout/waterfa...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#3 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', NULL, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', NULL, true)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('/pin/tejia', NULL, true)
+#6 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CController->render('/pin/tejia')
+#7 [internal function]: SearchController->actionTejia(NULL)
+#8 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#14 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#15 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/search/tejia/%E5%90%89%E9%9A%86%E5%9D%A1
+HTTP_REFERER=http://trip007.net/
+---
+2012/07/17 16:06:41 [error] [exception.CException] exception 'CException' with message 'PinController cannot find the requested view "/layout/waterfall".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:879
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/views/pin/tejia.php(30): CController->renderPartial('/layout/waterfa...')
+#1 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('tejia', Array, true)
+#5 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(74): CController->render('tejia', Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionTejia()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#14 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#16 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/tejia')
+#17 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#19 {main}
+REQUEST_URI=/tejia
+---
+2012/07/17 16:06:42 [error] [exception.CException] exception 'CException' with message 'PinController cannot find the requested view "/layout/waterfall".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:879
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/views/pin/tejia.php(30): CController->renderPartial('/layout/waterfa...')
+#1 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(127): require('/Users/cgeek/Si...')
+#2 /Users/cgeek/Sites/trip007/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/cgeek/Si...', Array, true)
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(870): CBaseController->renderFile('/Users/cgeek/Si...', Array, true)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('tejia', Array, true)
+#5 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php(74): CController->render('tejia', Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionTejia()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#14 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#16 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/tejia')
+#17 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#19 {main}
+REQUEST_URI=/tejia
+---
+2012/07/17 16:07:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "&p=2".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('&p=2')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/&p=2?_=1342512478905
+HTTP_REFERER=http://trip007.net/tejia
+---
+2012/07/17 16:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "&p=2".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('&p=2')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/&p=2?_=1342512479218
+HTTP_REFERER=http://trip007.net/tejia
+---
+2012/07/17 16:15:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/PinList".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/PinList')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/PinList?type=2&sort=view_count&p=2&_=1342512946318
+HTTP_REFERER=http://trip007.net/gonglue
+---

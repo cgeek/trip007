@@ -17,7 +17,7 @@ class PinController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('detail','welcomehot','tejia','index','gonglue','hotAjax','top'),
+				'actions'=>array('detail','welcomehot','tejia','index','gonglue','listAjax','top'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -50,8 +50,7 @@ class PinController extends Controller
 			$pin_list[] = $this->_format_pin($pin);
 		}
 		$this->_data['pin_list'] = $pin_list;
-		//$this->ajax_response(true,'',$this->_data);
-		
+		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=1';
 		$this->render('index',$this->_data);
 	}
 	
@@ -71,6 +70,7 @@ class PinController extends Controller
 			$pin_list[] = $this->_format_pin($pin);
 		}
 		$this->_data['pin_list'] = $pin_list;
+		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=1';
 		$this->render('tejia',$this->_data);
 	}
 	public function actionGonglue()
@@ -90,7 +90,7 @@ class PinController extends Controller
 		}
 		$this->_data['pin_list'] = $pin_list;
 		//$this->ajax_response(true,'',$this->_data);
-		
+		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=2';
 		$this->render('gonglue',$this->_data);
 	}
 
@@ -110,19 +110,26 @@ class PinController extends Controller
 			$pin_list[] = $this->_format_pin($pin);
 		}
 		$this->_data['pin_list'] = $pin_list;
+		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=1&sort=view_count';
 		$this->render('tejia',$this->_data);
 	}
 
-	public function actionHotAjax()
+	public function actionListAjax()
 	{
 		$p = intval($_GET['p']) > 1 ? intval($_GET['p']) : 1;
-
 		$per_page = 10;
 		$offset = ($p - 1) * $per_page;
 		$limit = $per_page; 
 		$criteria = new CDbCriteria;
 		$criteria->addCondition("status=0");
+		if(isset($_GET['type'])) {
+			$type = intval($_GET['type']);
+			$criteria->addCondition("type=$type");
+		}
 		$criteria->order = ' `ctime` DESC';
+		if(isset($_GET['sort']) && in_array($_GET['sort'],array('view_count'))) { 
+			$criteria->order = ' view_count DESC';
+		}
 		$criteria->limit = $limit;
 		$criteria->offset = $offset;
 		$count = Pin::model()->count($criteria);
