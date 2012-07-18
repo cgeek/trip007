@@ -77,6 +77,8 @@ class PinController extends Controller
 		}
 		$this->_data['pin_list'] = $pin_list;
 		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=1';
+
+		$this->pageTitle = "旅游特价情报站首页";
 		$this->render('index',$this->_data);
 	}
 	
@@ -97,6 +99,8 @@ class PinController extends Controller
 		}
 		$this->_data['pin_list'] = $pin_list;
 		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=1';
+		
+		$this->pageTitle = "特价信息 - 特价机票，特价酒店";
 		$this->render('tejia',$this->_data);
 	}
 	public function actionGonglue()
@@ -117,6 +121,7 @@ class PinController extends Controller
 		$this->_data['pin_list'] = $pin_list;
 		//$this->ajax_response(true,'',$this->_data);
 		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=2';
+		$this->pageTitle = "微攻略";
 		$this->render('gonglue',$this->_data);
 	}
 
@@ -137,6 +142,7 @@ class PinController extends Controller
 		}
 		$this->_data['pin_list'] = $pin_list;
 		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=1&sort=view_count';
+		$this->pageTitle = "每周推荐";
 		$this->render('tejia',$this->_data);
 	}
 
@@ -171,6 +177,7 @@ class PinController extends Controller
 
 	public function actionAdd()
 	{
+		$this->pageTitle = "添加信息";
 		$this->render('/pin/edit_pin',$this->_data);
 	}
 
@@ -181,6 +188,7 @@ class PinController extends Controller
 			throw new CHttpException(404,'Not found');
 		$this->_check_pin_author($pin_db);
 		$this->_data['pin_db'] = $pin_db;
+		$this->pageTitle = "编辑";
 		$this->render('/pin/edit_pin',$this->_data);
 	}
 
