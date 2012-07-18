@@ -99,6 +99,7 @@ define(function(require, exports, module){
 					cover_image_width = $form.find('input[name=cover_image_width]').val(),
 					title = $form.find('input[name=title]').val(),
 					desc = $form.find('textarea[name=desc]').val(),
+					tags = $form.find('textarea[name=tags]').val(),
 					pin_id = $form.find('input[name=pin_id]').val(),
 					cron_pub = $form.find('input[name=cron_pub]').val(),
 					type = $form.find('input[name=type]').val(),
@@ -107,7 +108,7 @@ define(function(require, exports, module){
 				$.ajax({
 					type: 'POST',
 					url: '/Api/Pin.savePin',
-					data: {'pin_id':pin_id,'type':type, 'content':content,'desc':desc,'title':title,'cover_image_id':cover_image_id,'cover_image_height':cover_image_height,'cover_image_width':cover_image_width, 'cron_pub':cron_pub, 'cron_time':cron_time,'is_sync_weibo':is_sync_weibo},
+					data: {'pin_id':pin_id,'type':type, 'content':content,'desc':desc,'title':title,'cover_image_id':cover_image_id,'cover_image_height':cover_image_height,'cover_image_width':cover_image_width, 'cron_pub':cron_pub, 'cron_time':cron_time,'is_sync_weibo':is_sync_weibo,'tags':tags},
 					dataType:'json',
 					cache:false
 				}).success(function(result){

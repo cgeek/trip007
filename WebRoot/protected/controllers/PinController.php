@@ -195,8 +195,9 @@ class PinController extends Controller
 	{
 		$data['title'] = htmlspecialchars(addslashes(trim($_POST['title'])));
 		$data['content'] = htmlspecialchars(addslashes($_POST['content'])); 
-		$data['content'] = mysql_escape_string($_POST['content']); 
+		$data['content'] = htmlspecialchars(addslashes(($_POST['content']))); 
 		$data['desc'] = htmlspecialchars(addslashes($_POST['desc']));
+		$data['tags'] = htmlspecialchars(addslashes($_POST['tags']));
 		$data['cover_image'] = $_POST['cover_image_id'];
 		$data['cover_image_width'] = $_POST['cover_image_width'];
 		$data['cover_image_height'] = $_POST['cover_image_height'];
@@ -233,6 +234,7 @@ class PinController extends Controller
 		$new_pin->title = $data['title'];
 		$new_pin->content = $data['content'];
 		$new_pin->desc = $data['desc'];
+		$new_pin->tags = $data['tags'];
 		$new_pin->cover_image = $data['cover_image'];
 		$new_pin->cover_image_width = $data['cover_image_width'];
 		$new_pin->cover_image_height = $data['cover_image_height'];

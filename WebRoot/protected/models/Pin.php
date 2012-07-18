@@ -10,12 +10,14 @@
  * @property string $title
  * @property string $desc
  * @property string $content
+ * @property string $tags
  * @property string $cover_image
  * @property integer $cover_image_width
  * @property integer $cover_image_height
  * @property integer $user_id
  * @property integer $is_sync_weibo
  * @property string $source_data
+ * @property string $source_url
  * @property integer $view_count
  * @property integer $ctime
  * @property string $mtime
@@ -52,11 +54,11 @@ class Pin extends CActiveRecord
 			array('user_id, ctime', 'required'),
 			array('type, cover_image_width, cover_image_height, user_id, is_sync_weibo, view_count, ctime, status', 'numerical', 'integerOnly'=>true),
 			array('out_feed_id', 'length', 'max'=>64),
-			array('title, cover_image', 'length', 'max'=>255),
+			array('title, tags, cover_image, source_url', 'length', 'max'=>255),
 			array('desc, content, source_data, mtime', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('pin_id, type, out_feed_id, title, desc, content, cover_image, cover_image_width, cover_image_height, user_id, is_sync_weibo, source_data, view_count, ctime, mtime, status', 'safe', 'on'=>'search'),
+			array('pin_id, type, out_feed_id, title, desc, content, tags, cover_image, cover_image_width, cover_image_height, user_id, is_sync_weibo, source_data, source_url, view_count, ctime, mtime, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -83,12 +85,14 @@ class Pin extends CActiveRecord
 			'title' => 'Title',
 			'desc' => 'Desc',
 			'content' => 'Content',
+			'tags' => 'Tags',
 			'cover_image' => 'Cover Image',
 			'cover_image_width' => 'Cover Image Width',
 			'cover_image_height' => 'Cover Image Height',
 			'user_id' => 'User',
 			'is_sync_weibo' => 'Is Sync Weibo',
 			'source_data' => 'Source Data',
+			'source_url' => 'Source Url',
 			'view_count' => 'View Count',
 			'ctime' => 'Ctime',
 			'mtime' => 'Mtime',
@@ -113,12 +117,14 @@ class Pin extends CActiveRecord
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('desc',$this->desc,true);
 		$criteria->compare('content',$this->content,true);
+		$criteria->compare('tags',$this->tags,true);
 		$criteria->compare('cover_image',$this->cover_image,true);
 		$criteria->compare('cover_image_width',$this->cover_image_width);
 		$criteria->compare('cover_image_height',$this->cover_image_height);
 		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('is_sync_weibo',$this->is_sync_weibo);
 		$criteria->compare('source_data',$this->source_data,true);
+		$criteria->compare('source_url',$this->source_url,true);
 		$criteria->compare('view_count',$this->view_count);
 		$criteria->compare('ctime',$this->ctime);
 		$criteria->compare('mtime',$this->mtime,true);
