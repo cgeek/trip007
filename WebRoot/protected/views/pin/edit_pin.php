@@ -83,9 +83,7 @@
 					<input type="text" name="minute" id="time_minute" value="<?=date('i',time());?>" style="width:25px;text-align:center;">
 				</div>
 				<div id="post-tags-holder">
-					<textarea name="tags" placeholder="添加关联目的地,用逗号隔开；如香港,泰国">
-						<?=isset($pin_db['tags']) ? stripslashes(htmlspecialchars_decode($pin_db['tags'])) :'';?>
-					</textarea>
+					<textarea name="tags" placeholder="添加关联目的地,用逗号隔开；如香港,泰国"><?=isset($pin_db['tags']) ? stripslashes(htmlspecialchars_decode($pin_db['tags'])) :'';?></textarea>
 				</div>
 				<div class="bind_weibo_sync">
 				<?php if(isset($pin_db) && $pin_db['status'] == 0):?>
