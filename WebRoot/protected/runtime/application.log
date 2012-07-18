@@ -10997,3 +10997,14 @@ Stack trace:
 REQUEST_URI=/Api/Pin.search?type=1&keyword=%E6%9C%BA%E7%A5%A8&p=2&_=1342536864102
 HTTP_REFERER=http://trip007.net/tejia/%E6%9C%BA%E7%A5%A8
 ---
+2012/07/18 12:53:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "searchAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('searchAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('searchAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/searchAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.search?type=1&keyword=%E6%B3%B0%E5%9B%BD&p=2&_=1342587210471
+HTTP_REFERER=http://trip007.net/tejia/%E6%B3%B0%E5%9B%BD
+---
