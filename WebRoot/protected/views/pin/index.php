@@ -9,9 +9,9 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="http://qimages.b0.upaiyun.com/5127d367c8ff0edd08c76100f23ac0d2_big.jpg" height="250" width=555>
+					<img src="http://qimages.b0.upaiyun.com/6e1a962bfdaece8336435010b527eb74_big.jpg" height="250" width=555>
 					<div class="carousel-caption">
-						<h4><a href="/pin/13" style="color:#fff;">http://qimages.b0.upaiyun.com/6e1a962bfdaece8336435010b527eb74_big.jpg</a></h4>
+						<h4><a href="/pin/13" style="color:#fff;">亚洲航空机票预订超级详细图解</h4>
 					</div>
 				</div>
 			</div>
