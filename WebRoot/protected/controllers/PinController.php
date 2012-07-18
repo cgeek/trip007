@@ -56,6 +56,7 @@ class PinController extends Controller
 		}
 		$this->_data['pin_list'] = $pin_list;
 		$this->_data['waterfall_api_url'] = "/Api/Pin.search?type=$type_id&keyword=$keyword";
+		$this->pageTitle = "$keyword - 特价信息 - 旅游特价情报站";
 		$this->render($type ,$this->_data);
 	}
 
