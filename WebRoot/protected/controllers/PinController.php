@@ -47,7 +47,8 @@ class PinController extends Controller
 			throw new CHttpException(404,'Not found');
 
 		$pin_list = array();
-		$docs = Yii::app()->search->setQuery($keyword)->search(); 
+		$query = $keyword . ' type:'.$type_id;
+		$docs = Yii::app()->search->setQuery($query)->search(); 
 		foreach($docs as $doc)
 		{
 			$pin = Pin::model()->findByPk($doc->pin_id);

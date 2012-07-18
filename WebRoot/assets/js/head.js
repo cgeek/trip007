@@ -5,6 +5,10 @@ define(function(require, exports, module){
 	//IE678 placeholder
 	$('input[placeholder], textarea[placeholder]').placeholder();
 
+	$('.carousel').carousel({
+		  interval: 2000
+	});
+
 	$('.user_nav').hover(function() {
 		  $(this).find('.user-nav-menu').stop(true, true).delay(200).fadeIn();
 	}, function() {

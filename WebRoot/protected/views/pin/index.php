@@ -1,7 +1,23 @@
 <div class="main">
 	<div class="welcome-banner" style="padding:10px;height:250px;border-radius:5px;background:#fff;">
-		<div style="width:555px;float:left;">
-			<img src="http://qimages.b0.upaiyun.com/3b7bec258201143d80414e64ccd7e505_big.jpg" height="250" width=555>
+		<div id="pinCarousel" class="carousel slide" style="width:555px;float:left;height:250px;">
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="http://qimages.b0.upaiyun.com/bcdd3786761b75cecb5dcf25d0e2ccb4_big.jpg" height="250" width="555">
+					<div class="carousel-caption">
+						<h4><a href="/pin/1" style="color:#fff;">捷星航空新加坡～大阪特价，特惠票价新加坡元168起</a></h4>
+					</div>
+				</div>
+				<div class="item">
+					<img src="http://qimages.b0.upaiyun.com/5127d367c8ff0edd08c76100f23ac0d2_big.jpg" height="250" width=555>
+					<div class="carousel-caption">
+						<h4><a href="/pin/1" style="color:#fff;">捷星航空新加坡～大阪特价，特惠票价新加坡元168起</a></h4>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel nav -->
+			<a class="carousel-control left" href="#pinCarousel" data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#pinCarousel" data-slide="next">&rsaquo;</a>
 		</div>
 		<div style="float:right;">
 		<iframe frameborder="0" style="display:block;" width="350px" height="250px" src="http://www.hotelscombined.com/Affiliate/Widgets/HC_large/default.aspx?a_aid=68060&languageCode=CS&openInNewWindow=1" scrolling="no" allowtransparency="true" ></iframe>
