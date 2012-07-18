@@ -5,13 +5,13 @@
 				<div class="item active">
 					<img src="http://qimages.b0.upaiyun.com/bcdd3786761b75cecb5dcf25d0e2ccb4_big.jpg" height="250" width="555">
 					<div class="carousel-caption">
-						<h4><a href="/pin/1" style="color:#fff;">捷星航空新加坡～大阪特价，特惠票价新加坡元168起</a></h4>
+						<h4><a href="/pin/17" style="color:#fff;">捷星航空新加坡～大阪特价，特惠票价新加坡元168起</a></h4>
 					</div>
 				</div>
 				<div class="item">
 					<img src="http://qimages.b0.upaiyun.com/5127d367c8ff0edd08c76100f23ac0d2_big.jpg" height="250" width=555>
 					<div class="carousel-caption">
-						<h4><a href="/pin/1" style="color:#fff;">捷星航空新加坡～大阪特价，特惠票价新加坡元168起</a></h4>
+						<h4><a href="/pin/13" style="color:#fff;">http://qimages.b0.upaiyun.com/6e1a962bfdaece8336435010b527eb74_big.jpg</a></h4>
 					</div>
 				</div>
 			</div>
