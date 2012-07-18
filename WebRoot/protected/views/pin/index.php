@@ -43,11 +43,11 @@ skyscanner.setOnLoadCallback(main);
 			</div>
 		</div>
 		<div class="places">
-			<a href="/search/tejia/马尔代夫">马尔代夫</a>
-			<a href="/search/tejia/沙巴">沙巴</a>
-			<a href="/search/tejia/曼谷">曼谷</a>
-			<a href="/search/tejia/普吉岛">普吉岛</a>
-			<a href="/search/tejia/吉隆坡">吉隆坡</a>
+			<a href="/tejia/马尔代夫">马尔代夫</a>
+			<a href="/tejia/沙巴">沙巴</a>
+			<a href="/tejia/曼谷">曼谷</a>
+			<a href="/tejia/普吉岛">普吉岛</a>
+			<a href="/tejia/吉隆坡">吉隆坡</a>
 		</div>
 <?php if(!Yii::app()->user->isGuest):?>
 		<div class="add_pin">

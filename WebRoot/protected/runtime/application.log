@@ -10308,3 +10308,692 @@ Stack trace:
 REQUEST_URI=/Api/User.Home?&p=2&_=1342518336848
 HTTP_REFERER=http://trip007.net/user/home
 ---
+2012/07/17 20:41:42 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:43:23 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:44:12 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.xunsarch.EXunSearch" is invalid. Make sure it points to an existing directory or file.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:343
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('extensions.xuns...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:45:06 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:45:07 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:45:07 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:45:07 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:45:40 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:46:22 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:47:09 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:47:10 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:47:12 [error] [exception.CException] exception 'CException' with message 'Alias "ext.xunsarch.EXunSearch" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/YiiBase.php(198): YiiBase::import('ext.xunsarch.EX...', true)
+#1 /Users/cgeek/Sites/trip007/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CModule->getComponent('search')
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(7): CModule->__get('search')
+#4 [internal function]: SearchController->actionTejia(NULL)
+#5 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#12 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#14 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:50:57 [error] [exception.CException] exception 'CException' with message 'Property "EXunSearch.query" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(9): CComponent->__get('query')
+#1 [internal function]: SearchController->actionTejia(NULL)
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:51:22 [error] [exception.CException] exception 'CException' with message 'Property "EXunSearch.search" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(9): CComponent->__get('search')
+#1 [internal function]: SearchController->actionTejia(NULL)
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:51:23 [error] [exception.CException] exception 'CException' with message 'Property "EXunSearch.search" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(9): CComponent->__get('search')
+#1 [internal function]: SearchController->actionTejia(NULL)
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:51:57 [error] [exception.CException] exception 'CException' with message 'Property "EXunSearch.search" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(9): CComponent->__get('search')
+#1 [internal function]: SearchController->actionTejia(NULL)
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:52:32 [error] [exception.CException] exception 'CException' with message 'Property "EXunSearch.search" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(8): CComponent->__get('search')
+#1 [internal function]: SearchController->actionTejia(NULL)
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 20:52:33 [error] [exception.CException] exception 'CException' with message 'Property "EXunSearch.search" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(8): CComponent->__get('search')
+#1 [internal function]: SearchController->actionTejia(NULL)
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 21:05:11 [error] [exception.CException] exception 'CException' with message 'SearchController and its behaviors do not have a method or closure named "getRequestUri".' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(8): CComponent->__call('getRequestUri', Array)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/SearchController.php(8): SearchController->getRequestUri()
+#2 [internal function]: SearchController->actionTejia(NULL)
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SearchController), Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SearchController), Object(ReflectionMethod), Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('tejia')
+#9 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('search/tejia/??...')
+#10 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#12 {main}
+REQUEST_URI=/search/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 21:13:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/马尔代夫".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/?????????...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 21:13:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/马尔代夫".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/?????????...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 21:13:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:14:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:14:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:15:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:23:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:23:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:23:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/taiguo".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/taiguo')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/taiguo
+---
+2012/07/17 21:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:31:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/酒店".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E9%85%92%E5%BA%97
+---
+2012/07/17 21:32:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:33:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%e6%b3%b0%e5%9b%bd
+---
+2012/07/17 21:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:34:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:41:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/tejia/%E9%A6%99%E6%B8%AF
+---
+2012/07/17 21:42:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/tejia/%E9%A6%99%E6%B8%AF
+---
+2012/07/17 21:42:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 21:42:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+---
+2012/07/17 21:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:47:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tejia/泰国".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('tejia/??????')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/tejia/%E6%B3%B0%E5%9B%BD
+---
+2012/07/17 21:57:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Not found' in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php:44
+Stack trace:
+#0 [internal function]: PinController->actionSearch('??????', NULL)
+#1 /Users/cgeek/Sites/trip007/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PinController), Array)
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PinController), Object(ReflectionMethod), Array)
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('search')
+#12 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/search')
+#13 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/tejia/%E9%85%92%E5%BA%97
+---
+2012/07/17 22:10:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "searchAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('searchAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('searchAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/searchAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.search?type=2&keyword=%E6%9C%BA%E7%A5%A8&p=2&_=1342534244068
+HTTP_REFERER=http://trip007.net/gonglue/%E6%9C%BA%E7%A5%A8
+---
+2012/07/17 22:18:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "searchAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('searchAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('searchAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/searchAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.search?type=1&keyword=%E6%9C%BA%E7%A5%A8&p=2&_=1342534704977
+HTTP_REFERER=http://trip007.net/tejia/%E6%9C%BA%E7%A5%A8
+---
+2012/07/17 22:18:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "searchAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('searchAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('searchAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/searchAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.search?type=1&keyword=%E6%9C%BA%E7%A5%A8&p=2&_=1342534705289
+HTTP_REFERER=http://trip007.net/tejia/%E6%9C%BA%E7%A5%A8
+---
+2012/07/17 22:18:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "searchAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('searchAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('searchAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/searchAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.search?type=1&keyword=%E6%9C%BA%E7%A5%A8&p=2&_=1342534708938
+HTTP_REFERER=http://trip007.net/tejia/%E6%9C%BA%E7%A5%A8
+---
+2012/07/17 22:18:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "searchAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('searchAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('searchAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/searchAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.search?type=1&keyword=%E6%9C%BA%E7%A5%A8&p=2&_=1342534715795
+HTTP_REFERER=http://trip007.net/tejia/%E6%9C%BA%E7%A5%A8
+---
+2012/07/17 22:54:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "searchAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('searchAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('searchAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/searchAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.search?type=1&keyword=%E6%9C%BA%E7%A5%A8&p=2&_=1342536842778
+HTTP_REFERER=http://trip007.net/tejia/%E6%9C%BA%E7%A5%A8
+---
+2012/07/17 22:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "searchAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('searchAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('searchAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/searchAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.search?type=1&keyword=%E6%9C%BA%E7%A5%A8&p=2&_=1342536863782
+HTTP_REFERER=http://trip007.net/tejia/%E6%9C%BA%E7%A5%A8
+---
+2012/07/17 22:54:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "searchAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('searchAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('searchAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Pin/searchAjax')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/Pin.search?type=1&keyword=%E6%9C%BA%E7%A5%A8&p=2&_=1342536864102
+HTTP_REFERER=http://trip007.net/tejia/%E6%9C%BA%E7%A5%A8
+---

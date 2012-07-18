@@ -14,11 +14,11 @@
 			</div>
 		</div>
 		<div class="places">
-			<a href="/search/gonglue/行程">行程</a>
-			<a href="/search/gonglue/机票">机票</a>
-			<a href="/search/gonglue/出入境">出入境</a>
-			<a href="/search/gonglue/购物">购物</a>
-			<a href="/search/gonglue/美食">美食</a>
+			<a href="/gonglue/行程">行程</a>
+			<a href="/gonglue/机票">机票</a>
+			<a href="/gonglue/出入境">出入境</a>
+			<a href="/gonglue/购物">购物</a>
+			<a href="/gonglue/美食">美食</a>
 		</div>
 <?php if(!Yii::app()->user->isGuest):?>
 		<div class="add_pin">

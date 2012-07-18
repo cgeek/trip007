@@ -17,7 +17,7 @@ class PinController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('detail','welcomehot','tejia','index','gonglue','listAjax','top'),
+				'actions'=>array('index','detail','search','tejia','gonglue','listAjax','top'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -33,6 +33,31 @@ class PinController extends Controller
 			),
 		);
 	}
+
+	public function actionSearch($keyword = NULL , $type = NULL)
+	{
+		if($type == 'tejia') {
+			$type_id = 1;
+		} else if($type == 'gonglue') {
+			$type_id = 2;
+		} else {
+			throw new CHttpException(404,'Not found');
+		}
+		if(empty($keyword)) 
+			throw new CHttpException(404,'Not found');
+
+		$pin_list = array();
+		$docs = Yii::app()->search->setQuery($keyword)->search(); 
+		foreach($docs as $doc)
+		{
+			$pin = Pin::model()->findByPk($doc->pin_id);
+			$pin_list[] = $this->_format_pin($pin);
+		}
+		$this->_data['pin_list'] = $pin_list;
+		$this->_data['waterfall_api_url'] = "/Api/Pin.search?type=$type_id&keyword=$keyword";
+		$this->render($type ,$this->_data);
+	}
+
 
 	public function actionIndex()
 	{

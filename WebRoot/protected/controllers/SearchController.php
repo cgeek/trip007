@@ -2,8 +2,14 @@
 
 class SearchController extends Controller
 {
+
 	public function actionTejia($keyword = NULL)
 	{
+		$docs = Yii::app()->search->search($keyword); 
+		foreach($docs as $doc)
+		{
+			echo $doc->pin_id . ",";
+		}
 		$this->render('/pin/tejia');
 	}
 	

@@ -42,15 +42,16 @@ return array(
 			'urlFormat'=>'path',
 			'showScriptName'=>false,
 			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/detail',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-				'Api/<controller:\w+>.<action:\w+>'=>'<controller>/<action>Ajax',
+				'<type:tejia|gonglue>/<keyword:(.*)+>' => '/pin/search',
+				'/Api/<controller:\w+>.<action:\w+>'=>'<controller>/<action>Ajax',
 				'/signup' => '/user/signup',
 				'/logout' => '/user/logout',
 				'/gonglue' => '/pin/gonglue',
 				'/tejia' => '/pin/tejia',
 				'/top' => '/pin/top',
+				'<controller:\w+>/<id:\d+>'=>'<controller>/detail',
+				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
 		/*
@@ -65,6 +66,12 @@ return array(
 			'username' => 'trip007',
 			'password' => '123456',
 			'charset' => 'utf8',
+		),
+		'search' => array(
+			'class' => 'ext.xunsearch.EXunSearch',
+			'xsRoot' => '/Users/cgeek/xunsearch',  // xunsearch 安装目录
+			'project' => 'pin', // 搜索项目名称或对应的 ini 文件路径
+			'charset' => 'utf-8', // 您当前使用的字符集（索引、搜索结果）
 		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -82,7 +89,7 @@ return array(
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				 */
 			),
 		),
 	),

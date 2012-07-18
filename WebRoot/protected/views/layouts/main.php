@@ -32,9 +32,9 @@
 				<li>
 					<dl class="clearfix">
 						<dt><a href="/tejia">特价信息</a></dt>
-						<dd><a href="/search/tejia/酒店">酒店</a></dd>
-						<dd><a href="/search/tejia/机票">机票</a></dd>
-						<dd><a href="/search/tejia">其他</a></dd>
+						<dd><a href="/tejia/酒店">酒店</a></dd>
+						<dd><a href="/tejia/机票">机票</a></dd>
+						<dd><a href="/tejia">其他</a></dd>
 					</dl>
 				</li>
 				<li>
