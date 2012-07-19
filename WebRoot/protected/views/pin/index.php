@@ -3,6 +3,12 @@
 		<div id="pinCarousel" class="carousel slide" style="width:555px;float:left;height:250px;">
 			<div class="carousel-inner">
 				<div class="item active">
+					<a target="_blank" href="/pin/19"> <img src="http://qimages.b0.upaiyun.com/08fbdbbc0ffd77e2dfcb52242551ea5a_big.jpg" height="250" width="555"> </a>
+					<div class="carousel-caption">
+						<h4><a target="_blank" href="/pin/19" style="color:#fff;">泰航促销，北京往返曼谷税前机票1910元起，特价机票需在官网上用银联卡支付</a></h4>
+					</div>
+				</div>
+				<div class="item">
 					<a target="_blank" href="/pin/17"> <img src="http://qimages.b0.upaiyun.com/bcdd3786761b75cecb5dcf25d0e2ccb4_big.jpg" height="250" width="555"> </a>
 					<div class="carousel-caption">
 						<h4><a target="_blank" href="/pin/17" style="color:#fff;">捷星航空新加坡～大阪特价，特惠票价新加坡元168起</a></h4>
