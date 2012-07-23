@@ -101,7 +101,7 @@ class PinController extends Controller
 		$this->_data['pin_list'] = $pin_list;
 		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=1';
 		
-		$this->pageTitle = "特价信息 - 特价机票，特价酒店";
+		$this->pageTitle = "特价信息 - 特价机票，特价酒店 - 旅游特价情报站";
 		$this->render('tejia',$this->_data);
 	}
 	public function actionGonglue()
@@ -122,7 +122,7 @@ class PinController extends Controller
 		$this->_data['pin_list'] = $pin_list;
 		//$this->ajax_response(true,'',$this->_data);
 		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=2';
-		$this->pageTitle = "微攻略";
+		$this->pageTitle = "微攻略 - 旅游特价情报站";
 		$this->render('gonglue',$this->_data);
 	}
 
@@ -143,7 +143,7 @@ class PinController extends Controller
 		}
 		$this->_data['pin_list'] = $pin_list;
 		$this->_data['waterfall_api_url'] = '/Api/Pin.List?type=1&sort=view_count';
-		$this->pageTitle = "每周推荐";
+		$this->pageTitle = "每周推荐 - 旅游特价情报站";
 		$this->render('tejia',$this->_data);
 	}
 
@@ -178,7 +178,7 @@ class PinController extends Controller
 
 	public function actionAdd()
 	{
-		$this->pageTitle = "添加信息";
+		$this->pageTitle = "添加信息 - 旅游特价情报站";
 		$this->render('/pin/edit_pin',$this->_data);
 	}
 
@@ -333,6 +333,7 @@ class PinController extends Controller
 
 		$this->_data['pin'] = $pin;
 		$this->_data['pinner'] = $pinner;
+		$this->pageTitle = $pin['title'] . " - 旅游特价情报站";
 		$this->render('detail',$this->_data);
 	}
 
