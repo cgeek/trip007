@@ -11022,3 +11022,22 @@ Stack trace:
 REQUEST_URI=/user/sub
 HTTP_REFERER=http://trip007.net/user/home
 ---
+2012/07/23 12:48:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Not found' in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/PinController.php:325
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): PinController->actionDetail()
+#1 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#8 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('detail')
+#10 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/detail')
+#11 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#13 {main}
+REQUEST_URI=/pin/19
+HTTP_REFERER=http://trip007.net/
+---
