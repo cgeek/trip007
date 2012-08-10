@@ -11072,3 +11072,19 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/message/
 ---
+2012/08/10 16:10:55 [error] [exception.XSException] [XSException] ../../../xunsearch/sdk/php/lib/XS.php(2204): Connection refused(C#61)
+REQUEST_URI=/tejia/%E9%85%92%E5%BA%97
+HTTP_REFERER=http://trip007.net/
+---
+2012/08/10 16:19:10 [error] [exception.XSException] [XSException] ../../../xunsearch/sdk/php/lib/XS.php(2204): Connection refused(C#61)
+REQUEST_URI=/tejia/%E9%85%92%E5%BA%97
+HTTP_REFERER=http://trip007.net/
+---
+2012/08/10 16:31:00 [error] [exception.XSException] [XSException] ../../../xunsearch/sdk/php/lib/XS.php(2204): Connection refused(C#61)
+REQUEST_URI=/gonglue/%E8%B4%AD%E7%89%A9
+HTTP_REFERER=http://trip007.net/gonglue
+---
+2012/08/10 16:42:42 [error] [exception.XSException] [XSException] ../../../xunsearch/sdk/php/lib/XS.php(2204): Connection refused(C#61)
+REQUEST_URI=/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
+HTTP_REFERER=http://trip007.net/top
+---

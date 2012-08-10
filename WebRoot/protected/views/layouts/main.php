@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/base.css" />
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/libs/seajs/1.1.0/sea.js"></script>
 	<title><?php echo CHtml::encode($this->pageTitle); ?> -- 提供最新旅游特价信息</title>
-	<meta name="keywords" content="旅游特价信息情报站，特价信息，旅游，旅游特价，特价机票，特价酒店，最后一分钟，自助游, 泰国，亚航，曼谷，普吉岛，马尔代夫"/>
+	<meta name="keywords" content="旅游特价信息网,旅游特价信息,旅游特价信息情报站，特价信息，旅游，旅游特价，特价机票，特价酒店，最后一分钟，自助游, 泰国，亚航，曼谷，普吉岛，马尔代夫"/>
 	<meta name="author" content="旅游特价信息网,旅游特价信息情报站"/>
 	<meta name="Description" content="旅游特价信息网,每天给你提供最新的机票，酒店，旅游线路等方面的特价信息."/>
 </head>
@@ -17,7 +17,7 @@
 	<div id="header-top">
 		<div class="main">
 			<div class="logo">
-				<a title="旅游特价情报站" href="/">旅游特价情报站</a>
+				<a title="旅游特价信息网" href="/">旅游特价信息网</a>
 			</div>
 			<div class="tips">
 				<span>发现最超值的旅游特价信息</span>

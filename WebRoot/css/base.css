@@ -100,8 +100,9 @@ strong {
 }
 #header-top { 
 	background:#35BFE9;
-	height:50px;
+	height:60px;
 }
+#header-top .main {padding-top:10px;}
 .logo {color:#fff;float:left;overflow:hidden;width:230px;}
 .logo a {color: #FFFFFF;float:left;margin:10px 0;font-size: 30px;}
 .logo p{text-align:left;float:left;}
@@ -380,11 +381,11 @@ color: #41545F;
 	border:1px solid #e8e8e8;
 	border-radius:5px;
 	min-height:400px;
-	width:640px;
+	width:620px;
 	float:left;
 }
 .aside {
-	width:280px;
+	width:300px;
 	float:right;
 	overflow:hidden;
 }
@@ -401,12 +402,13 @@ color: #41545F;
 .pin-opt {float:right;display:block;}
 .pin-content {
 	padding:20px;
-	width:600px;
+	width:580px;
 	float:left;
 	line-height:25px;
 	font-size:14px;
 }
 .pin-content h2 { line-height:30px;font-size:1.231em;padding-bottom:15px;}
+.pin-content img {max-width:580px;}
 
 /*====== use profile =====*/
 #user_info .profile { padding:15px;}
