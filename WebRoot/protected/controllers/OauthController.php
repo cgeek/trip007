@@ -41,7 +41,7 @@ class OauthController extends Controller
 		$uid_get = $c->get_uid();
 		if( ! isset($uid_get['uid']))
 		{
-			echo "登录失败，未知错误: ";
+			echo "登录失败，无法获得用户id: ";
 			Yii::log('oauth error:'. var_dump($uid_get));
 			return ;
 		}
