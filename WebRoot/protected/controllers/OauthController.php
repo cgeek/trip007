@@ -25,7 +25,7 @@ class OauthController extends Controller
 			}
 		}
 
-		if ($token) {
+		if (isset($token) && !empty($token)) {
 			$_SESSION['token'] = $token;
 			setcookie( 'weibojs_'.$weiboService->client_id, http_build_query($token));
 			$this->process_out_callback();
@@ -39,13 +39,13 @@ class OauthController extends Controller
 		$access_token =  $_SESSION['token']['access_token'];
 		$c = new SaeTClientV2( WB_AKEY , WB_SKEY , $access_token);
 		$uid_get = $c->get_uid();
-		$uid = $uid_get['uid'];
-		if(empty($uid))
+		if( ! isset($uid_get['uid']))
 		{
 			echo "登录失败，未知错误: ";
 			Yii::log('oauth error:'. var_dump($uid_get));
 			return ;
 		}
+		$uid = $uid_get['uid'];
 		$user_info = $c->show_user_by_id($uid);//根据ID获取用户等基本信息
 		if(empty($user_info))
 		{
