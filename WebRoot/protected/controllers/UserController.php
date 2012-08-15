@@ -273,11 +273,6 @@ class UserController extends Controller
 		User::model()->updateByPK($user_id,$update_data);
 	}
 
-	public function actionSetting()
-	{
-		$this->render('setting');
-	}
-
 	public function actionLogin()
 	{
 		if(Yii::app()->request->isAjaxRequest) {
@@ -316,7 +311,10 @@ class UserController extends Controller
 
 	public function actionSettings()
 	{	
-		$this->render('settings');
+		$id = Yii::app()->user->user_id;
+		$user_db = User::model()->findByPk($id);
+		$this->_data['user_db'] = $user_db;
+		$this->render('settings',$this->_data);
 	}
 
 	public function actionSignup()

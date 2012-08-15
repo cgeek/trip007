@@ -47,7 +47,7 @@
 					<a href="/gonglue">微攻略</a>
 				</li>
 				<li>
-					<a href="http://hotles.trip007.net/" target="_blank">酒店比价</a>
+					<a href="http://hotels.trip007.net/" target="_blank">酒店比价</a>
 				</li>
 				<!--li>
 					<a href="/zhuangbei/">装备</a>

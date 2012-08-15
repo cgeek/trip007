@@ -567,3 +567,39 @@ color: #41545F;
 	padding-top: 5px;
 	width: 110px;
 }
+
+
+/*======agreement=======*/
+.agreement-box {
+	background:#fff;
+	border-radius:5px;
+	padding:40px;
+}
+.agreement-box h2 {
+	border-bottom: 0 none;
+	text-align: center;
+}
+.agreement-box ul li {
+	color: #333333;
+	line-height: 2;
+}
+.agreement-box ul li h3 {
+	margin: 20px 0 0;
+}
+.agreement-box ul li ol {
+	line-height: 1.8;
+	margin-left: 2em;
+}
+.agreement-box ul li ol pre, .agreement-box ul li pre {
+	margin-left: 2em;
+	background:#fff;
+	border:0;
+	padding:0;
+	margin:0;
+}
+.agreement-box ul li p {
+	color: #333333;
+	line-height: 1.6;
+	margin: 15px 0 0;
+	padding-left: 2em;
+}

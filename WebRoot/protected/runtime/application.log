@@ -11088,3 +11088,145 @@ HTTP_REFERER=http://trip007.net/gonglue
 REQUEST_URI=/tejia/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB
 HTTP_REFERER=http://trip007.net/top
 ---
+2012/08/10 17:06:31 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (29)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php (60)
+2012/08/10 17:07:14 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.email" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CWebUser.php(141): CComponent->__get('email')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php(24): CWebUser->__get('email')
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/UserController.php(319): WebUser->__get('email')
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): UserController->actionSettings()
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('settings')
+#13 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/settings')
+#14 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/user/settings
+HTTP_REFERER=http://trip007.net/user/21
+---
+2012/08/10 17:07:16 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.email" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CWebUser.php(141): CComponent->__get('email')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php(24): CWebUser->__get('email')
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/UserController.php(319): WebUser->__get('email')
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): UserController->actionSettings()
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('settings')
+#13 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/settings')
+#14 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/user/settings
+HTTP_REFERER=http://trip007.net/user/21
+---
+2012/08/10 17:07:43 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.email" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CWebUser.php(141): CComponent->__get('email')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php(24): CWebUser->__get('email')
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/UserController.php(319): WebUser->__get('email')
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): UserController->actionSettings()
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('settings')
+#13 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('user/settings')
+#14 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/user/settings
+HTTP_REFERER=http://trip007.net/user/21
+---
+2012/08/10 17:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://trip007.net/user/settings
+---
+2012/08/10 17:08:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://trip007.net/user/settings
+---
+2012/08/10 17:12:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://trip007.net/user/settings
+---
+2012/08/10 17:13:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://trip007.net/user/settings
+---
+2012/08/10 17:14:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://trip007.net/user/settings
+---
+2012/08/10 17:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://trip007.net/user/settings
+---
+2012/08/10 17:15:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://trip007.net/user/settings
+---
+2012/08/10 17:15:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/home.js".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/js/home....')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/js/home.js?t=20120301
+HTTP_REFERER=http://trip007.net/user/settings
+---
