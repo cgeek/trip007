@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/libs/seajs/1.1.0/sea.js"></script>
 </head>
 
 <body>
@@ -31,6 +32,7 @@
 				array('label'=>'后台首页', 'url'=>array('/admin/default')),
 				array('label'=>'用户管理', 'url'=>array('/admin/user')),
 				array('label'=>'内容管理', 'url'=>array('/admin/pin')),
+				array('label'=>'系统设置', 'url'=>array('/admin/default')),
 				array('label'=>'登录', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'退出登录 ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

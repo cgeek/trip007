@@ -1,0 +1,34 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'spm' ]
+info using npm@1.0.106
+info using node@v0.4.12
+verbose config file /Users/cgeek/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose into /Users/cgeek/Sites/trip007/WebRoot/assets/js [ 'spm' ]
+verbose cache add spm
+verbose cache add [ 'spm', null ]
+silly cache add: name, spec, args [ undefined, 'spm', [ 'spm', null ] ]
+verbose parsed url { pathname: 'spm', href: 'spm' }
+info addNamed [ 'spm', '' ]
+verbose addNamed [ null, '' ]
+verbose GET spm
+verbose raw, before any munging spm
+verbose url resolving [ 'https://registry.npmjs.org/', './spm' ]
+verbose url resolved https://registry.npmjs.org/spm
+verbose etag "6V6RJ78WZKJW9GEGANYVU9K8X"
+ERR! Error: ETIMEDOUT, Operation timed out
+ERR!     at Socket._onConnect (net.js:595:18)
+ERR!     at IOWatcher.onWritable [as callback] (net.js:186:12)
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.4.0
+ERR! command "node" "/usr/local/bin/npm" "install" "spm"
+ERR! cwd /Users/cgeek/Sites/trip007/WebRoot/assets/js
+ERR! node -v v0.4.12
+ERR! npm -v 1.0.106
+ERR! code ETIMEDOUT
+verbose exit [ 1, true ]

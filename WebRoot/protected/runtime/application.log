@@ -11230,3 +11230,164 @@ Stack trace:
 REQUEST_URI=/assets/js/home.js?t=20120301
 HTTP_REFERER=http://trip007.net/user/settings
 ---
+2012/10/04 15:37:00 [error] [php] PDO::__construct(): [2002] Connection refused (trying to connect via tcp://127.0.0.1:3306) (/Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:422)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive()
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CConsoleApplication->getComponent()
+#4 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/MetaActionCommand.php(9): CConsoleApplication->__get()
+#5 unknown(0): MetaActionCommand->actionCrontab()
+#6 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs()
+#7 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): MetaActionCommand->run()
+#8 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CConsoleApplication->run()
+#11 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once()
+
+2012/10/11 09:36:00 [error] [php] PDO::__construct(): [2002] Connection refused (trying to connect via tcp://127.0.0.1:3306) (/Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:422)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive()
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CConsoleApplication->getComponent()
+#4 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/MetaActionCommand.php(9): CConsoleApplication->__get()
+#5 unknown(0): MetaActionCommand->actionCrontab()
+#6 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs()
+#7 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): MetaActionCommand->run()
+#8 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CConsoleApplication->run()
+#11 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once()
+
+2012/10/23 10:20:00 [error] [php] PDO::__construct(): [2002] Connection refused (trying to connect via tcp://127.0.0.1:3306) (/Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:422)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive()
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CConsoleApplication->getComponent()
+#4 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/MetaActionCommand.php(9): CConsoleApplication->__get()
+#5 unknown(0): MetaActionCommand->actionCrontab()
+#6 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs()
+#7 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): MetaActionCommand->run()
+#8 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CConsoleApplication->run()
+#11 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once()
+
+2012/11/10 09:57:07 [error] [php] PDO::__construct(): [2002] Connection refused (trying to connect via tcp://127.0.0.1:3306) (/Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:422)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive()
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CConsoleApplication->getComponent()
+#4 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/MetaActionCommand.php(9): CConsoleApplication->__get()
+#5 unknown(0): MetaActionCommand->actionCrontab()
+#6 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs()
+#7 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): MetaActionCommand->run()
+#8 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CConsoleApplication->run()
+#11 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once()
+
+2012/11/22 10:00:01 [error] [php] PDO::__construct(): [2002] Connection refused (trying to connect via tcp://127.0.0.1:3306) (/Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:422)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive()
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CConsoleApplication->getComponent()
+#4 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/MetaActionCommand.php(9): CConsoleApplication->__get()
+#5 unknown(0): MetaActionCommand->actionCrontab()
+#6 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs()
+#7 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): MetaActionCommand->run()
+#8 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CConsoleApplication->run()
+#11 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once()
+
+2012/12/17 10:54:00 [error] [php] PDO::__construct(): [2002] Connection refused (trying to connect via tcp://127.0.0.1:3306) (/Users/cgeek/Sites/trip007/framework/db/CDbConnection.php:422)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/cgeek/Sites/trip007/framework/db/CDbConnection.php(309): CDbConnection->setActive()
+#2 /Users/cgeek/Sites/trip007/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/cgeek/Sites/trip007/framework/base/CModule.php(104): CConsoleApplication->getComponent()
+#4 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/MetaActionCommand.php(9): CConsoleApplication->__get()
+#5 unknown(0): MetaActionCommand->actionCrontab()
+#6 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs()
+#7 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): MetaActionCommand->run()
+#8 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CConsoleApplication->run()
+#11 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once()
+
+2013/01/07 22:39:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/question
+HTTP_REFERER=http://trip007.cn/gii/controller
+---
+2013/01/07 22:40:04 [error] [exception.CException] exception 'CException' with message 'QuestionController cannot find the requested view "list".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:879
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('list', NULL, true)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(7): CController->render('list')
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionList()
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('list')
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/list')
+#8 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/question/list
+---
+2013/01/07 23:43:21 [error] [exception.CException] exception 'CException' with message 'QuestionController cannot find the requested view "list".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:879
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(783): CController->renderPartial('list', NULL, true)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(7): CController->render('list')
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionList()
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('list')
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/list')
+#8 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/question/list
+---
+2013/01/08 00:34:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listJson".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listJson')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listJson')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/listJs...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/api/question/list
+---
+2013/01/08 00:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "list".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('list')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('list')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/list')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/question/list
+---
+2013/01/08 00:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "list".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('list')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('list')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/list')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/question/list
+---
