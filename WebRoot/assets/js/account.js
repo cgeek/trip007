@@ -17,7 +17,7 @@ define(function(require, exports, module){
 				data:$form.serialize(),
 				dataType:'json',
 				success:function(data){
-					if (data.success == true) {
+					if (data.code == 200) {
 						cookie.set('login_email', $form.find('input[name=email]').val(), {
 							expires: 3650 
 						});
@@ -37,7 +37,7 @@ define(function(require, exports, module){
 				data:$form.serialize(),
 				dataType:'json',
 				success:function(data){
-					if (data.success == true) {
+					if (data.code == 200) {
 						cookie.set('login_email', $form.find('input[name=email]').val(), {
 							expires: 3650 
 						});

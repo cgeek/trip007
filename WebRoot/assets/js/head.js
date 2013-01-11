@@ -63,7 +63,7 @@ define(function(require, exports, module){
 			data: {'pin_id':pin_id},
 			dataType: 'json'
 		}).success(function(result){
-			if(result.success == true) {
+			if(result.code == 200) {
 				alert('删除成功');
 				window.location.href= "/";
 			} else {

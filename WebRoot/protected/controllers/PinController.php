@@ -173,7 +173,7 @@ class PinController extends Controller
 			$pin_list[] = $this->_format_pin($pin);
 		}
 		$this->_data['pin_list'] = $pin_list;
-		$this->ajax_response(true,'',$this->_data);
+		$this->ajax_response(200,'',$this->_data);
 	}
 
 	public function actionAdd()
@@ -232,7 +232,7 @@ class PinController extends Controller
 
 		Pin::model()->updateByPk($pin_id, $data);
 		$this->_data['pin_id'] = $pin_id;
-		$this->ajax_response(true,'',$this->_data);
+		$this->ajax_response(200,'',$this->_data);
 	}
 
 	private function _save_add_pin($data)
@@ -262,7 +262,7 @@ class PinController extends Controller
 			if($is_cron_pub) {
 				$data['pin_id'] = $new_pin_id;
 				if(! $this->_create_cron_job($data))
-					$this->ajax_response(false,'定时任务发布失败');
+					$this->ajax_response(500,'定时任务发布失败');
 			} else if($data['is_sync_weibo'] == 1) {
 				Yii::import('ext.sinaWeibo.SinaWeibo',true);
 				$text = cut_str($data['desc'],120);
@@ -274,9 +274,9 @@ class PinController extends Controller
 					$r = $c->update($text);
 				}
 			}
-			$this->ajax_response(true,'',$this->_data);
+			$this->ajax_response(200,'',$this->_data);
 		} else {
-			$this->ajax_response(false,'插入失败');
+			$this->ajax_response(500,'插入失败');
 		}
 	}
 
@@ -300,17 +300,17 @@ class PinController extends Controller
 	{
 		$pin_id = $_POST['pin_id'];
 		if(empty($pin_id) || $pin_id <=0)
-			$this->ajax_response(false,'参数不正确');
+			$this->ajax_response(500,'参数不正确');
 		$pin_db = Pin::model()->findByPk($pin_id);
 		if(empty($pin_db))
-			$this->ajax_response(false,'该信息不存在');
+			$this->ajax_response(404,'该信息不存在');
 		$this->_check_pin_author($pin_db);
 
 		$data = array('status'=> -1);
 		Pin::model()->updateByPk($pin_id, $data);
 		// 更新用户发表数量
 		$this->_update_user_stats();
-		$this->ajax_response(true,'删除成功');
+		$this->ajax_response(200, '删除成功');
 	}
 
 	public function actionDetail()
@@ -348,7 +348,7 @@ class PinController extends Controller
 	{
 		$p = $_GET['p'];
 		if($p > 2) {
-			$this->ajax_response(true,'','');
+			$this->ajax_response(200,'','');
 		}
 		$url = 'http://api.t.sina.com.cn/statuses/user_timeline/2636967831.json?source=2437693526&feature=1';
 		$json_data = file_get_contents($url);
@@ -362,7 +362,7 @@ class PinController extends Controller
 			$data[] = $feed;
 		}
 		$this->_data = json_encode($data);
-		$this->ajax_response(true,'', $this->_data);
+		$this->ajax_response(200,'', $this->_data);
 	}
 
 	private function _process_content($content) {

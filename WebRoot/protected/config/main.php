@@ -43,8 +43,7 @@ return array(
 			'showScriptName'=>false,
 			'rules'=>array(
 				'<type:tejia|gonglue>/<keyword:(.*)+>' => '/pin/search',
-				'/Api/<controller:\w+>.<action:\w+>'=>'<controller>/<action>Ajax',
-				'/api/<controller:\w+>.<action:\w+>'=>'<controller>/<action>Json',
+				'/api/<controller:\w+>.<action:\w+>'=>'<controller>/<action>JSON',
 				'/signup' => '/user/signup',
 				'/logout' => '/user/logout',
 				'/gonglue' => '/pin/gonglue',

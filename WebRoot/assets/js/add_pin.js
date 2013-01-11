@@ -112,7 +112,7 @@ define(function(require, exports, module){
 					dataType:'json',
 					cache:false
 				}).success(function(result){
-					if(result.success == true) {
+					if(result.code == 200) {
 						url = "/pin/" + result.data.pin_id;
 						window.location.href= url;
 					}

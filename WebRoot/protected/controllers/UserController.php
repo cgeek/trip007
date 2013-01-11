@@ -73,7 +73,6 @@ class UserController extends Controller
 			$pin_list[] = format_pin($pin);
 		}
 		$this->_data['pin_list'] = $pin_list;
-		//$this->ajax_response(true,'',$this->_data);
 
 		if(!Yii::app()->user->isGuest) {
 			$followed = UserRelation::model()->find('user_id=:user_id AND follow_id=:follow_id AND type=1',array('user_id'=>Yii::app()->user->user_id, 'follow_id'=>$id));
@@ -111,7 +110,6 @@ class UserController extends Controller
 			$pin_list[] = format_pin($pin);
 		}
 		$this->_data['pin_list'] = $pin_list;
-		//$this->ajax_response(true,'',$this->_data);
 		$this->_data['waterfall_api_url'] = '/Api/User.Home?';
 		$this->render('/user/home',$this->_data);
 	}
@@ -138,7 +136,7 @@ class UserController extends Controller
 			$pin_list[] = format_pin($pin);
 		}
 		$this->_data['pin_list'] = $pin_list;
-		$this->ajax_response(true,'',$this->_data);
+		$this->ajax_response(200,'',$this->_data);
 	}
 
 	public function actionTimeline($id)
@@ -167,7 +165,7 @@ class UserController extends Controller
 		$user_db = User::model()->findByPk($user_id);
 		if(empty($user_db) || empty($user_db['out_token']))
 		{
-			$this->ajax_response(false,'用户不存在');	
+			$this->ajax_response(404,'用户不存在');	
 		}
 		$p = $_GET['p'];
 		$p = intval($p) <= 0 ? intval($p) : 1;
@@ -179,7 +177,7 @@ class UserController extends Controller
 		    $feed['created_at'] = date('Y-m-d H:i:s',strtotime($feed['created_at']));
 			$data[] = $feed;
 		}
-		$this->ajax_response(true,'',$data);
+		$this->ajax_response(200,'',$data);
 	}
 
 	private function _process_content($content) {
@@ -214,12 +212,12 @@ class UserController extends Controller
 		$follow_id = $_POST['user_id'];
 		$user_db = User::model()->findByPk($follow_id);
 		if(empty($user_db) || $user_db->status < 0)
-			$this->ajax_response(false,'用户不存在');
+			$this->ajax_response(404,'用户不存在');
 
 		$user_id = Yii::app()->user->user_id;
 		$followed = UserRelation::model()->find('user_id=:user_id AND follow_id=:follow_id AND type=1',array('user_id'=>$user_id, 'follow_id'=>$follow_id));
 		if($followed) {
-			$this->ajax_response(false,'已经关注过');
+			$this->ajax_response(500,'已经关注过');
 		}
 		$follow_model = new UserRelation;
 		$follow_model->user_id = $user_id;
@@ -229,7 +227,7 @@ class UserController extends Controller
 		
 		$fansed = UserRelation::model()->find('user_id=:user_id AND follow_id=:follow_id AND type=0',array('user_id'=>$follow_id, 'follow_id'=>$user_id));
 		if($fansed) {
-			$this->ajax_response(false,'已经关注过');
+			$this->ajax_response(500,'已经关注过');
 		}
 		$fans_model = new UserRelation;
 		$fans_model->user_id = $follow_id;
@@ -240,7 +238,7 @@ class UserController extends Controller
 		$this->_update_stats($user_id);
 		$this->_update_stats($follow_id);
 
-		$this->ajax_response(true,'');
+		$this->ajax_response(200,'');
 	}
 
 	public function actionUnFollowAjax()
@@ -253,7 +251,7 @@ class UserController extends Controller
 		$this->_update_stats($user_id);
 		$this->_update_stats($follow_id);
 
-		$this->ajax_response(true,'');
+		$this->ajax_response(200,'');
 	}
 
 	public function actionFollowing()
@@ -279,7 +277,7 @@ class UserController extends Controller
 			$email = $_POST['email'];
 			$password = $_POST['password'];
 			if(empty($email) || empty($password)) {
-				$this->ajax_response(false, "邮箱或者密码不能为空");
+				$this->ajax_response(500, "邮箱或者密码不能为空");
 			}
 			if($this->_identity===null)
 			{
@@ -292,12 +290,12 @@ class UserController extends Controller
 				$duration=($rememberMe === 1) ? 3600*24*30 : 0; // 30 days
 
 				Yii::app()->user->login($this->_identity,$duration);
-				$this->ajax_response(true, "恭喜你，登录成功！");
+				$this->ajax_response(200, "恭喜你，登录成功！");
 			} else {
 				if($this->_identity->errorCode === UserIdentity::ERROR_PASSWORD_INVALID) {
-					$this->ajax_response(false, "密码不正确，请重新输入");
+					$this->ajax_response(500, "密码不正确，请重新输入");
 				} else if($this->_identity->errorCode === UserIdentity::ERROR_USERNAME_INVALID) { 
-					$this->ajax_response(false, "你输入的邮箱不正确，请重新输入");
+					$this->ajax_response(500, "你输入的邮箱不正确，请重新输入");
 				}
 			}
 		} else {
@@ -328,11 +326,11 @@ class UserController extends Controller
 			$email = $_POST['email'];
 			$password = $_POST['password'];
 			if(empty($email) || empty($password)) {
-				$this->ajax_response(false, "邮箱或者密码不能为空");
+				$this->ajax_response(500, "邮箱或者密码不能为空");
 			}
 			$user = User::model()->find("email=:email",array(":email"=>$email));
 			if(!empty($user)) {
-				$this->ajax_response(false, "该邮箱已经使用，请换其他邮箱");
+				$this->ajax_response(500, "该邮箱已经使用，请换其他邮箱");
 			}
 			$user_model=new User;
 			$user_model->email = $email;
@@ -345,9 +343,9 @@ class UserController extends Controller
 				$this->_identity=new UserIdentity($email,$password);
 				$this->_identity->authenticate();
 				Yii::app()->user->login($this->_identity,3600*24*30);
-				$this->ajax_response(true, "恭喜你注册成功!");
+				$this->ajax_response(200, "恭喜你注册成功!");
 			} else {
-				$this->ajax_response(false, "注册失败，请重新注册");
+				$this->ajax_response(500, "注册失败，请重新注册");
 			}
 		} else {
 			$this->render('register');

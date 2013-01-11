@@ -28,7 +28,6 @@ define(function(require){
 					data:{"pin_id":pin_id},
 					type: 'POST',
 					success: function(result) {
-						result = $.parseJSON(result);
 						if(result['code'] == 200)
 						{
 							if(cancel) {

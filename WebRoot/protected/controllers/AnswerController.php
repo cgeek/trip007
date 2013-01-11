@@ -79,7 +79,7 @@ class AnswerController extends Controller
 			$answer_id = $_GET['answer_id'];
 		}
 		if(empty($answer_id) || $answer_id <=0)
-			$this->ajax_response(false,'参数不正确');
+			$this->ajax_response(500, '参数不正确');
 		$answer_db = Answer::model()->findByPk($answer_id);
 		if(empty($answer_db))
 			$this->ajax_response(404,'该信息不存在');

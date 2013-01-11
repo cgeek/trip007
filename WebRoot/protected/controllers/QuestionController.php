@@ -65,7 +65,7 @@ class QuestionController extends Controller
 	}
 
 
-	public function actionDetail()
+	public function actionDetailJSON()
 	{
 		$question_id = intval($_GET['question_id']) > 1 ? intval($_GET['question_id']) : 1;
 		if(empty($question_id) || $question_id <= 0) {
@@ -112,7 +112,7 @@ class QuestionController extends Controller
 		return array('count'=> $count, 'answer_list' => $answer_list);
 	}
 
-	public function actionList()
+	public function actionListJSON()
 	{
 		$lat = $_GET['lat'];
 		$lon = $_GET['lon'];
@@ -146,8 +146,8 @@ class QuestionController extends Controller
 		{
 			$question_list[] = $this->_format_question($question->attributes, $lat, $lon);
 		}
-		$this->_data['count'] = $count;
-		$this->_data['list'] = $question_list;
+		$this->_data['total'] = $count;
+		$this->_data['items'] = $question_list;
 		$this->ajax_response(200,'',$this->_data);
 	}
 
