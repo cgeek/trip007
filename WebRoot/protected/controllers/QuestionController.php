@@ -175,8 +175,8 @@ class QuestionController extends Controller
 			'ctime' =>  human_time($question_db['ctime']),
 			'user' => array(
 				'user_id' => $question_db['user_id'],
-				'user_avatar' => $user['avatar'],
-				'user_name' => $user['user_name']
+				'user_avatar' => empty($user['avatar']) ? '' : $user['avatar'],
+				'user_name' => empty($user['user_name']) ? '' : $user['user_name']
 			)
 		);
 		return $data;
