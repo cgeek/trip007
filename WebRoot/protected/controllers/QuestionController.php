@@ -173,11 +173,11 @@ class QuestionController extends Controller
 			'answer_count' => $question_db['answer_count'],
 			'distance' => $distance,
 			'ctime' =>  human_time($question_db['ctime']),
-			'lat' => $question_db['lat'],
-			'lon' => $question_db['lon'],
-			'user_id' => $question_db['user_id'],
-			'user_avatar' => $user['avatar'],
-			'user_name' => $user['user_name'],
+			'user' => array(
+				'user_id' => $question_db['user_id'],
+				'user_avatar' => $user['avatar'],
+				'user_name' => $user['user_name']
+			)
 		);
 		return $data;
 	}
