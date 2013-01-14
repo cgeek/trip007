@@ -11401,3 +11401,263 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/question/list
 ---
+2013/01/12 16:18:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1357978693816
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/12 16:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1357978694119
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/12 17:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/question/detail/1".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('api/question/de...')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/api/question/detail/1
+---
+2013/01/12 17:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listJSON".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listJSON')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listJSON')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('answer/listJSON')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/api/answer/list?question_id=1
+---
+2013/01/12 19:22:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listJSON".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listJSON')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listJSON')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('answer/listJSON')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/api/answer/list?question_id=1
+---
+2013/01/13 16:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "list".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('list')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('list')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/list')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/question/list
+---
+2013/01/13 16:59:59 [error] [php] error_log() expects parameter 1 to be string, array given (/Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php:217)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): QuestionController->runAction()
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): QuestionController->runActionWithFilters()
+#3 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): QuestionController->run()
+#4 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CWebApplication->run()
+REQUEST_URI=/question/locoySpider
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php (217)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2013/01/13 17:00:00 [error] [php] error_log() expects parameter 1 to be string, array given (/Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php:217)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): QuestionController->runAction()
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): QuestionController->runActionWithFilters()
+#3 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): QuestionController->run()
+#4 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CWebApplication->run()
+REQUEST_URI=/question/locoySpider
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php (217)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2013/01/13 18:46:32 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "one".' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(226): CComponent->__call('one', Array)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(220): CActiveRecord->__call('one', Array)
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(220): User->one()
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionLocoySpider()
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('locoySpider')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/locoyS...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/question/locoySpider
+---
+2013/01/13 21:14:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email'. The SQL statement executed was: INSERT INTO `user` (`pin_count`, `msg_count`, `fans_count`, `follow_count`, `email`, `password`, `user_name`, `ctime`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php (234)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2013/01/13 21:14:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email'. The SQL statement executed was: INSERT INTO `user` (`pin_count`, `msg_count`, `fans_count`, `follow_count`, `email`, `password`, `user_name`, `ctime`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in /Users/cgeek/Sites/trip007/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(1018): CDbCommand->execute()
+#1 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(791): CActiveRecord->insert(NULL)
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(234): CActiveRecord->save()
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionLocoySpider()
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('locoySpider')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/locoyS...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/question/locoySpider
+---
+2013/01/13 21:53:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email'. The SQL statement executed was: INSERT INTO `user` (`pin_count`, `msg_count`, `fans_count`, `follow_count`, `email`, `password`, `user_name`, `ctime`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php (234)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2013/01/13 21:53:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email'. The SQL statement executed was: INSERT INTO `user` (`pin_count`, `msg_count`, `fans_count`, `follow_count`, `email`, `password`, `user_name`, `ctime`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in /Users/cgeek/Sites/trip007/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(1018): CDbCommand->execute()
+#1 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(791): CActiveRecord->insert(NULL)
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(234): CActiveRecord->save()
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionLocoySpider()
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('locoySpider')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/locoyS...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/question/locoySpider
+---
+2013/01/13 22:18:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email'. The SQL statement executed was: INSERT INTO `user` (`pin_count`, `msg_count`, `fans_count`, `follow_count`, `email`, `password`, `user_name`, `ctime`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php (234)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2013/01/13 22:18:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email'. The SQL statement executed was: INSERT INTO `user` (`pin_count`, `msg_count`, `fans_count`, `follow_count`, `email`, `password`, `user_name`, `ctime`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in /Users/cgeek/Sites/trip007/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(1018): CDbCommand->execute()
+#1 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(791): CActiveRecord->insert(NULL)
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(234): CActiveRecord->save()
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionLocoySpider()
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('locoySpider')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/locoyS...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/question/locoySpider
+---
+2013/01/13 22:23:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email'. The SQL statement executed was: INSERT INTO `user` (`pin_count`, `msg_count`, `fans_count`, `follow_count`, `email`, `password`, `user_name`, `ctime`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php (234)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2013/01/13 22:23:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email'. The SQL statement executed was: INSERT INTO `user` (`pin_count`, `msg_count`, `fans_count`, `follow_count`, `email`, `password`, `user_name`, `ctime`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in /Users/cgeek/Sites/trip007/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(1018): CDbCommand->execute()
+#1 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(791): CActiveRecord->insert(NULL)
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(234): CActiveRecord->save()
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionLocoySpider()
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('locoySpider')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/locoyS...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/question/locoySpider
+---
+2013/01/13 23:55:14 [error] [php] Missing argument 1 for CModel::getError(), called in /Users/cgeek/Sites/trip007/framework/base/CComponent.php on line 112 and defined (/Users/cgeek/Sites/trip007/framework/base/CModel.php:369)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/base/CComponent.php(264): Question->__get()
+#1 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(226): Question->__call()
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(264): Question->__call()
+#3 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(264): Question->error()
+#4 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionLocoySpider()
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): QuestionController->runAction()
+#7 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): QuestionController->runActionWithFilters()
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): QuestionController->run()
+#9 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CWebApplication->run()
+REQUEST_URI=/question/locoySpider
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php (264)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php (264)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2013/01/14 00:03:53 [error] [exception.CException] exception 'CException' with message 'Question and its behaviors do not have a method or closure named "errors".' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/ar/CActiveRecord.php(226): CComponent->__call('errors', Array)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(264): CActiveRecord->__call('errors', Array)
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(264): Question->errors()
+#3 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionLocoySpider()
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('locoySpider')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/locoyS...')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/question/locoySpider
+---
+2013/01/14 00:07:11 [error] [exception.CException] exception 'CException' with message 'Property "QuestionController._errors" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/base/CModel.php(359): CComponent->__get('_errors')
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(264): CModel->getErrors()
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionLocoySpider()
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('locoySpider')
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/locoyS...')
+#8 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/question/locoySpider
+---
+2013/01/14 00:14:50 [error] [exception.CException] exception 'CException' with message 'Alias "ext.qqWeibo.QqWeibo" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/cgeek/Sites/trip007/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(52): YiiBase::import('ext.qqWeibo.QqW...', true)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php(264): QuestionController->_share_weibo(Array)
+#2 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionLocoySpider()
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('locoySpider')
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/locoyS...')
+#8 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/question/locoySpider
+---
+2013/01/14 01:40:43 [error] [php] error_log() expects parameter 1 to be string, array given (/Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php:361)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/actions/CInlineAction.php(50): QuestionController->actionLocoySpider()
+#1 /Users/cgeek/Sites/trip007/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(287): QuestionController->runAction()
+#3 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): QuestionController->runActionWithFilters()
+#4 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): QuestionController->run()
+#5 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#6 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CWebApplication->run()
+REQUEST_URI=/question/locoySpider
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php (361)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/QuestionController.php (305)
+in /Users/cgeek/Sites/trip007/WebRoot/index.php (16)
+2013/01/14 02:14:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "detail".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('detail')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('detail')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/detail')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/question/detail?question_id=2875
+---

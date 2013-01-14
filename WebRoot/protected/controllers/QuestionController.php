@@ -121,7 +121,7 @@ class QuestionController extends Controller
 			$squares = $this->_returnSquarePoint($lat, $lon, $distance);
 		}
 		$p = isset($_GET['page'])  ? intval($_GET['page']) : 1;
-		$per_page = 100;
+		$per_page = 10;
 		$offset = ($p - 1) * $per_page;
 		$limit = $per_page; 
 		$criteria = new CDbCriteria;
@@ -171,6 +171,7 @@ class QuestionController extends Controller
 			'title' => $question_db['title'],
 			'content' => $question_db['content'],
 			'answer_count' => $question_db['answer_count'],
+			'view_count' => $question_db['view_count'],
 			'distance' => $distance,
 			'ctime' =>  human_time($question_db['ctime']),
 			'user' => array(
@@ -198,6 +199,165 @@ class QuestionController extends Controller
 			'right-bottom'=>array('lat'=>$lat - $dlat, 'lon'=>$lon + $dlon)
 			);
 	}
+
+	public function actionLocoySpider()
+	{
+		$postData = array(
+			'title' => trim($_POST['title']),
+			'content' => trim($_POST['content']),
+			'user_name' => $_POST['username'],
+			'ctime' => $_POST['ctime'],
+			'answers' => $_POST['answers'],
+			'qyer_question_id' => $_POST['questionId'],
+			'tags' => $_POST['tags'],
+			'user_id'=> $_POST['user_id'],
+			'source_url' => $_POST['采集页网址'],
+		);
+		
+		//检查是否重复
+
+		if(empty($postData['user_name'])) {
+			$postData['user_name'] = 'miaomiao';
+		}
+		//判断用户是否已经存在
+		$user_id = $this->_get_user_id_by_username($postData['user_name'], $postData['user_id']);
+		if(empty($user_id)) {
+			error_log("=====ask====>: empty user_id");
+			return NULL;
+		}
+
+		//插入问题
+		$ctime = !empty($postData['ctime']) ? strtotime($postData['ctime']) : time();
+		$new_question = new Question;
+		$new_question->title = $postData['title'];
+		$new_question->content = $postData['content'];
+		$new_question->user_id = $user_id;
+		$new_question->ctime = $ctime;
+		$new_question->mtime = date('Y-m-d h:m:s', $ctime);
+		$new_question->source_type = 'spider';
+		$new_question->source_url = $postData['source_url'];
+		$new_question->source_meta_info =  json_encode(array( 'qyer_question_id' => $postData['qyer_question_id']));
+		$new_question->source_title_md5 = md5($postData['source_url']);
+		$new_question->status = 0;
+
+		if($new_question->save())
+		{
+			$question_id = $new_question->question_id;
+			// 更新用户发表数量
+			//$question_db = Question::model()->findByPk($new_question_id);
+		} else {
+			error_log("=====ask====>: insert question error");
+			var_dump($new_question->getErrors());
+			return NULL;
+		}
+		
+		$tag_ids = array();
+		//判断tag是否已经存在
+		if(!empty($postData['tags'])) {
+			$tag_array = explode("\r", $postData['tags']);
+			foreach($tag_array as $tag) {
+				$tag_db = Tag::model()->find("tag_name=:tag_name", array(":tag_name"=>$tag));
+				if(!empty($tag_db)) {
+					$tag_db = $tag_db->attributes;
+					$tag_id = $tag_db['tag_id'];
+				} else {
+					$tag_new = new Tag;
+					$tag_new->tag_name = $tag;
+					$tag_new->tag_meta = 'question';
+					$tag_new->ctime = time();
+					$tag_new->status = 0;
+					if($tag_new->save()) {
+						$tag_id = $tag_new->tag_id;
+					}
+				}
+				if(isset($tag_id) || $tag_id > 0 ) {
+					$tag_ids[] = $tag_id;
+				}
+			}
+		}
+
+		if(!empty($tag_ids)) {
+			foreach($tag_ids as $tag_id) {
+				$tag_question_db = TagMeta::model()->find("tag_id=:tag_id AND question_id=:question_id", array(":tag_id"=> $tag_id, ":question_id"=>$question_id));
+				if(empty($tag_question_db)) {
+					$tag_meta_new = new TagMeta;
+					$tag_meta_new->tag_id = $tag_id;
+					$tag_meta_new->question_id = $question_id;
+					$tag_meta_new->save();
+				}
+			}
+		}
+
+		if(!empty($postData['answers'])) {
+			$answer_list = explode("\r", $postData['answers']);
+			if (!empty($answer_list)) {
+				foreach($answer_list as $answer) {
+					$answer_array = explode("||", $answer);
+					if(count($answer_array) == 4) {
+						$answer_data['user_id'] = $answer_array[0];
+						$answer_data['user_name'] = $answer_array[1];
+						$answer_data['ctime'] = $answer_array[2];
+						$answer_data['content'] = $answer_array[3];
+						$answer_data['question_id'] = $question_id;
+						$this->_insert_answer($answer_data);
+					}
+				}
+			}
+		}
+		echo 'success';
+	}
+
+	private function _get_user_id_by_username($user_name, $qyer_user_id = 0)
+	{
+		$user_id = '';
+		$user_db = User::model()->find("user_name=:username",array(":username"=>$user_name));
+		if (!empty($user_db)) {
+			$user_db = $user_db->attributes;
+			$user_id = $user_db['user_id'];
+		} else {
+			$user_model = new User;
+			$user_model->password =  md5('miaomiao123');
+			$user_model->user_name  = $user_name;
+			if(!empty($postData['user_id'])) {
+				$user_model->avatar = 'http://qycenter.qyer.com/avatar.php?uid=' . $qyer_user_id . '&size=small&random=1';
+				$user_model->qyer_user_id = $qyer_user_id;
+			}
+			$user_model->ctime = time();
+			if($user_model->save()) {
+				$user_id = $user_model->user_id;
+			}
+		}
+		
+		return $user_id;
+
+	}
+
+	private function _insert_answer($answer_data)
+	{
+		if(empty($answer_data)) {
+			error_log("=====ask====>: empty answer_data");
+			return ;
+		}
+		$user_id = $this->_get_user_id_by_username($answer_data['user_name'], $answer_data['user_id']);
+		if(empty($user_id)) {
+			error_log("=====ask====>: insert answer error no user_id");
+			return ;
+		}
+		//判断用户
+		$ctime = !empty($answer_data['ctime']) ? strtotime($answer_data['ctime']) : time();
+		$answer_new = new Answer;
+		$answer_new->question_id = $answer_data['question_id'];
+		$answer_new->content = $answer_data['content'];
+		$answer_new->user_id = $user_id;
+		$answer_new->ctime = $ctime;
+		$answer_new->mtime = date('Y-m-d h:m:s', $ctime);
+
+		if(!$answer_new->save()) {
+			error_log("=====ask====>: insert answer error no user_id");
+			var_dump($answer_new->getErrors());
+		}
+	}
+
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

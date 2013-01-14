@@ -26,6 +26,7 @@
  * @property string $mtime
  * @property string $last_login_time
  * @property integer $status
+ * @property string $qyer_user_id
  */
 class User extends CActiveRecord
 {
@@ -58,11 +59,11 @@ class User extends CActiveRecord
 			array('ctime', 'required'),
 			array('pin_count, msg_count, fans_count, follow_count, ctime, status', 'numerical', 'integerOnly'=>true),
 			array('user_name, password, gender', 'length', 'max'=>64),
-			array('email, website, location, province, description, avatar, avatar_large, out_source, out_uid, out_token', 'length', 'max'=>255),
+			array('email, website, location, province, description, avatar, avatar_large, out_source, out_uid, out_token, qyer_user_id', 'length', 'max'=>255),
 			array('mtime, last_login_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('user_id, user_name, password, email, website, location, province, description, avatar, avatar_large, gender, out_source, out_uid, out_token, pin_count, msg_count, fans_count, follow_count, ctime, mtime, last_login_time, status', 'safe', 'on'=>'search'),
+			array('user_id, user_name, password, email, website, location, province, description, avatar, avatar_large, gender, out_source, out_uid, out_token, pin_count, msg_count, fans_count, follow_count, ctime, mtime, last_login_time, status, qyer_user_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -105,6 +106,7 @@ class User extends CActiveRecord
 			'mtime' => 'Mtime',
 			'last_login_time' => 'Last Login Time',
 			'status' => 'Status',
+			'qyer_user_id' => 'Qyer User',
 		);
 	}
 
@@ -141,6 +143,7 @@ class User extends CActiveRecord
 		$criteria->compare('mtime',$this->mtime,true);
 		$criteria->compare('last_login_time',$this->last_login_time,true);
 		$criteria->compare('status',$this->status);
+		$criteria->compare('qyer_user_id',$this->qyer_user_id,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

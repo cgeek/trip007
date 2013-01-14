@@ -9,7 +9,7 @@
  * @property string $content
  * @property integer $user_id
  * @property integer $ctime
- * @property integer $mtime
+ * @property string $mtime
  * @property string $lat
  * @property string $lon
  * @property integer $status
@@ -43,7 +43,7 @@ class Answer extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('question_id, content, user_id, ctime, mtime', 'required'),
-			array('question_id, user_id, ctime, mtime, status', 'numerical', 'integerOnly'=>true),
+			array('question_id, user_id, ctime, status', 'numerical', 'integerOnly'=>true),
 			array('lat, lon', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -96,7 +96,7 @@ class Answer extends CActiveRecord
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('ctime',$this->ctime);
-		$criteria->compare('mtime',$this->mtime);
+		$criteria->compare('mtime',$this->mtime,true);
 		$criteria->compare('lat',$this->lat,true);
 		$criteria->compare('lon',$this->lon,true);
 		$criteria->compare('status',$this->status);

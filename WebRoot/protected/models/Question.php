@@ -9,12 +9,16 @@
  * @property string $content
  * @property integer $user_id
  * @property integer $ctime
- * @property integer $mtime
+ * @property string $mtime
  * @property integer $view_count
  * @property integer $answer_count
  * @property string $lat
  * @property string $lon
  * @property integer $status
+ * @property string $source_type
+ * @property string $source_url
+ * @property string $source_title_md5
+ * @property string $source_meta_info
  */
 class Question extends CActiveRecord
 {
@@ -44,13 +48,15 @@ class Question extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('content, user_id, ctime, mtime', 'required'),
-			array('user_id, ctime, mtime, view_count, answer_count, status', 'numerical', 'integerOnly'=>true),
-			array('title', 'length', 'max'=>255),
+			array('content, user_id, ctime, mtime, source_type', 'required'),
+			array('user_id, ctime, view_count, answer_count, status', 'numerical', 'integerOnly'=>true),
+			array('title, source_type, source_url', 'length', 'max'=>255),
 			array('lat, lon', 'length', 'max'=>16),
+			array('source_title_md5', 'length', 'max'=>64),
+			array('source_meta_info', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('question_id, title, content, user_id, ctime, mtime, view_count, answer_count, lat, lon, status', 'safe', 'on'=>'search'),
+			array('question_id, title, content, user_id, ctime, mtime, view_count, answer_count, lat, lon, status, source_type, source_url, source_title_md5, source_meta_info', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -82,6 +88,10 @@ class Question extends CActiveRecord
 			'lat' => 'Lat',
 			'lon' => 'Lon',
 			'status' => 'Status',
+			'source_type' => 'Source Type',
+			'source_url' => 'Source Url',
+			'source_title_md5' => 'Source Title Md5',
+			'source_meta_info' => 'Source Meta Info',
 		);
 	}
 
@@ -101,12 +111,16 @@ class Question extends CActiveRecord
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('ctime',$this->ctime);
-		$criteria->compare('mtime',$this->mtime);
+		$criteria->compare('mtime',$this->mtime,true);
 		$criteria->compare('view_count',$this->view_count);
 		$criteria->compare('answer_count',$this->answer_count);
 		$criteria->compare('lat',$this->lat,true);
 		$criteria->compare('lon',$this->lon,true);
 		$criteria->compare('status',$this->status);
+		$criteria->compare('source_type',$this->source_type,true);
+		$criteria->compare('source_url',$this->source_url,true);
+		$criteria->compare('source_title_md5',$this->source_title_md5,true);
+		$criteria->compare('source_meta_info',$this->source_meta_info,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

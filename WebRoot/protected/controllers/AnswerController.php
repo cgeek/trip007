@@ -3,6 +3,39 @@
 class AnswerController extends Controller
 {
 	private $_data;
+
+	public function actionListJSON($question_id)
+	{
+		$question_id = $_GET['question_id'];
+		$limit = 100;
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("status=0");
+		$criteria->addCondition("question_id=$question_id");
+		$criteria->order = ' `ctime` DESC';
+		$criteria->limit = $limit;
+		$count = Answer::model()->count($criteria);
+		$answer_list_db = Answer::model()->findAll($criteria);
+		$answer_list = array();
+		foreach($answer_list_db as $answer_db)
+		{
+			$answer = $answer_db->attributes;
+			$user_db = User::model()->findByPk($answer['user_id']);
+			if(!empty($user_db)) {
+				$answer['user'] = array(
+					'user_id' => $user_db['user_id'],
+					'user_name' => $user_db['user_name'],
+					'user_avatar' => $user_db['avatar']
+				);
+			}
+			$answer['ctime'] = human_time($answer['ctime']);
+			$answer['lat'] = empty($answer['lat']) ? '' : $answer['lat'];
+			$answer['lon'] = empty($answer['lon']) ? '' : $answer['lon'];
+			$answer_list[] = $answer;
+		}
+		$data =	array('total'=> $count, 'items' => $answer_list);
+		$this->ajax_response(200, '', $data);
+	}
+
 	public function actionPost()
 	{
 		$data['content'] = htmlspecialchars(addslashes(trim($_GET['content'])));
