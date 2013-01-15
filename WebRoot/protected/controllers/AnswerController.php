@@ -27,6 +27,7 @@ class AnswerController extends Controller
 					'user_avatar' => $user_db['avatar']
 				);
 			}
+			$answer['content'] = str_replace($answer['content'], '&nbsp;','');
 			$answer['content'] = strip_tags($answer['content']);
 			$answer['ctime'] = human_time($answer['ctime']);
 			$answer['lat'] = empty($answer['lat']) ? '' : $answer['lat'];
