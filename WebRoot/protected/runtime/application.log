@@ -11681,3 +11681,342 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/question/detail?question_id=1
 ---
+2013/01/15 14:41:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "detailJSON".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('detailJSON')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('detailJSON')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('answer/detailJS...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/api/answer/detail?question_id=1
+---
+2013/01/15 14:41:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "detailJSON".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('detailJSON')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('detailJSON')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('answer/detailJS...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/api/answer/detail?answer_id=1
+---
+2013/01/15 14:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "detailJSON".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('detailJSON')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('detailJSON')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('answer/detailJS...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/api/answer/detail
+---
+2013/01/15 15:06:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "detailJSON".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('detailJSON')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('detailJSON')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('answer/detailJS...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/api/answer/detail?question_id=1
+---
+2013/01/18 21:46:49 [error] [php] include(Question.php): failed to open stream: No such file or directory (/Users/cgeek/Sites/trip007/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/FullbuildCommand.php(21): spl_autoload_call()
+#1 unknown(0): FullbuildCommand->actionTagToQuestion()
+#2 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs()
+#3 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): FullbuildCommand->run()
+#4 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#6 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CConsoleApplication->run()
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once()
+
+2013/01/18 21:50:27 [error] [exception.CException] exception 'CException' with message 'CDbCommand and its behaviors do not have a method or closure named "queryOne".' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/FullbuildCommand.php(22): CComponent->__call('queryOne', Array)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/FullbuildCommand.php(22): CDbCommand->queryOne()
+#2 [internal function]: FullbuildCommand->actionTagToQuestion()
+#3 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(FullbuildCommand), Array)
+#4 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#5 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#6 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#7 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CApplication->run()
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once('/Users/cgeek/Si...')
+#9 {main}
+---
+2013/01/18 22:38:00 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY000]: General error. The SQL statement executed was: UPDATE  `trip007`.`question` SET  `tags` =  '吉隆坡;清迈;泰国;签证;落地签' WHERE  `question`.`question_id` =1;.
+2013/01/18 22:38:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error. The SQL statement executed was: UPDATE  `trip007`.`question` SET  `tags` =  '吉隆坡;清迈;泰国;签证;落地签' WHERE  `question`.`question_id` =1;' in /Users/cgeek/Sites/trip007/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/FullbuildCommand.php(54): CDbCommand->queryRow()
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/FullbuildCommand.php(30): FullbuildCommand->_get_questions(10, 0)
+#3 [internal function]: FullbuildCommand->actionTagToQuestion()
+#4 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(FullbuildCommand), Array)
+#5 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#6 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#8 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CApplication->run()
+#9 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once('/Users/cgeek/Si...')
+#10 {main}
+---
+2013/01/18 22:38:38 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY000]: General error. The SQL statement executed was: UPDATE  `question` SET  `tags` =  '吉隆坡;清迈;泰国;签证;落地签' WHERE  `question_id` =1;.
+2013/01/18 22:38:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error. The SQL statement executed was: UPDATE  `question` SET  `tags` =  '吉隆坡;清迈;泰国;签证;落地签' WHERE  `question_id` =1;' in /Users/cgeek/Sites/trip007/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/FullbuildCommand.php(54): CDbCommand->queryRow()
+#2 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/FullbuildCommand.php(30): FullbuildCommand->_get_questions(10, 0)
+#3 [internal function]: FullbuildCommand->actionTagToQuestion()
+#4 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(FullbuildCommand), Array)
+#5 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#6 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#8 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CApplication->run()
+#9 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once('/Users/cgeek/Si...')
+#10 {main}
+---
+2013/01/23 00:42:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358872976423
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/23 00:42:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358872976731
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/23 00:43:20 [error] [exception.XSException] [XSException] ../../../xunsearch/sdk/php/lib/XS.php(2204): Connection refused(C#61)
+REQUEST_URI=/tejia/%E9%85%92%E5%BA%97
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/23 09:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358906095100
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/23 09:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358906095409
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/23 10:26:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358907961398
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/23 10:26:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358907961712
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/23 10:43:07 [info] [application] login success
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (34)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/components/WebUser.php (29)
+in /Users/cgeek/Sites/trip007/WebRoot/protected/controllers/OauthController.php (81)
+2013/01/23 10:50:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.savePin".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.savePin')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.savePin
+HTTP_REFERER=http://trip007.cn/pin/add
+---
+2013/01/23 10:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.savePin".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.savePin')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.savePin
+HTTP_REFERER=http://trip007.cn/pin/add
+---
+2013/01/23 10:50:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358909443933
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/23 10:50:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358909444241
+HTTP_REFERER=http://trip007.cn/
+---
+2013/01/23 10:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358909449173
+HTTP_REFERER=http://trip007.cn/tejia
+---
+2013/01/23 10:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358909449492
+HTTP_REFERER=http://trip007.cn/tejia
+---
+2013/01/23 10:50:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Api/Pin.List".' in /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('Api/Pin.List')
+#1 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/Api/Pin.List?type=1&p=2&_=1358909450605
+HTTP_REFERER=http://trip007.cn/tejia
+---
+2013/01/23 10:54:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listAjax".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listAjax')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listAjax')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('question/listAj...')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/Api/question/list
+---
+2013/01/23 10:54:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "listJSON".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('listJSON')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listJSON')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/listJSON')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/api/pin/list
+---
+2013/01/23 10:56:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listJSON')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/listJSON')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/api/pin/list?p=2
+---
+2013/01/23 10:56:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listJSON')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/listJSON')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/api/pin/list?p=2
+---
+2013/01/23 10:56:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listJSON')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/listJSON')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/api/pin/list?p=2
+---
+2013/01/23 10:56:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listJSON')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/listJSON')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/api/pin/list?p=2
+---
+2013/01/23 10:56:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/cgeek/Sites/trip007/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/cgeek/Sites/trip007/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/cgeek/Sites/trip007/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/cgeek/Sites/trip007/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/cgeek/Sites/trip007/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/cgeek/Sites/trip007/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('listJSON')
+#8 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/listJSON')
+#9 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/api/pin/list
+---
+2013/01/23 14:13:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "list".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('list')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('list')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/list')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/list?page=1&tags=%E6%B8%85%E8%BF%88
+---
+2013/01/23 14:14:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "list".' in /Users/cgeek/Sites/trip007/framework/web/CController.php:484
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/framework/web/CController.php(271): CController->missingAction('list')
+#1 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(276): CController->run('list')
+#2 /Users/cgeek/Sites/trip007/framework/web/CWebApplication.php(135): CWebApplication->runController('pin/list')
+#3 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/cgeek/Sites/trip007/WebRoot/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/pin/list?p=1
+---

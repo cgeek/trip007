@@ -27,7 +27,7 @@ define(function(require, exports, module){
 				onProgress: function(id, fileName, loaded, total) {
 				},
 				onComplete: function(id, fileName, responseJSON){
-					if(responseJSON.success == true) {
+					if(responseJSON.code == 200) {
 						var image = responseJSON['data']['image'];
 						$('input[name=cover_image_id]').val(image.image_id);
 						$('input[name=cover_image_width]').val(image.width);

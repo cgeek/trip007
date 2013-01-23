@@ -17,7 +17,7 @@ class PinController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','detail','search','tejia','gonglue','listAjax','top'),
+				'actions'=>array('index','detail','search','tejia','gonglue','listJSON','listAjax','top'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -147,6 +147,10 @@ class PinController extends Controller
 		$this->render('tejia',$this->_data);
 	}
 
+	public function actionListJSON()
+	{
+		$this->actionListAjax();
+	}
 	public function actionListAjax()
 	{
 		$p = intval($_GET['p']) > 1 ? intval($_GET['p']) : 1;

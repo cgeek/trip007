@@ -17,7 +17,6 @@ class QuestionController extends Controller
 		if(empty($data['content']) || empty($data['user_id'])) {
 			$this->ajax_response(404,'内容或者用户id不能为空');
 		}
-
 		$this->_save_question($data);
 	}
 
@@ -82,7 +81,6 @@ class QuestionController extends Controller
 
 		$this->_data = $this->_format_question($question_db);
 		$answers = $this->_get_answerlist($question_id);
-		$this->_data['answer_list']= $answers['answer_list'];
 		$this->_data['answer_count']= $answers['count'];
 		$this->ajax_response(200,'',$this->_data);
 	}
@@ -117,6 +115,7 @@ class QuestionController extends Controller
 		$lat = $_GET['lat'];
 		$lon = $_GET['lon'];
 		$distance = isset($_GET['distance']) ? $_GET['distance'] : 2;
+		$tags = isset($_GET['tags']) ? $_GET['tags'] : '';
 		if(!empty($lat) && $lat > 0 && !empty($lon) && $lon > 0) {
 			$squares = $this->_returnSquarePoint($lat, $lon, $distance);
 		}
@@ -134,7 +133,9 @@ class QuestionController extends Controller
 			$criteria->addCondition("lon>{$squares['left-top']['lon']}");
 			$criteria->addCondition("lon<{$squares['right-bottom']['lon']}");
 		}
-
+		if(!empty($tags)) {
+			$criteria->addSearchCondition('tags', $tags);
+		}
 		$criteria->order = ' `view_count` DESC';
 		$criteria->order = ' `ctime` DESC';
 		$criteria->limit = $limit;
@@ -170,6 +171,7 @@ class QuestionController extends Controller
 			'question_id' => $question_db['question_id'],
 			'title' => $question_db['title'],
 			'content' => $question_db['content'],
+			'tags' => empty($question_db['tags']) ? '': $question_db['tags'],
 			'answer_count' => $question_db['answer_count'],
 			'view_count' => $question_db['view_count'],
 			'distance' => $distance,
@@ -262,7 +264,7 @@ class QuestionController extends Controller
 					$tag_id = $tag_db['tag_id'];
 				} else {
 					$tag_new = new Tag;
-					$tag_new->tag_name = $tag;
+					$tag_new->tag_name = trim($tag);
 					$tag_new->tag_meta = 'question';
 					$tag_new->ctime = time();
 					$tag_new->status = 0;
