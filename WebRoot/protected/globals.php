@@ -26,7 +26,7 @@ function upimage($image_id, $size = 'medium')
 {
 	if(empty($image_id) || $image_id == md5(''))
 	{
-		return FALSE;
+		return '';
 	}
 	if(strlen($image_id) != 32) {
 		return $image_id;
