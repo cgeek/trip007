@@ -26,7 +26,7 @@
 			<a class="carousel-control right" href="#pinCarousel" data-slide="next">&rsaquo;</a>
 		</div>
 		<div style="float:right;">
-		<iframe frameborder="0" style="display:block;" width="350px" height="250px" src="http://hotels.trip007.cn/Affiliate/Widgets/HC_large/default.aspx?a_aid=68060&brandId=154915&domain=hotels.trip007.cn&languageCode=CS&openInNewWindow=1" scrolling="no" allowtransparency="true" ></iframe>
+			<script type='text/javascript' src='http://www.hotelscombined.com/SearchBox/130457'></script>
 		<!--
 		<script type="text/javascript" src="http://api.skyscanner.net/api.ashx?key=3e0a870b-406d-4798-bba8-73dd095a081"></script>  
 <script type="text/javascript">  

@@ -5,7 +5,7 @@
 		<div class="cover_image"><a target="_blank" href="/pin/<?=$pin['pin_id'];?>"><img width=222 height="<?=$pin['cover_image_height'];?>" src="<?=$pin['cover_image_mw'];?>" ></a></div>
 		<p class="title"><a target="_blank" href="/pin/<?=$pin['pin_id'];?>"><?=$pin['title'];?></a></p>
 		<p class="content">	<?=$pin['desc'];?> </p>
-		<div class="author">
+		<!--div class="author">
 			<a target="_blank" class="author_avatar" href="/user/<?=$pin['user']['user_id'];?>">
 				<img src="<?=$pin['user']['avatar'];?>" width=30 > 
 			</a>
@@ -14,7 +14,7 @@
 			<br>
 			<span><?=$pin['ctime'];?></span>
 			</div>
-		</div>
+		</div-->
 	</div>
 		<?php endforeach;?>
 	<?php endif;?>
