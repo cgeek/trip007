@@ -129,3 +129,14 @@ function format_pin($pin)
 	$format_pin['ctime'] = date("Y-m-d H:i",$pin->ctime);
 	return $format_pin;
 }
+
+function ajax_response($code = 200, $message="",$data = array())
+{
+	header('Content-Type: application/json; charset=utf-8');
+	$result['code'] = $code;
+	//$result['success'] = $success;
+	$result['message'] = $message;
+	$result['data'] = $data;
+	echo json_encode($result);
+	exit();
+}
