@@ -14,6 +14,11 @@ class NoteController extends Controller
             'ctime' => '2014-05-22 12:11:00',
             'mtime' => '2014-05-22 12:11:00',
         );
+        $note = array('title' => 'RABI全制霸九天八夜在红旗下宣誓要睡午觉的自由行',
+            'cover_image' => 'http://file26.mafengwo.net/M00/15/4B/wKgB4lNzP3uAZEgZAAJ8ckTTV3490.jpeg',
+            'detail_html_url' => 'http://www.mafengwo.cn/i/3055428.html',
+            'ctime' => '2014-05-22 12:11:00',
+            'mtime' => '2014-05-22 12:11:00',
         $this->_data['note_list'] = array($note);
         ajax_response(200, '', $this->_data);
 	}
