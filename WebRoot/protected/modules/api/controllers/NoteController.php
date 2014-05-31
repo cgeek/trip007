@@ -7,7 +7,15 @@ class NoteController extends Controller
 	public function actionList()
 	{
         //$this->render('list');
-        ajax_response(200, '', array());
+
+        $note = array('title' => 'RABI全制霸九天八夜在红旗下宣誓要睡午觉的自由行',
+            'cover_image' => 'http://file26.mafengwo.net/M00/94/63/wKgB4lMQoaGAcK8UACgO7DpfklA76.groupinfo.w600.jpeg',
+            'detail_html_url' => 'http://www.mafengwo.cn/i/3055428.html',
+            'ctime' => '2014-05-22 12:11:00',
+            'mtime' => '2014-05-22 12:11:00',
+        );
+        $this->_data['note_list'] = array($note);
+        ajax_response(200, '', $this->_data);
 	}
 
 	// Uncomment the following methods and override them if needed
