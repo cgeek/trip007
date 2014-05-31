@@ -16,7 +16,7 @@
 	<div id="header-top">
 		<div class="main">
 			<div class="logo">
-				<a title="旅游特价信息网" href="/">旅游特价信息网</a>
+				<a title="出国去哪儿" href="/">出国去哪儿!</a>
 			</div>
 			<div class="tips">
 				<span>发现最超值的旅游特价信息</span>

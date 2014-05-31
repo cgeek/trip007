@@ -3,3 +3,5 @@ WebRoot/themes/classic/views/
 WebRoot/protected/runtime/
 *.swp
 WebRoot/protected/runtime/application.log
+*.log
+*.log.*

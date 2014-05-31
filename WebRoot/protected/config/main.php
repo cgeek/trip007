@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'旅游特价信息网',
+	'name'=>'出国去哪儿',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -27,6 +27,7 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 		'admin',
+		'api',
 	),
 
 	// application components
@@ -44,7 +45,6 @@ return array(
 			'rules'=>array(
 				'<type:tejia|gonglue>/<keyword:(.*)+>' => '/pin/search',
 				'/Api/<controller:\w+>.<action:\w+>'=>'<controller>/<action>Ajax',
-				'/api/<controller:\w+>.<action:\w+>'=>'<controller>/<action>JSON',
 				'/signup' => '/user/signup',
 				'/logout' => '/user/logout',
 				'/gonglue' => '/pin/gonglue',

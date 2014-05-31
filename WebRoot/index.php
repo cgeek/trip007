@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('asia/shanghai');
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
