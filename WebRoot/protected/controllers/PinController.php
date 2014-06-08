@@ -337,8 +337,14 @@ class PinController extends Controller
 
 		$this->_data['pin'] = $pin;
 		$this->_data['pinner'] = $pinner;
-		$this->pageTitle = $pin['title'] . " - 旅游特价信息网";
-		$this->render('detail',$this->_data);
+        $this->pageTitle = $pin['title'] . " - 旅游特价信息网";
+
+        if(isset($_GET['m']) && $_GET['m'] = 'true') {
+		    $this->renderPartial('m_detail',$this->_data);
+        } else {
+		    $this->render('detail',$this->_data);
+        }
+        
 	}
 
 	private function _update_user_stats()

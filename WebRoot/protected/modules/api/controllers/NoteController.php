@@ -19,7 +19,7 @@ class NoteController extends Controller
 		{
             $note = array('title' => $pin->title,
                 'cover_image' => upimage($pin->cover_image, 'big'),
-                'detail_html_url' => 'http://www.trip007.cn/pin/' . $pin->pin_id,
+                'detail_html_url' => 'http://www.trip007.cn/pin/' . $pin->pin_id . "?m=true",
                 'ctime' => '2014-05-22 12:11:00',
                 'mtime' => '2014-05-22 12:11:00',
             );
