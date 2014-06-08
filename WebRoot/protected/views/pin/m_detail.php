@@ -8,6 +8,9 @@
     <title>
 	<?php if(!empty($pin['title'])):?><?=$pin['title'];?><?php endif;?>
     </title>
+    <style>
+        img {width:98%;}
+    </style>
 </head>
 <body>
 	<?php if(!empty($pin['title'])):?><h2><?=$pin['title'];?></h2><?php endif;?>
