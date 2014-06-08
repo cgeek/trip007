@@ -5,49 +5,48 @@ class NoteController extends Controller
     private $_data;
 
 	public function actionList()
-	{
-        //$this->render('list');
+    {
+		$limit = 10;
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("status=0");
+		$criteria->addCondition("type=2");
+		$criteria->order = ' `ctime` DESC';
+		$criteria->limit = $limit;
+		$count = Pin::model()->count($criteria);
+		$data = Pin::model()->findAll($criteria);
+		$pin_list = array();
+		foreach($data as $pin)
+		{
+            $note = array('title' => $pin->title,
+                'cover_image' => upimage($pin->cover_image, 'big'),
+                'detail_html_url' => 'http://www.trip007.cn/pin/' . $pin->pin_id,
+                'ctime' => '2014-05-22 12:11:00',
+                'mtime' => '2014-05-22 12:11:00',
+            );
+			$pin_list[] = $note;
+		}
+		$this->_data['note_list'] = $pin_list;
 
-        $note = array('title' => 'RABI全制霸九天八夜在红旗下宣誓要睡午觉的自由行',
-            'cover_image' => 'http://file26.mafengwo.net/M00/94/63/wKgB4lMQoaGAcK8UACgO7DpfklA76.groupinfo.w600.jpeg',
-            'detail_html_url' => 'http://www.mafengwo.cn/i/3055428.html',
-            'ctime' => '2014-05-22 12:11:00',
-            'mtime' => '2014-05-22 12:11:00',
-        );
-        $note1 = array('title' => 'RABI全制霸九天八夜在红旗下宣誓要睡午觉的自由行',
-            'cover_image' => 'http://file26.mafengwo.net/M00/15/4B/wKgB4lNzP3uAZEgZAAJ8ckTTV3490.jpeg',
-            'detail_html_url' => 'http://www.mafengwo.cn/i/3055428.html',
-            'ctime' => '2014-05-22 12:11:00',
-            'mtime' => '2014-05-22 12:11:00',
-        );
-        $this->_data['note_list'] = array($note, $note1);
         ajax_response(200, '', $this->_data);
 	}
 
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
+	private function _format_pin($pin)
 	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
+		$format_pin = array();
+		$user = User::model()->findByPk($pin->user_id);
 
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
+		$format_pin['pin_id'] = $pin->pin_id;
+		$format_pin['title'] = $pin->title;
+		$format_pin['desc'] = empty($pin->desc) ? mb_substr(strip_tags(htmlspecialchars_decode($pin->content)),0,200,'utf-8') : htmlspecialchars_decode($pin->desc);
+		$format_pin['cover_image_b'] = upimage($pin->cover_image,'big');
+		$format_pin['cover_image_m'] = upimage($pin->cover_image,'medium');
+		$format_pin['cover_image_mw'] = upimage($pin->cover_image,'mw');
+		$fixed_width = fixed_pin_height($pin->cover_image_width, $pin->cover_image_height);
+		$format_pin['cover_image_width'] = $fixed_width['width'];
+		$format_pin['cover_image_height'] = $fixed_width['height'];
+		$format_pin['user'] = array('user_id'=> $user->user_id,'user_name'=>$user->user_name,'avatar'=>$user->avatar);
+		$format_pin['ctime'] = date("Y-m-d H:i",$pin->ctime);
+		return $format_pin;
+    }
+
 }

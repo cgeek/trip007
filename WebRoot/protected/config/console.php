@@ -7,7 +7,12 @@ return array(
 	'name'=>'My Console Application',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+    'preload'=>array('log'),
+
+	'import'=>array(
+		'application.models.*',
+		'application.components.*',
+	),
 
 	// application components
 	'components'=>array(

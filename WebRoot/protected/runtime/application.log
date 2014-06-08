@@ -9111,3 +9111,40 @@ Stack trace:
 #11 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once('/Users/cgeek/Si...')
 #12 {main}
 ---
+2014/06/05 16:16:03 [error] [php] include(Place.php): failed to open stream: No such file or directory (/Users/cgeek/Sites/trip007/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/QyerCommand.php(45): spl_autoload_call()
+#1 unknown(0): QyerCommand->actionGetAllCountry()
+#2 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs()
+#3 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): QyerCommand->run()
+#4 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#6 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CConsoleApplication->run()
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once()
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic(4): require_once()
+
+2014/06/05 16:16:44 [error] [php] include(Place.php): failed to open stream: No such file or directory (/Users/cgeek/Sites/trip007/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/QyerCommand.php(45): spl_autoload_call()
+#1 unknown(0): QyerCommand->actionGetAllCountry()
+#2 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs()
+#3 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): QyerCommand->run()
+#4 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#6 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CConsoleApplication->run()
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once()
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic(4): require_once()
+
+2014/06/05 16:34:18 [error] [exception.CException] exception 'CException' with message 'Property "QyerCommand._post" is not defined.' in /Users/cgeek/Sites/trip007/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/cgeek/Sites/trip007/WebRoot/protected/commands/QyerCommand.php(93): CComponent->__get('_post')
+#1 [internal function]: QyerCommand->actionUpdateCountryInfo()
+#2 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(QyerCommand), Array)
+#3 /Users/cgeek/Sites/trip007/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#4 /Users/cgeek/Sites/trip007/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#5 /Users/cgeek/Sites/trip007/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#6 /Users/cgeek/Sites/trip007/framework/yiic.php(33): CApplication->run()
+#7 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic.php(9): require_once('/Users/cgeek/Si...')
+#8 /Users/cgeek/Sites/trip007/WebRoot/protected/yiic(4): require_once('/Users/cgeek/Si...')
+#9 {main}
+---
