@@ -9,7 +9,7 @@ class NoteController extends Controller
 		$limit = 10;
 		$criteria = new CDbCriteria;
 		$criteria->addCondition("status=0");
-		$criteria->addCondition("type=2");
+		$criteria->addCondition("type=3");
 		$criteria->order = ' `ctime` DESC';
 		$criteria->limit = $limit;
 		$count = Pin::model()->count($criteria);
