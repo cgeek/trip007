@@ -36,6 +36,7 @@ class SaleController extends Controller
             } else {
                 $sale_format['price'] = $sale_format['price'] . "元";
             }
+            $sale_format['html5_url'] = "http://www.trip007.cn/sale/" . $sale_format['id'] . "?m=true";
 			$sale_list[] = $sale_format;
 		}
 		$this->_data['sale_list'] = $sale_list;
