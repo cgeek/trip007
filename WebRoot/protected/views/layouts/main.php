@@ -22,7 +22,6 @@
 				<span>发现最超值的旅游特价信息</span>
 			</div>
 			<div class="weibo-follow">
-				<iframe width="136" scrolling="no" height="24" frameborder="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&amp;width=136&amp;height=24&amp;uid=1776438131&amp;style=2&amp;btn=light&amp;dpc=1" border="0" marginheight="0" marginwidth="0" allowtransparency="true"></iframe>
 			</div>
 		</div>
 	</div>
@@ -60,10 +59,8 @@
 					<b class="caret"></b>
 				</a>
 				<ul class="user-nav-menu">
-					<li><a href="/user/home">我的关注</a></li>
-					<!--li><a href="/user/sub">我的订阅</a></li-->
-					<li><a href="/user/<?=Yii::app()->user->user_id;?>">我的发布</a></li>
-					<li><a href="/pin/add">发布特价信息</a></li>
+					<li><a href="/note/add">发表游记</a></li>
+					<li><a href="/sale/add">发布特价信息</a></li>
 					<li><a href="/pin/add?type=2">发布微攻略</a></li>
 					<li><a href="/user/settings">个人设置</a></li>
 					<li><a href="/logout">退出登录</a></li>

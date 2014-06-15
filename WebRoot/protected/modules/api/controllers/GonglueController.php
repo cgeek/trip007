@@ -25,7 +25,7 @@ class GonglueController extends Controller
             );
 			$pin_list[] = $note;
 		}
-		$this->_data['note_list'] = $pin_list;
+		$this->_data['gonglue_list'] = $pin_list;
 
         ajax_response(200, '', $this->_data);
 	}

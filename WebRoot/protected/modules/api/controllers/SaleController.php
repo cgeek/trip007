@@ -6,26 +6,39 @@ class SaleController extends Controller
 
 	public function actionList()
     {
-		$limit = 10;
+        $pageSize = Yii::app()->request->getParam('pageSize');
+        $page = Yii::app()->request->getParam('p');
+
+        $pageSize = (empty($pageSize) || $pageSize > 50) ? 20 : intval($pageSize);
+        $page = empty($page) ? 1 : intval($page);
+        $offset = ($page - 1) * $pageSize;
+
+		$limit = $pageSize;
 		$criteria = new CDbCriteria;
 		$criteria->addCondition("status=0");
-		$criteria->addCondition("type=1");
 		$criteria->order = ' `ctime` DESC';
-		$criteria->limit = $limit;
-		$count = Pin::model()->count($criteria);
-		$data = Pin::model()->findAll($criteria);
-		$pin_list = array();
-		foreach($data as $pin)
-		{
-            $note = array('title' => $pin->title,
-                'cover_image' => upimage($pin->cover_image, 'big'),
-                'detail_html_url' => 'http://www.trip007.cn/pin/' . $pin->pin_id. "?m=true",
-                'ctime' => '2014-05-22 12:11:00',
-                'mtime' => '2014-05-22 12:11:00',
-            );
-			$pin_list[] = $note;
+        $criteria->limit = $limit;
+        $criteria->offset = $offset;
+
+		$count = Sale::model()->count($criteria);
+		$data = Sale::model()->findAll($criteria);
+		$sale_list = array();
+		foreach($data as $sale)
+        {
+            $sale_format = $sale->attributes;
+            if(empty($sale_format['discount'])) {
+                $sale_format['discount'] = '';
+            } else {
+                $sale_format['discount'] = $sale_format['discount'] . "折";
+            }
+            if(empty($sale_format['price'])) {
+                $sale_format['price'] = '';
+            } else {
+                $sale_format['price'] = $sale_format['price'] . "元";
+            }
+			$sale_list[] = $sale_format;
 		}
-		$this->_data['sale_list'] = $pin_list;
+		$this->_data['sale_list'] = $sale_list;
 
         ajax_response(200, '', $this->_data);
 	}

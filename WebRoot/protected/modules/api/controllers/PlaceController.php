@@ -6,37 +6,47 @@ class PlaceController extends Controller
 
 	public function actionDiscoveryList()
     {
-        $section = array(
-            'id' => '1',
-            'title' => '一生必去的全球目的地',
-            'desc' => '叹为观止的40处世界风光',
-            'places' => array(
-                array(
-                    'place_id' => 1,
-                    'place_name' => '仙本那',
-                    'country_name' => '马来西亚',
-                    'cover_image' => 'http://pic.qyer.com/album/1a4/2d/2086499/index/300_200'),
-                array(
-                    'place_id' => 1,
-                    'place_name' => '仙本那',
-                    'country_name' => '马来西亚',
-                    'cover_image' => 'http://pic.qyer.com/album/1a4/2d/2086499/index/300_200'),
-                array(
-                    'place_id' => 1,
-                    'place_name' => '仙本那',
-                    'country_name' => '马来西亚',
-                    'cover_image' => 'http://pic.qyer.com/album/1a4/2d/2086499/index/300_200'),
-
-                array(
-                    'place_id' => 1,
-                    'place_name' => '仙本那',
-                    'country_name' => '马来西亚',
-                    'cover_image' => 'http://pic.qyer.com/album/1a4/2d/2086499/index/300_200'),
-
-            )
-        );
+        $sections = array(
+            array(
+                'id'=>1,
+                'title' => '屌丝也能出国旅行',
+                'desc' => '谁说没钱就不能出国',
+                'place_ids' => array(54,56,219,7440)
+            ),
+            array(
+                'id'=>2,
+                'title' => '购物旅行两不误',
+                'desc' => '疯狂的血拼吧',
+                'place_ids' => array(50,67,53,55)
+            ),
+            array(
+                'id'=>3,
+                'title' => '最美海岛推荐',
+                'desc' => '夕阳，沙滩，海龟',
+                'place_ids' => array(7837,7789,8845,6890)
+            ),
         
-        $this->_data['section_list'] = array($section, $section);
+        );
+
+        foreach($sections as $key=>$section) {
+            $criteria = new CDbCriteria;
+            $criteria->addInCondition('id',$section['place_ids']);
+		    $data = Place::model()->findAll($criteria);
+		    $place_list = array();
+		    foreach($data as $place)
+            {
+                $place = array(
+                    'place_id' => $place->id,
+                    'place_name' => $place->place_name,
+                    'place_name_en' => $place->place_name_en,
+                    'cover_image' => $place->cover_image
+                );
+                $place_list[] = $place;
+            }
+            $section['places'] = $place_list;
+            $sections[$key] = $section;
+        }
+        $this->_data['section_list'] = $sections;
         ajax_response(200, '', $this->_data);
 	}
 

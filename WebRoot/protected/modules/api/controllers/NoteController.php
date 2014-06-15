@@ -6,47 +6,37 @@ class NoteController extends Controller
 
 	public function actionList()
     {
-		$limit = 10;
+        $pageSize = Yii::app()->request->getParam('pageSize');
+        $page = Yii::app()->request->getParam('p');
+
+        $pageSize = (empty($pageSize) || $pageSize > 50) ? 20 : intval($pageSize);
+        $page = empty($page) ? 1 : intval($page);
+        $offset = ($page - 1) * $pageSize;
+
+		$limit = $pageSize;
 		$criteria = new CDbCriteria;
 		$criteria->addCondition("status=0");
-		$criteria->addCondition("type=3");
 		$criteria->order = ' `ctime` DESC';
-		$criteria->limit = $limit;
-		$count = Pin::model()->count($criteria);
-		$data = Pin::model()->findAll($criteria);
-		$pin_list = array();
-		foreach($data as $pin)
+        $criteria->limit = $limit;
+        $criteria->offset = $offset;
+
+		$count = Note::model()->count($criteria);
+		$data = Note::model()->findAll($criteria);
+		$note_list = array();
+		foreach($data as $note)
 		{
-            $note = array('title' => $pin->title,
-                'cover_image' => upimage($pin->cover_image, 'big'),
-                'detail_html_url' => 'http://www.trip007.cn/pin/' . $pin->pin_id . "?m=true",
+            $note = array(
+                'title' => $note->title,
+                'cover_image' => upimage($note->cover_image, 'big'),
+                'detail_html_url' => 'http://www.trip007.cn/note/' . $note->id. "?m=true",
                 'ctime' => '2014-05-22 12:11:00',
                 'mtime' => '2014-05-22 12:11:00',
             );
-			$pin_list[] = $note;
+			$note_list[] = $note;
 		}
-		$this->_data['note_list'] = $pin_list;
+		$this->_data['note_list'] = $note_list;
 
         ajax_response(200, '', $this->_data);
 	}
-
-	private function _format_pin($pin)
-	{
-		$format_pin = array();
-		$user = User::model()->findByPk($pin->user_id);
-
-		$format_pin['pin_id'] = $pin->pin_id;
-		$format_pin['title'] = $pin->title;
-		$format_pin['desc'] = empty($pin->desc) ? mb_substr(strip_tags(htmlspecialchars_decode($pin->content)),0,200,'utf-8') : htmlspecialchars_decode($pin->desc);
-		$format_pin['cover_image_b'] = upimage($pin->cover_image,'big');
-		$format_pin['cover_image_m'] = upimage($pin->cover_image,'medium');
-		$format_pin['cover_image_mw'] = upimage($pin->cover_image,'mw');
-		$fixed_width = fixed_pin_height($pin->cover_image_width, $pin->cover_image_height);
-		$format_pin['cover_image_width'] = $fixed_width['width'];
-		$format_pin['cover_image_height'] = $fixed_width['height'];
-		$format_pin['user'] = array('user_id'=> $user->user_id,'user_name'=>$user->user_name,'avatar'=>$user->avatar);
-		$format_pin['ctime'] = date("Y-m-d H:i",$pin->ctime);
-		return $format_pin;
-    }
 
 }
