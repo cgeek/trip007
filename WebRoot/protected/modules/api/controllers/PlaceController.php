@@ -11,7 +11,7 @@ class PlaceController extends Controller
                 'id'=>1,
                 'title' => '屌丝也能出国旅行',
                 'desc' => '谁说没钱就不能出国',
-                'place_ids' => array(54,56,219,7440)
+                'place_ids' => array(54,56,52,7440)
             ),
             array(
                 'id'=>2,
@@ -23,7 +23,7 @@ class PlaceController extends Controller
                 'id'=>3,
                 'title' => '最美海岛推荐',
                 'desc' => '夕阳，沙滩，海龟',
-                'place_ids' => array(7837,7789,8845,6890)
+                'place_ids' => array(7837,9826,8845,6890)
             ),
         
         );
